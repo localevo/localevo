@@ -10996,3 +10996,40 @@ header.masthead h1, header.masthead .h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
+
+.transition-hover {
+    transition: all 0.3s ease;
+}
+
+.transition-hover:hover {
+    color: #ff7900 !important;
+    transform: scale(1.05);
+}
+
+#contact a {
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #ff7900 !important;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* spațiu între pictograme */
+    margin-top: 25px;
+}
+
+.social-links a {
+    color: #6c757d;
+    font-size: 3rem; /* mărește pictogramele */
+    text-decoration: none; /* elimină sublinierea */
+    transition: all 0.3s ease;
+    line-height: 1;
+}
+
+.social-links a:hover {
+    color: #0d6efd;
+    transform: scale(1.15);
+}
