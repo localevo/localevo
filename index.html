@@ -505,10 +505,9 @@
                     </div>
 
                     <!-- Formular Contact -->
-                    <form action="https://formsubmit.co/contact@localevo.ro" method="POST">
+                    <form id="contactForm" action="https://formsubmit.co/contact@localevo.ro" method="POST">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_subject" value="Mesaj nou de pe Localevo">
-                        <input type="hidden" name="_next" value="https://localevo.ro">
 
                         <div class="mb-3">
                             <input type="text" class="form-control" name="nume și prenume" placeholder="Nume și prenume"
@@ -527,6 +526,9 @@
                         <button type="submit" class="btn btn-primary w-100">
                             Trimite mesajul
                         </button>
+                        <div id="successMessage" class="alert alert-success mt-3 d-none" role="alert">
+                            ✅ Mulțumim! Mesajul tău a fost trimis cu succes. Te vom contacta în cel mai scurt timp.
+                        </div>
 
                     </form>
 
@@ -582,6 +584,8 @@
         <span>Scrie-ne</span>
 
     </a>
+
+    <script src="js/contact.js"></script>
 
 </body>
 
