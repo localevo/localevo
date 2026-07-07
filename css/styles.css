@@ -11158,3 +11158,31 @@ header.masthead h1, header.masthead .h1 {
 .brand-icon-align {
     vertical-align: middle;
 }
+
+#contact .form-control{
+    border-radius:10px;
+    padding:12px 16px;
+    border:1px solid #ddd;
+}
+
+#contact .form-control:focus{
+    border-color:#f4623a;
+    box-shadow:0 0 0 .2rem rgba(244,98,58,.25);
+}
+
+#contact textarea{
+    resize:none;
+}
+
+#contact .btn-primary{
+    background:#f4623a;
+    border-color:#f4623a;
+    border-radius:10px;
+    padding:12px;
+    font-weight:600;
+}
+
+#contact .btn-primary:hover{
+    background:#da4d28;
+    border-color:#da4d28;
+}
