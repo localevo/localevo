@@ -11088,7 +11088,7 @@ header.masthead h1, header.masthead .h1 {
     right: 25px;
     z-index: 9999;
 
-    background: #f97316;
+    background: #6c757d;
     color: white;
 
     padding: 12px 20px;
@@ -11166,8 +11166,8 @@ header.masthead h1, header.masthead .h1 {
 }
 
 #contact .form-control:focus{
-    border-color:#f4623a;
-    box-shadow:0 0 0 .2rem rgba(244,98,58,.25);
+    border-color:#f97316;
+    box-shadow:0 0 0 .2rem rgba(249,115,22,.25);
 }
 
 #contact textarea{
@@ -11175,8 +11175,8 @@ header.masthead h1, header.masthead .h1 {
 }
 
 #contact .btn-primary{
-    background:#f4623a;
-    border-color:#f4623a;
+    background:#f97316;
+    border-color:#f97316;
     border-radius:10px;
     padding:12px;
     font-weight:600;
@@ -11185,4 +11185,85 @@ header.masthead h1, header.masthead .h1 {
 #contact .btn-primary:hover{
     background:#da4d28;
     border-color:#da4d28;
+}
+
+#desprenoi{
+    background:#f97316;
+}
+
+/* Titlu */
+#desprenoi h2{
+    color:#fff;
+    font-weight:700;
+    letter-spacing:.5px;
+}
+
+/* Linie sub titlu */
+#desprenoi .divider-light{
+    border-top:3px solid #fff;
+    width:90px;
+    margin:0 auto 40px;
+    opacity:.9;
+}
+
+/* Cardurile cu text */
+.about-card{
+    background:#fff;
+    border-radius:18px;
+    padding:35px 40px;
+    box-shadow:0 8px 25px rgba(0,0,0,.10);
+    transition:.3s;
+}
+
+.about-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.about-card p{
+    color:#4b5563;
+    font-size:1.08rem;
+    line-height:1.9;
+    margin:0;
+    text-align:left;
+}
+
+/* Cardurile echipei */
+.team-card{
+    background:#fff;
+    border-radius:18px;
+    padding:30px 20px;
+    height:100%;
+    box-shadow:0 8px 25px rgba(0,0,0,.10);
+    transition:.3s;
+}
+
+.team-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.team-card h5{
+    color:#1f2937;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.team-card p{
+    color:#f97316;
+    font-weight:600;
+    margin:0;
+}
+
+/* Butonul din secțiunea Despre noi */
+#desprenoi .btn{
+    border-radius:50px;
+    font-weight:700;
+    font-size:1rem;
+    transition:.3s;
+}
+
+#desprenoi .btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 25px rgba(0,0,0,.20);
 }
