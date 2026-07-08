@@ -11213,6 +11213,9 @@ header.masthead h1, header.masthead .h1 {
     padding:35px 40px;
     box-shadow:0 8px 25px rgba(0,0,0,.10);
     transition:.3s;
+    text-align:center;
+
+    
 }
 
 .about-card:hover{
@@ -11225,7 +11228,7 @@ header.masthead h1, header.masthead .h1 {
     font-size:1.08rem;
     line-height:1.9;
     margin:0;
-    text-align:left;
+    text-align:center;
 }
 
 /* Cardurile echipei */
