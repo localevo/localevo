@@ -35,6 +35,13 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #f97316;
+  --localevo-primary: #F97316;
+  --localevo-primary-dark: #EA580C;
+  --localevo-primary-light: #FFF7ED;
+  --localevo-dark: #212529;
+  --localevo-gray: #6C757D;
+  --localevo-light: #F8F9FA;
+  --localevo-card: #FFFFFF;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -10930,16 +10937,20 @@ hr.divider-light {
 }
 
 header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  padding-top: 11rem;
+  padding-bottom: calc(8rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(17,24,39,.72) 0%, rgba(17,24,39,.72) 100%), url("../assets/img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
 header.masthead h1, header.masthead .h1 {
-  font-size: 2.25rem;
+    font-weight:900;
+    margin:auto;
+    letter-spacing:-1px;
+    line-height:1.15;
+    text-shadow:0 3px 15px rgba(0,0,0,.25);
 }
 @media (min-width: 992px) {
   header.masthead {
@@ -10949,7 +10960,11 @@ header.masthead h1, header.masthead .h1 {
     padding-bottom: 0;
   }
   header.masthead p {
-    font-size: 1.15rem;
+    font-size:1.15rem;
+    line-height:1.8;
+    color:rgba(255,255,255,.92);
+    max-width:760px;
+    margin:auto;
   }
   header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
@@ -11040,17 +11055,19 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .portfolio-card {
-    background: #fff;
-    border-radius: 15px;
-    padding: 25px 15px;
-    text-align: center;
-    height: 100%;
-    box-shadow: 0 5px 15px rgba(0,0,0,.08);
-    transition: all .3s ease;
+    background:#fff;
+    border-radius:20px;
+    padding:25px 15px;
+    text-align:center;
+    height:100%;
+    border:1px solid rgba(249,115,22,.08);
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:all .35s ease;
 }
 
 .portfolio-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
 }
 
 .portfolio-card img {
@@ -11175,8 +11192,9 @@ header.masthead h1, header.masthead .h1 {
 }
 
 #contact .btn-primary{
-    background:#f97316;
-    border-color:#f97316;
+    
+    background:var(--localevo-primary);
+    border-color:var(--localevo-primary);
     border-radius:10px;
     padding:12px;
     font-weight:600;
@@ -11188,12 +11206,13 @@ header.masthead h1, header.masthead .h1 {
 }
 
 #desprenoi{
-    background:#f97316;
+    background:var(--localevo-light);
+    padding:100px 0;
 }
 
 /* Titlu */
 #desprenoi h2{
-    color:#fff;
+    color:var(--localevo-dark);
     font-weight:700;
     letter-spacing:.5px;
 }
@@ -11208,19 +11227,20 @@ header.masthead h1, header.masthead .h1 {
 
 /* Cardurile cu text */
 .about-card{
-    background:#fff;
-    border-radius:18px;
+    background: var(--localevo-card);
+    border-radius:20px;
     padding:35px 40px;
-    box-shadow:0 8px 25px rgba(0,0,0,.10);
-    transition:.3s;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    border:1px solid rgba(249,115,22,.08);
+    transition:all .35s ease;
     text-align:center;
 
     
 }
 
 .about-card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
 }
 
 .about-card p{
@@ -11233,17 +11253,17 @@ header.masthead h1, header.masthead .h1 {
 
 /* Cardurile echipei */
 .team-card{
-    background:#fff;
-    border-radius:18px;
-    padding:30px 20px;
+    background: var(--localevo-card);
+    border-radius:20px;
+    padding:35px 25px;
     height:100%;
-    box-shadow:0 8px 25px rgba(0,0,0,.10);
-    transition:.3s;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:all .35s ease;
 }
 
 .team-card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
 }
 
 .team-card h5{
@@ -11269,4 +11289,211 @@ header.masthead h1, header.masthead .h1 {
 #desprenoi .btn:hover{
     transform:translateY(-3px);
     box-shadow:0 12px 25px rgba(0,0,0,.20);
+}
+
+header.masthead .btn{
+    padding:18px 38px;
+    border-radius:50px;
+    font-size:1rem;
+    font-weight:700;
+    box-shadow:0 12px 30px rgba(249,115,22,.35);
+    transition:all .3s ease;
+}
+
+header.masthead .btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 18px 40px rgba(249,115,22,.45);
+}
+
+header.masthead .divider{
+    width:90px;
+    height:4px;
+    max-width:90px; /* suprascrie Bootstrap */
+    background:var(--localevo-primary);
+    border:none;
+    border-radius:30px;
+    opacity:1;
+    margin:2rem auto;
+}
+
+/* Bara principală */
+#mainNav{
+    transition:all .35s ease;
+}
+
+/* Bara după scroll */
+#mainNav.navbar-shrink{
+
+    background:#ffffff;
+
+    box-shadow:0 4px 20px rgba(0,0,0,.06);
+
+}
+
+/* Logo */
+
+#mainNav .navbar-brand img{
+
+    height:58px;
+
+    width:auto;
+
+    transition:all .3s ease;
+
+}
+
+/* Linkurile */
+
+#mainNav .navbar-nav .nav-link{
+
+    position:relative;
+
+    letter-spacing:.3px;
+
+    transition:all .3s ease;
+
+}
+
+#mainNav .navbar-nav .nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:14px;
+
+    right:14px;
+
+    bottom:-6px;
+
+    height:3px;
+
+    background:var(--localevo-primary);
+
+    border-radius:30px;
+
+    transform:scaleX(0);
+
+    transition:transform .3s ease;
+
+}
+
+#mainNav .navbar-nav .nav-link:hover::after,
+
+#mainNav .navbar-nav .nav-link.active::after{
+
+    transform:scaleX(1);
+
+}
+
+@media (max-width:991px){
+
+    #mainNav .navbar-brand img{
+
+        height:42px;
+
+    }
+
+}
+
+#serviciilenoastre{
+    background:#343a40;
+    color:#ffffff;
+}
+
+#serviciilenoastre .divider{
+    background:var(--localevo-primary);
+}
+
+#serviciilenoastre p{
+    color:rgba(255,255,255,.9);
+}
+
+#serviciilenoastre{
+    background:#343a40;
+    color:#e9ecef;
+}
+
+#serviciilenoastre h2,
+#serviciilenoastre h3{
+    color:#ffffff;
+}
+
+#serviciilenoastre p,
+#serviciilenoastre li,
+#serviciilenoastre span,
+#serviciilenoastre .text-muted{
+    color:#e9ecef !important;
+}
+
+/* =====================================
+   PACHETE SERVICII
+===================================== */
+
+#pricing{
+    background:#343a40;
+    color:#E9ECEF;
+    padding:5rem 0;
+}
+
+#pricing h2{
+    color:#FFFFFF;
+}
+
+#pricing .divider{
+    background:var(--localevo-primary);
+}
+
+/* Tot textul din secțiune */
+
+#pricing p,
+#pricing li,
+#pricing span,
+#pricing small,
+#pricing .text-muted{
+    color:#E9ECEF !important;
+}
+
+/* Titlurile din carduri */
+
+#pricing h3,
+#pricing h4,
+#pricing h5{
+    color:#FFFFFF;
+}
+
+/* =====================================
+   PACHETE SERVICII
+===================================== */
+
+#pricing{
+    background:#343a40;
+    color:#E9ECEF;
+    padding:5rem 0;
+}
+
+#pricing h2{
+    color:#FFFFFF;
+}
+
+#pricing .divider{
+    background:var(--localevo-primary);
+}
+
+/* Tot textul din secțiune */
+
+#pricing p,
+#pricing li,
+#pricing span,
+#pricing small,
+#pricing .text-muted{
+    color:#E9ECEF !important;
+}
+
+/* Titlurile din carduri */
+
+#pricing h3,
+#pricing h4,
+#pricing h5{
+    color:#FFFFFF;
 }
