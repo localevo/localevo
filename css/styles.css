@@ -11396,10 +11396,6 @@ header.masthead .divider{
 
 }
 
-#serviciilenoastre{
-    background:#343a40;
-    color:#ffffff;
-}
 
 #serviciilenoastre .divider{
     background:var(--localevo-primary);
@@ -11410,7 +11406,7 @@ header.masthead .divider{
 }
 
 #serviciilenoastre{
-    background:#343a40;
+    background-color:#6c757d;
     color:#e9ecef;
 }
 
@@ -11496,4 +11492,25 @@ header.masthead .divider{
 #pricing h4,
 #pricing h5{
     color:#FFFFFF;
+}
+
+#serviciilenoastre h3,
+#portfoliulnostru h6,
+#pricing h3,
+#contact h3,
+.team-card h5{
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+#serviciilenoastre p,
+#portfoliulnostru p,
+#pricing p,
+#contact p,
+.team-card p{
+    font-family: "Merriweather", serif;
+    font-size: 1rem;
+    line-height: 1.8;
 }
