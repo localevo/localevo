@@ -40,4 +40,64 @@ window.addEventListener('DOMContentLoaded', event => {
         elements: '#portfolio a.portfolio-box'
     });
 
+
+    // =====================================
+    // PORTFOLIO CAROUSEL
+    // =====================================
+
+    const portfolioCarousel = document.querySelector('#portfolioCarousel');
+    const portfolioPrev = document.querySelector('.portfolio-prev');
+    const portfolioNext = document.querySelector('.portfolio-next');
+
+    if (portfolioCarousel && portfolioPrev && portfolioNext) {
+
+        // Scroll dreapta
+        portfolioNext.addEventListener('click', () => {
+
+            const card = portfolioCarousel.querySelector(
+                '.portfolio-carousel-item'
+            );
+
+            if (!card) {
+                return;
+            }
+
+            const cardWidth = card.offsetWidth;
+            const gap = parseFloat(
+                window.getComputedStyle(portfolioCarousel).gap
+            ) || 0;
+
+            portfolioCarousel.scrollBy({
+                left: cardWidth + gap,
+                behavior: 'smooth'
+            });
+
+        });
+
+
+        // Scroll stânga
+        portfolioPrev.addEventListener('click', () => {
+
+            const card = portfolioCarousel.querySelector(
+                '.portfolio-carousel-item'
+            );
+
+            if (!card) {
+                return;
+            }
+
+            const cardWidth = card.offsetWidth;
+            const gap = parseFloat(
+                window.getComputedStyle(portfolioCarousel).gap
+            ) || 0;
+
+            portfolioCarousel.scrollBy({
+                left: -(cardWidth + gap),
+                behavior: 'smooth'
+            });
+
+        });
+
+    }
+
 });

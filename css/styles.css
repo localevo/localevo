@@ -11690,3 +11690,152 @@ header.masthead .divider{
         margin-bottom: 1.5rem;
     }
 }
+
+/* =====================================
+   PORTOFOLIU CAROUSEL
+===================================== */
+
+.portfolio-carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.portfolio-carousel {
+    display: flex;
+    gap: 1.5rem;
+
+    width: 100%;
+    overflow-x: auto;
+
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+    padding: 1rem 0;
+
+    scrollbar-width: none;
+}
+
+.portfolio-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.portfolio-carousel-item {
+    flex: 0 0 calc((100% - 4.5rem) / 4);
+    scroll-snap-align: start;
+}
+
+/* Butoane carousel */
+
+.portfolio-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 48px;
+    height: 48px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #f97316;
+    color: #ffffff;
+
+    font-size: 1.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+
+    z-index: 5;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.portfolio-carousel-btn:hover {
+    transform: translateY(-50%) scale(1.08);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio-prev {
+    left: -24px;
+}
+
+.portfolio-next {
+    right: -24px;
+}
+
+
+/* =====================================
+   TABLETA
+===================================== */
+
+@media (max-width: 991.98px) {
+
+    .portfolio-carousel-item {
+        flex: 0 0 calc((100% - 1.5rem) / 2);
+    }
+
+}
+
+
+/* =====================================
+   MOBIL
+===================================== */
+
+@media (max-width: 575.98px) {
+
+    .portfolio-carousel-item {
+        flex: 0 0 85%;
+    }
+
+    .portfolio-carousel {
+        gap: 1rem;
+    }
+
+    .portfolio-prev {
+        left: -10px;
+    }
+
+    .portfolio-next {
+        right: -10px;
+    }
+
+    .portfolio-carousel-btn {
+        width: 42px;
+        height: 42px;
+        font-size: 1.2rem;
+    }
+
+}
+
+/* =====================================
+   FUNDAL SECTIUNE PORTOFOLIU
+===================================== */
+
+#portfoliulnostru {
+    position: relative;
+    background-image: url("../assets/img/portfolio-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#portfoliulnostru::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.35);
+}
+
+#portfoliulnostru .container {
+    position: relative;
+    z-index: 1;
+}
