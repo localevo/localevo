@@ -11386,16 +11386,6 @@ header.masthead .divider{
 
 }
 
-@media (max-width:991px){
-
-    #mainNav .navbar-brand img{
-
-        height:42px;
-
-    }
-
-}
-
 
 #serviciilenoastre .divider{
     background:var(--localevo-primary);
@@ -11540,4 +11530,40 @@ header.masthead .divider{
 
     transform: scale(1.25);
     transform-origin: left center;
+}
+
+/* NAVBAR FINAL */
+
+#mainNav {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+#mainNav .navbar-brand {
+    height: 64px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+#mainNav .navbar-brand img {
+    height: 58px !important;
+    width: auto;
+    max-height: 58px;
+    display: block;
+    object-fit: contain;
+    transform: none !important;
+}
+
+/* Mobil */
+@media (max-width: 991px) {
+    #mainNav .navbar-brand {
+        height: 60px;
+    }
+
+    #mainNav .navbar-brand img {
+        height: 54px !important;
+        max-height: 54px;
+    }
 }
