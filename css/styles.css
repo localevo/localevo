@@ -11839,3 +11839,189 @@ header.masthead .divider{
     position: relative;
     z-index: 1;
 }
+
+/* =====================================
+   PACHET RECOMANDAT
+===================================== */
+
+#pacheteservicii .recommended-package {
+    position: relative;
+    border: 3px solid rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Tag Recomandat */
+
+#pacheteservicii .recommended-tag {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #ffffff;
+    color: #6c757d;
+
+    padding: 7px 22px;
+    border-radius: 50px;
+
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
+
+    z-index: 2;
+}
+
+/* =====================================
+   TEXT SECTIUNE CONTACT
+===================================== */
+
+#contact p {
+    font-family: "Merriweather", serif;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* =====================================
+   SECTIUNE CONTACT
+===================================== */
+
+#contact p {
+    font-family: "Merriweather", serif;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+/* CARDURI CONTACT */
+
+#contact .contact-card {
+    background-color: #ffffff;
+
+    padding: 2.5rem;
+
+    border-radius: 0.75rem;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+#contact .contact-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 16px 35px rgba(0, 0, 0, 0.17);
+}
+
+
+/* TITLU CARD */
+
+#contact .contact-card-title {
+    font-family: "Merriweather Sans", sans-serif;
+
+    font-size: 1.5rem;
+
+    font-weight: 700;
+
+    margin-bottom: 1rem;
+
+    color: #343a40;
+}
+
+
+/* TEXT CARD */
+
+#contact .contact-card-text {
+    color: #6c757d;
+
+    margin-bottom: 2rem;
+}
+
+
+/* DATE CONTACT */
+
+#contact .contact-info-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    margin-bottom: 1.5rem;
+}
+
+
+/* ICONITE */
+
+#contact .contact-icon {
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: rgba(249, 115, 22, 0.12);
+
+    color: #f97316;
+
+    font-size: 1.5rem;
+}
+
+
+/* LABEL */
+
+#contact .contact-label {
+    display: block;
+
+    font-family: "Merriweather Sans", sans-serif;
+
+    font-size: 0.8rem;
+
+    font-weight: 700;
+
+    color: #6c757d;
+
+    margin-bottom: 0.2rem;
+}
+
+/* =====================================
+   ALINIERE TEXT SECTIUNE CONTACT
+===================================== */
+
+/* Titlul principal si textul introductiv */
+#contact h2,
+#contact > .container > .row:first-child p {
+    text-align: center;
+}
+
+/* Titlurile cardurilor */
+#contact .contact-card-title {
+    text-align: center;
+}
+
+/* Textele descriptive din carduri */
+#contact .contact-card-text {
+    text-align: center;
+}
+
+/* Zona social media */
+#contact .contact-social {
+    text-align: center;
+}
+
+/* Pictogramele social media centrate */
+#contact .social-links {
+    justify-content: center;
+}

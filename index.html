@@ -201,7 +201,7 @@
             <div class="row">
                 <div class="col-12 text-center mt-2">
                     <a class="btn btn-primary btn-xl px-5 py-3" href="#contact">
-                        Contactază-ne
+                        Contactează-ne pentru detalii
                     </a>
                 </div>
             </div>
@@ -213,7 +213,7 @@
     <!-- Services-->
     <section class="page-section" id="serviciilenoastre">
         <div class="container px-4 px-lg-5">
-            <h2 class="text-center fw-bold mt-0">Serviciile noastre</h2>
+            <h2 class="text-center fw-bold mt-0">Cum te putem ajuta</h2>
             <hr class="divider" />
             <p class="text-center">
                 Totul începe cu o discuție, o analiză gratuită, prin care ne dorim să aflăm care este situația afacerii
@@ -346,7 +346,7 @@
             <div class="row mt-5">
                 <div class="col-12 text-center">
                     <a class="btn btn-primary btn-xl px-5 py-3" href="#pacheteservicii">
-                        Pachete Servicii
+                        Alege pachetul potrivit
                     </a>
                 </div>
             </div>
@@ -354,37 +354,36 @@
         </div>
 
     </section>
-   
-</section><section class="page-section bg-light" id="portfoliulnostru">
-    <div class="container px-4 px-lg-5">
 
-        <div class="text-center mb-5">
-            <h2 class=" fw-bold mt-0">Portofoliul nostru</h2>
-            <hr class="divider" />
-        </div>
+    </section>
+    <section class="page-section bg-light" id="portfoliulnostru">
+        <div class="container px-4 px-lg-5">
 
-        <div class="portfolio-carousel-wrapper">
+            <div class="text-center mb-5">
+                <h2 class=" fw-bold mt-0">Portofoliul nostru</h2>
+                <hr class="divider" />
+            </div>
 
-            <!-- Buton stânga -->
-            <button class="portfolio-carousel-btn portfolio-prev"
-                type="button"
-                aria-label="Anterior">
-                <i class="bi bi-chevron-left"></i>
-            </button>
+            <div class="portfolio-carousel-wrapper">
 
-            <!-- Carousel -->
-            <div class="portfolio-carousel" id="portfolioCarousel">
+                <!-- Buton stânga -->
+                <button class="portfolio-carousel-btn portfolio-prev" type="button" aria-label="Anterior">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
 
-                <!-- Card 1 -->
-                <div class="portfolio-carousel-item">
-                    <div class="portfolio-card">
-                        <img src="assets/img/portfolio/client1.svg" alt="Logo Client 1">
-                        <h6>Localevo</h6>
+                <!-- Carousel -->
+                <div class="portfolio-carousel" id="portfolioCarousel">
+
+                    <!-- Card 1 -->
+                    <div class="portfolio-carousel-item">
+                        <div class="portfolio-card">
+                            <img src="assets/img/portfolio/client1.svg" alt="Logo Client 1">
+                            <h6>Localevo</h6>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Card 2 -->
-                 <!--
+                    <!-- Card 2 -->
+                    <!--
                 <div class="portfolio-carousel-item">
                     <div class="portfolio-card">
                         <img src="assets/img/portfolio/client2.png" alt="Logo Client 2">
@@ -392,8 +391,8 @@
                     </div>
                 </div>
                 -->
-                <!-- Card 3 -->
-                 <!-- 
+                    <!-- Card 3 -->
+                    <!-- 
                 <div class="portfolio-carousel-item">
                     <div class="portfolio-card">
                         <img src="assets/img/portfolio/client3.png" alt="Logo Client 3">
@@ -401,31 +400,40 @@
                     </div>
                 </div>
                 -->
-                <!-- Adaugi restul cardurilor aici -->
+                    <!-- Adaugi restul cardurilor aici -->
+
+                </div>
+
+                <!-- Buton dreapta -->
+                <button class="portfolio-carousel-btn portfolio-next" type="button" aria-label="Următor">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
 
             </div>
 
-            <!-- Buton dreapta -->
-            <button class="portfolio-carousel-btn portfolio-next"
-                type="button"
-                aria-label="Următor">
-                <i class="bi bi-chevron-right"></i>
-            </button>
-
         </div>
-
-    </div>
-</section>
     </section>
+
     <section id="pricing" style="background-color: #6c757d; padding: 5rem 0;">
         <div class="container px-4 px-lg-5">
+
             <!-- Pachete -->
             <section class="page-section" id="pacheteservicii">
+
                 <div class="row mb-5 text-center">
                     <div class="col-12">
-                        <h2 class="section-heading text-uppercase fw-bold text-white mb-3">Pachete Servicii</h2>
-                        <p class="section-subheading text-white-50 fs-5">Alege pachetul care ți se potrivește, iar noi
-                            ne ocupăm de implementare, astfel încât tu să te concentrezi pe afacerea ta. </p>
+
+                        <h2 class="fw-bold mt-0 text-white">
+                            Pachete pentru afacerea ta
+                        </h2>
+
+                        <hr class="divider" />
+
+                        <p class="text-center text-white">
+                            Alege pachetul care ți se potrivește, iar noi ne ocupăm de implementare,
+                            astfel încât tu să te concentrezi pe afacerea ta.
+                        </p>
+
                     </div>
                 </div>
                 <!-- Cele 3 Carduri -->
@@ -464,8 +472,12 @@
 
                     <!-- Pachet 2: Dezvoltare Rapidă -->
                     <div class="col-lg-4 col-md-6">
-                        <div class="card h-100 text-center text-white border-0 shadow-lg"
+                        <div class="card h-100 text-center text-white shadow-lg recommended-package"
                             style="background-color: #f97316;">
+
+                            <div class="recommended-tag">
+                                Recomandat
+                            </div>
                             <div class="card-header py-4 border-0">
                                 <h3 class="card-title mb-2 fw-bold">Dezvoltare Rapidă</h3>
                                 <div class="price mt-3">
@@ -533,88 +545,187 @@
         </div>
     </section>
     <!-- Contact-->
+    <!-- Contact -->
     <section class="page-section" id="contact">
         <div class="container px-4 px-lg-5">
+
             <!-- Titlu -->
             <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8 col-xl-6 text-center">
-                    <h2 class="mt-0">Hai să discutăm!</h2>
+                <div class="col-lg-8 col-xl-7 text-center">
+
+                    <h2 class="fw-bold mt-0">
+                        Solicită o analiză gratuită pentru afacerea ta
+                    </h2>
+
                     <hr class="divider" />
-                    <p class="text-muted">
-                        Dacă iți dorești o soluție prin care clienții să te găsescă mai repede la o căutare pe Google,
-                        creezi o comunitate pe rețelele sociale, iți prezinți oferta printr-o pagină web și comunici
-                        rapid cu aceștia.
+
+                    <p class="text-center mb-5">
+                        Dacă îți dorești o soluție prin care clienții să te găsească mai repede
+                        la o căutare pe Google, să creezi o comunitate pe rețelele sociale,
+                        să îți prezinți oferta printr-o pagină web și să comunici rapid cu aceștia.
                     </p>
+
                 </div>
             </div>
 
-            <!-- Detalii de Contact (Telefon și Email) -->
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-6 text-center">
 
-                    <!-- Telefon Interactiv -->
-                    <div class="d-flex align-items-center justify-content-center mb-3">
-                        <i class="bi bi-phone fs-2 text-muted me-3"></i>
-                        <!-- Link activ pentru apelare -->
-                        <a href="tel:+40764804090"
-                            class="text-decoration-none text-muted fw-bold fs-3 transition-hover">
-                            +40 764 804 090
-                        </a>
+            <!-- Carduri Contact -->
+            <div class="row g-4 justify-content-center align-items-stretch">
+
+                <!-- Card date contact -->
+                <div class="col-lg-5 col-md-6">
+
+                    <div class="contact-card h-100">
+
+                        <h3 class="contact-card-title">
+                            Dacă vrei să discutăm 
+                        </h3>
+
+                        <p class="contact-card-text">
+                            Folosește datele de contact de mai jos 
+                        </p>
+
+
+                        <!-- Telefon -->
+                        <div class="contact-info-item">
+
+                            <div class="contact-icon">
+                                <i class="bi bi-phone"></i>
+                            </div>
+
+                            <div>
+                                <span class="contact-label">
+                                    Telefon
+                                </span>
+
+                                <a href="tel:+40764804090">
+                                    +40 764 804 090
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Email -->
+                        <div class="contact-info-item">
+
+                            <div class="contact-icon">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+
+                            <div>
+                                <span class="contact-label">
+                                    Email
+                                </span>
+
+                                <a href="mailto:contact@localevo.ro">
+                                    contact@localevo.ro
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Social Media -->
+                        <div class="contact-social">
+
+                            <span class="contact-label">
+                                Urmărește-ne pe rețelele sociale!
+                            </span>
+
+                            <div class="social-links">
+
+                                <a href="https://www.facebook.com/localevohd" target="_blank" aria-label="Facebook">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+
+                                <a href="https://www.instagram.com/localevo_2026/" target="_blank"
+                                    aria-label="Instagram">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+
+                                <a href="https://www.linkedin.com/company/localevo/" target="_blank"
+                                    aria-label="LinkedIn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
                     </div>
 
-                    <!-- Email: Pe o singură linie orizontală, interactiv -->
-                    <div class="d-flex align-items-center justify-content-center mb-3">
-                        <i class="bi bi-envelope fs-2 text-muted me-3"></i>
-                        <a href="mailto:contact@localevo.ro"
-                            class="text-decoration-none text-muted fw-bold fs-3 transition-hover">
-                            contact@localevo.ro
-                        </a>
-                    </div>
-
-                    <!-- Formular Contact -->
-                    <form id="contactForm" action="https://formsubmit.co/contact@localevo.ro" method="POST">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_subject" value="Mesaj nou de pe Localevo">
-
-                        <div class="mb-3">
-                            <input type="text" class="form-control" name="nume și prenume" placeholder="Nume și prenume"
-                                required>
-                        </div>
-
-                        <div class="mb-3">
-                            <input type="tel" class="form-control" name="telefon" placeholder="Telefon" required>
-                        </div>
-
-                        <div class="mb-3">
-                            <textarea class="form-control" name="mesaj" rows="4" placeholder="Cum te putem ajuta?"
-                                required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary w-100">
-                            Trimite mesajul
-                        </button>
-                        <div id="successMessage" class="alert alert-success mt-3 d-none" role="alert">
-                            ✅ Mulțumim! Mesajul tău a fost trimis cu succes. Te vom contacta în cel mai scurt timp.
-                        </div>
-
-                    </form>
-
-                    <hr class="divider" />
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/localevohd" target="_blank" aria-label="Facebook">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-
-                        <a href="https://www.instagram.com/localevo_2026/" target="_blank" aria-label="Instagram">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-
-                        <a href="https://www.linkedin.com/company/localevo/" target="_blank" aria-label="LinkedIn">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    </div>
                 </div>
+
+
+                <!-- Card Formular -->
+                <div class="col-lg-5 col-md-6">
+
+                    <div class="contact-card h-100">
+
+                        <h3 class="contact-card-title">
+                            Sau lasă-ne un mesaj
+                        </h3>
+
+                        <p class="contact-card-text">
+                            Completează formularul și te contactăm în cel mai scurt timp.
+                        </p>
+
+
+                        <!-- Formular Contact -->
+                        <form id="contactForm" action="https://formsubmit.co/contact@localevo.ro" method="POST">
+
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <input type="hidden" name="_subject" value="Mesaj nou de pe Localevo">
+
+
+                            <!-- Nume -->
+                            <div class="mb-3">
+
+                                <input type="text" class="form-control" name="nume și prenume"
+                                    placeholder="Nume și prenume" required>
+
+                            </div>
+
+
+                            <!-- Telefon -->
+                            <div class="mb-3">
+
+                                <input type="tel" class="form-control" name="telefon" placeholder="Telefon" required>
+
+                            </div>
+
+
+                            <!-- Mesaj -->
+                            <div class="mb-3">
+
+                                <textarea class="form-control" name="mesaj" rows="4" placeholder="Cum te putem ajuta?"
+                                    required></textarea>
+
+                            </div>
+
+
+                            <!-- Buton -->
+                            <button type="submit" class="btn btn-primary btn-xl w-100 contact-submit">
+                                Trimite mesajul
+                            </button>
+
+
+                            <!-- Mesaj succes -->
+                            <div id="successMessage" class="alert alert-success mt-3 d-none" role="alert">
+                                Mulțumim! Mesajul tău a fost trimis cu succes.
+                                Te vom contacta în cel mai scurt timp.
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
             </div>
+
         </div>
     </section>
 
@@ -623,12 +734,12 @@
         <div class="container px-4 px-lg-5">
             <div class="small text-center text-muted">
                 Copyright &copy; Localevo SRL 2026.
-                Toate drepturile rezervate.
                 |
                 <a href="politica-confidentialitate.html">
                     Politica de Confidențialitate
-                    |
+
                 </a>
+                |
                 <a href="politica-cookies.html">
                     Politica de Cookies
                 </a>
