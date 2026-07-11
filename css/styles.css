@@ -11514,3 +11514,30 @@ header.masthead .divider{
     font-size: 1rem;
     line-height: 1.8;
 }
+
+/* Navbar compact */
+#mainNav {
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+}
+
+/* Container logo */
+#mainNav .navbar-brand {
+    height: 65px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+}
+
+/* Logo mărit vizual fără să mărească navbar-ul */
+#mainNav .navbar-logo {
+    height: 60px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+
+    transform: scale(1.25);
+    transform-origin: left center;
+}
