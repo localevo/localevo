@@ -11675,3 +11675,18 @@ header.masthead .divider{
     transform: translateY(-1px);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
 }
+
+/* =====================================
+   CARDURI SERVICII - VARIANTA MOBILA
+===================================== */
+
+@media (max-width: 991px) {
+    #serviciilenoastre .service-card {
+        height: auto;
+        min-height: 100%;
+    }
+
+    #serviciilenoastre .row.g-4 > [class*="col-"] {
+        margin-bottom: 1.5rem;
+    }
+}
