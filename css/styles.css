@@ -11721,7 +11721,7 @@ header.masthead .divider{
 }
 
 .portfolio-carousel-item {
-    flex: 0 0 calc((100% - 4.5rem) / 4);
+    flex: 0 0 calc((100% - 3rem) / 3);
     scroll-snap-align: start;
 }
 
@@ -12024,4 +12024,74 @@ header.masthead .divider{
 /* Pictogramele social media centrate */
 #contact .social-links {
     justify-content: center;
+}
+
+.team-card {
+    max-width: 240px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.team-card h5 {
+    font-size: 1.1rem;
+    margin-bottom: .25rem;
+}
+
+.team-card p {
+    font-size: .9rem;
+    margin-bottom: 0;
+}
+
+#contact{
+    padding-bottom: 2rem;
+}
+
+.about-benefits{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:2rem;
+    flex-wrap:wrap;
+    margin:20px 0;
+}
+
+.benefit-item{
+    display:flex;
+    align-items:center;
+    gap:.6rem;
+    color:#495057;
+    font-weight:600;
+    font-size:1rem;
+}
+
+.benefit-item i{
+    font-size:1.5rem;
+    color:var(--bs-primary); /* sau #0d6efd */
+}
+
+.portfolio-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 15px;          /* înainte 25px 15px */
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(249,115,22,.08);
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.portfolio-card img {
+    width: 170px;           /* înainte 110px */
+    height: 170px;          /* înainte 110px */
+    object-fit: contain;
+    margin: 0 auto 10px;
+}
+
+.portfolio-card h6 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
 }
