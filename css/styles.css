@@ -11721,7 +11721,7 @@ header.masthead .divider{
 }
 
 .portfolio-carousel-item {
-    flex: 0 0 calc((100% - 3rem) / 3);
+    flex: 0 0 calc((100% - 4.5rem) / 4);
     scroll-snap-align: start;
 }
 
@@ -12094,4 +12094,47 @@ header.masthead .divider{
     margin: 0;
     font-size: 1rem;
     font-weight: 600;
+}
+
+/* Cardurile echipei */
+.team-card{
+    height:100%;
+    padding:22px 18px;
+    border-radius:18px;
+}
+
+/* Beneficii */
+.benefit-box{
+    display:flex;
+    align-items:center;
+    gap:16px;
+
+    background:#fff;
+    border-radius:16px;
+
+    padding:18px 22px;
+
+    border:1px solid rgba(249,115,22,.10);
+
+    box-shadow:0 8px 22px rgba(0,0,0,.06);
+
+    height:100%;
+
+    transition:.3s;
+}
+
+.benefit-box:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
+}
+
+.benefit-box i{
+    font-size:1.7rem;
+    color:#f97316;
+}
+
+.benefit-box span{
+    font-weight:600;
+    color:#495057;
+    line-height:1.5;
 }
