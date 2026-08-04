@@ -12153,3 +12153,8 @@ header.masthead .divider{
     padding-top:3rem;
     padding-bottom:3rem;
 }
+
+#portfolioCarousel a {
+    text-decoration: none;
+    color: inherit;
+}
