@@ -11322,6 +11322,22 @@ header.masthead .divider{
     margin:2rem auto;
 }
 
+@media (max-width: 991.98px) {
+  header.masthead {
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(17, 24, 39, 0.52) 0%,
+        rgba(17, 24, 39, 0.52) 100%
+      ),
+      url("../assets/img/bg-masthead.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 /* Bara principală */
 #mainNav{
     transition:all .35s ease;
@@ -12157,4 +12173,68 @@ header.masthead .divider{
 #portfolioCarousel a {
     text-decoration: none;
     color: inherit;
+}
+
+/* =====================================
+   SECTIUNE RECENZII
+===================================== */
+
+#recenzii {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #ffffff;
+}
+
+.review-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 2rem;
+
+    border: 1px solid rgba(249, 115, 22, 0.10);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.review-stars {
+    color: #f97316;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+.review-text {
+    color: #6c757d;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.review-author {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-author strong {
+    color: #343a40;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+.review-author span {
+    color: #6c757d;
+    font-size: 0.85rem;
+    margin-top: 3px;
 }
