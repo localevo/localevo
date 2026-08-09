@@ -12238,3 +12238,199 @@ header.masthead .divider{
     font-size: 0.85rem;
     margin-top: 3px;
 }
+
+/* =====================================
+   LOCALEVO - PALETA RAFINATA 2026
+   Portocaliul ramane accentul principal,
+   iar suprafetele mari devin mai calme.
+===================================== */
+
+/* SERVICII */
+#serviciilenoastre {
+    background-color: #FFF7ED;
+}
+
+#serviciilenoastre > .container > p,
+#serviciilenoastre > .container > h2 {
+    color: #343A40 !important;
+}
+
+#serviciilenoastre .service-card {
+    position: relative;
+    overflow: hidden;
+    background-color: #FFFFFF !important;
+    border: 1px solid #E9ECEF;
+    border-top: 4px solid #F97316;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 30px rgba(33, 37, 41, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#serviciilenoastre .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(33, 37, 41, 0.12);
+}
+
+#serviciilenoastre .service-card h3 {
+    color: #343A40 !important;
+}
+
+#serviciilenoastre .service-card p,
+#serviciilenoastre .service-card li,
+#serviciilenoastre .service-card span,
+#serviciilenoastre .service-card .text-muted {
+    color: #495057 !important;
+}
+
+#serviciilenoastre .service-card li::marker,
+#serviciilenoastre .service-card > .mb-2 i {
+    color: #F97316 !important;
+}
+
+/* PACHETE */
+#pricing {
+    background: #F8F9FA !important;
+    color: #343A40 !important;
+}
+
+#pricing h2,
+#pricing > .container > #pacheteservicii > .row p {
+    color: #343A40 !important;
+}
+
+#pricing .divider {
+    background: #F97316;
+}
+
+#pacheteservicii .package-card {
+    background: #FFFFFF;
+    color: #343A40;
+    border: 1px solid #E9ECEF !important;
+    border-radius: 0.85rem;
+    box-shadow: 0 10px 30px rgba(33, 37, 41, 0.09) !important;
+    overflow: visible;
+}
+
+#pacheteservicii .package-card h3,
+#pacheteservicii .package-card h4,
+#pacheteservicii .package-card h5 {
+    color: #343A40 !important;
+}
+
+#pacheteservicii .package-card p,
+#pacheteservicii .package-card li,
+#pacheteservicii .package-card span,
+#pacheteservicii .package-card small,
+#pacheteservicii .package-card .text-muted {
+    color: #495057 !important;
+}
+
+#pacheteservicii .package-card .amount,
+#pacheteservicii .package-card .currency {
+    color: #F97316 !important;
+}
+
+#pacheteservicii .package-card li {
+    border-color: #E9ECEF !important;
+}
+
+#pacheteservicii .recommended-package {
+    background: #F97316 !important;
+    color: #FFFFFF !important;
+    border: 3px solid #EA580C !important;
+    transform: translateY(-8px);
+    box-shadow: 0 18px 42px rgba(249, 115, 22, 0.24) !important;
+}
+
+#pacheteservicii .recommended-package h3,
+#pacheteservicii .recommended-package h4,
+#pacheteservicii .recommended-package h5,
+#pacheteservicii .recommended-package p,
+#pacheteservicii .recommended-package li,
+#pacheteservicii .recommended-package span,
+#pacheteservicii .recommended-package small,
+#pacheteservicii .recommended-package .text-muted,
+#pacheteservicii .recommended-package .amount,
+#pacheteservicii .recommended-package .currency {
+    color: #FFFFFF !important;
+}
+
+#pacheteservicii .recommended-package li {
+    border-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+#pacheteservicii .recommended-tag {
+    background-color: #FFFFFF;
+    color: #EA580C;
+    border: 1px solid rgba(234, 88, 12, 0.18);
+}
+
+@media (max-width: 991px) {
+    #pacheteservicii .recommended-package {
+        transform: none;
+    }
+}
+
+/* =====================================
+   HERO - IMAGINE MAI LUMINOASA
+   Desktop + mobil
+   ===================================== */
+
+/* Desktop */
+header.masthead {
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(17, 24, 39, 0.55) 0%,
+            rgba(17, 24, 39, 0.55) 100%
+        ),
+        url("../assets/img/bg-masthead.jpg") !important;
+
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+/* Mobil / tableta */
+@media (max-width: 991.98px) {
+    header.masthead {
+        background:
+            linear-gradient(
+                to bottom,
+                rgba(17, 24, 39, 0.38) 0%,
+                rgba(17, 24, 39, 0.38) 100%
+            ),
+            url("../assets/img/bg-masthead.jpg") !important;
+
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+}
+
+/* =====================================
+   FUNDAL SECTIUNE SERVICII
+   Separare vizuala fata de Despre noi
+   ===================================== */
+
+#serviciilenoastre {
+    background-color: #F5F6F7 !important;
+}
+
+/* =====================================
+   SERVICII - FUNDAL MAI CLAR DIFERENTIAT
+   fata de sectiunea Despre noi
+   ===================================== */
+
+#serviciilenoastre {
+    background-color: #FFF4EA !important;
+}
+
+/* =====================================
+   PACHETE SERVICII - ACELASI FUNDAL CA SERVICII
+   ===================================== */
+
+#pricing,
+#pacheteservicii {
+    background-color: #FFF4EA !important;
+}
