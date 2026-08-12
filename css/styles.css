@@ -12434,3 +12434,28 @@ header.masthead {
 #pacheteservicii {
     background-color: #FFF4EA !important;
 }
+
+/* Informații suplimentare pachete */
+
+#pricing .package-info,
+#pricing .package-info p,
+#pricing .package-info li {
+    color: #495057 !important;
+}
+
+#pricing .package-info {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+#pricing .package-info p {
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+#pricing .package-info ul {
+    padding-left: 1.25rem;
+}
+
+#pricing .package-info li::marker {
+    color: #F97316;
+}
