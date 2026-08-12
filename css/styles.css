@@ -12459,3 +12459,7 @@ header.masthead {
 #pricing .package-info li::marker {
     color: #F97316;
 }
+
+#pricing .package-info > p:first-child {
+    text-align: center;
+}
