@@ -93,7 +93,7 @@
     <!-- SimpleLightbox plugin CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css?v=20260813-10" rel="stylesheet" />
+    <link href="css/styles.css?v=20260813-13" rel="stylesheet" />
 </head>
 
 <body id="page-top">
@@ -302,7 +302,7 @@
 
     <!-- Services-->
     <section class="page-section decorative-section localevo-accent-section" id="serviciilenoastre">
-        <div class="container px-4 px-lg-5">
+        <div class="container-fluid services-wide-container">
             <h2 class="text-center fw-bold mt-0">Cum putem colabora</h2>
             <hr class="divider" />
             <p class="text-center">
@@ -310,15 +310,10 @@
                 practice, simple și accesibile.
             </p>
 
-            <div class="section-carousel-wrapper services-carousel-wrapper mt-3">
-                <button class="section-carousel-btn services-prev" type="button" aria-label="Serviciul anterior">
-                    <i class="bi bi-chevron-left"></i>
-                </button>
-
-                <div class="section-carousel services-carousel" id="servicesCarousel">
+            <div class="services-grid mt-3">
 
                     <!-- Coloana 1: Imagine și prezență online -->
-                    <div class="section-carousel-item services-carousel-item text-center">
+                    <div class="services-grid-item text-center">
                         <div class="service-card">
                             <div class="mb-2"><i class="bi bi-globe fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">Imagine și prezență online</h3>
@@ -350,7 +345,7 @@
                     </div>
 
                     <!-- Coloana 2: Digitalizare de bază -->
-                    <div class="section-carousel-item services-carousel-item text-center">
+                    <div class="services-grid-item text-center">
                         <div class="service-card">
                             <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">Digitalizare de bază</h3>
@@ -388,7 +383,7 @@
                     </div>
 
                     <!-- Coloana 3: Organizare simplificată -->
-                    <div class="section-carousel-item services-carousel-item text-center">
+                    <div class="services-grid-item text-center">
                         <div class="service-card">
                             <div class="mb-2"><i class="bi bi-grid-3x3-gap fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">Organizare simplificată</h3>
@@ -420,17 +415,12 @@
                         </div>
                     </div>
 
-                </div>
-
-                <button class="section-carousel-btn services-next" type="button" aria-label="Serviciul următor">
-                    <i class="bi bi-chevron-right"></i>
-                </button>
             </div>
             <!-- Buton Servicii -->
             <div class="row mt-5">
                 <div class="col-12 text-center">
                     <a class="btn btn-primary btn-xl px-5 py-3" href="#pacheteservicii">
-                        Alege pachetul potrivit
+                        Solicită oferta
                     </a>
                 </div>
             </div>
@@ -611,7 +601,7 @@
     </section>
 
     <section id="pricing" class="decorative-section" style="padding: 5rem 0;">
-        <div class="container px-4 px-lg-5">
+        <div class="container-fluid packages-wide-container">
 
             <!-- Pachete -->
             <div id="pacheteservicii">
@@ -631,15 +621,10 @@
 
                     </div>
                 </div>
-                <!-- Cele 3 Carduri - Carousel -->
-                <div class="section-carousel-wrapper packages-carousel-wrapper">
-                    <button class="section-carousel-btn packages-prev" type="button" aria-label="Pachetul anterior">
-                        <i class="bi bi-chevron-left"></i>
-                    </button>
-
-                    <div class="section-carousel packages-carousel" id="packagesCarousel">
+                <!-- Cele 3 Carduri -->
+                <div class="packages-grid">
                         <!-- Pachet 1: Start Local -->
-                        <div class="section-carousel-item packages-carousel-item">
+                        <div class="packages-grid-item">
                             <div class="card h-100 text-center border-0 shadow-lg package-card">
                                 <div class="card-header py-4 border-0">
                                     <h3 class="card-title mb-2 fw-bold">Start Local</h3>
@@ -673,7 +658,7 @@
                         </div>
 
                         <!-- Pachet 2: Dezvoltare Rapidă -->
-                        <div class="section-carousel-item packages-carousel-item">
+                        <div class="packages-grid-item">
                             <div class="card h-100 text-center shadow-lg recommended-package package-card">
 
                                 <div class="recommended-tag">
@@ -719,7 +704,7 @@
                         </div>
 
                         <!-- Pachet 3: Afacere Stabilă -->
-                        <div class="section-carousel-item packages-carousel-item">
+                        <div class="packages-grid-item">
                             <div class="card h-100 text-center border-0 shadow-lg package-card">
                                 <div class="card-header py-4 border-0">
                                     <h3 class="card-title mb-2 fw-bold">Afacere Stabilă</h3>
@@ -771,11 +756,6 @@
                             </div>
                         </div>
 
-                    </div>
-
-                    <button class="section-carousel-btn packages-next" type="button" aria-label="Pachetul următor">
-                        <i class="bi bi-chevron-right"></i>
-                    </button>
                 </div>
                 <!-- Sfârșit carduri -->
 
@@ -1011,36 +991,9 @@
     </a>
 
 
-    <!-- Carousels Servicii + Pachete -->
+    <!-- Carousels Tipuri de afaceri + Portofoliu -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            function initSectionCarousel(carouselId, prevSelector, nextSelector) {
-                const carousel = document.getElementById(carouselId);
-                const prevButton = document.querySelector(prevSelector);
-                const nextButton = document.querySelector(nextSelector);
-
-                if (!carousel || !prevButton || !nextButton) return;
-
-                const getScrollAmount = () => {
-                    const item = carousel.querySelector('.section-carousel-item');
-                    if (!item) return carousel.clientWidth;
-
-                    const styles = window.getComputedStyle(carousel);
-                    const gap = parseFloat(styles.columnGap || styles.gap || 0);
-                    return item.getBoundingClientRect().width + gap;
-                };
-
-                prevButton.addEventListener('click', function () {
-                    carousel.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
-                });
-
-                nextButton.addEventListener('click', function () {
-                    carousel.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
-                });
-            }
-
-            initSectionCarousel('servicesCarousel', '.services-prev', '.services-next');
-            initSectionCarousel('packagesCarousel', '.packages-prev', '.packages-next');
 
             const businessCarousel = document.getElementById('businessCarousel');
             const businessPrev = document.querySelector('.business-prev');

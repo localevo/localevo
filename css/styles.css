@@ -13496,3 +13496,113 @@ header.masthead::after {
         font-size: 1.3rem !important;
     }
 }
+
+
+/* =====================================
+   LOCALEVO — SERVICII + PACHETE FĂRĂ CAROUSEL
+   3 carduri pe desktop, 1 card pe mobil
+===================================== */
+
+/* Aproape din margine în margine, dar păstrăm un spațiu confortabil față de ecran. */
+#serviciilenoastre .services-wide-container,
+#pricing .packages-wide-container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: clamp(14px, 2.2vw, 34px);
+    padding-right: clamp(14px, 2.2vw, 34px);
+}
+
+/* Grid fix: fără scroll orizontal, fără scroll-snap și fără săgeți. */
+.services-grid,
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(16px, 1.8vw, 28px);
+    width: 100%;
+    overflow: visible;
+    align-items: stretch;
+}
+
+.services-grid-item,
+.packages-grid-item {
+    min-width: 0;
+    width: 100%;
+    display: flex;
+}
+
+/* Cardul ocupă întreaga coloană și toate cele 3 carduri pot avea aceeași înălțime. */
+.services-grid-item .service-card,
+.packages-grid-item .package-card {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    height: 100%;
+}
+
+/* Eliminăm orice comportament rămas de carousel pentru aceste două secțiuni. */
+#serviciilenoastre .section-carousel-btn,
+#pricing .section-carousel-btn,
+#serviciilenoastre .services-prev,
+#serviciilenoastre .services-next,
+#pricing .packages-prev,
+#pricing .packages-next {
+    display: none !important;
+}
+
+@media (max-width: 767.98px) {
+    #serviciilenoastre .services-wide-container,
+    #pricing .packages-wide-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .services-grid,
+    .packages-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .services-grid-item,
+    .packages-grid-item {
+        width: 100%;
+    }
+
+    .services-grid-item .service-card,
+    .packages-grid-item .package-card {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+
+/* =====================================
+   LOCALEVO V13 — CONTRAST TEXT
+   Decorurile grafice rămân neschimbate
+===================================== */
+
+/* SERVICII */
+#serviciilenoastre h2 {
+    color: #343a40 !important;
+}
+
+#serviciilenoastre > .container-fluid > p,
+#serviciilenoastre p.text-center {
+    color: #6c757d !important;
+}
+
+/* PACHETE */
+#pricing #pacheteservicii h2 {
+    color: #343a40 !important;
+}
+
+#pricing #pacheteservicii p.text-center,
+#pricing #pacheteservicii .text-white {
+    color: #6c757d !important;
+}
+
+/* Separatorul portocaliu rămâne clar vizibil */
+#serviciilenoastre .divider,
+#pricing #pacheteservicii .divider {
+    border-color: #f97316 !important;
+    opacity: 1 !important;
+}
