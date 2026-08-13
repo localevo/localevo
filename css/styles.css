@@ -12463,3 +12463,369 @@ header.masthead {
 #pricing .package-info > p:first-child {
     text-align: center;
 }
+
+/* =====================================
+   CAROUSEL SERVICII + PACHETE
+===================================== */
+
+.section-carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+}
+
+.section-carousel {
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 0;
+    padding: 1rem 0;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.section-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.section-carousel-item {
+    flex: 0 0 calc((100% - 3rem) / 3);
+    min-width: 0;
+    scroll-snap-align: start;
+    display: flex;
+}
+
+.section-carousel-item > .service-card,
+.section-carousel-item > .package-card {
+    width: 100%;
+}
+
+.section-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background-color: #f97316;
+    color: #ffffff;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    z-index: 5;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.section-carousel-btn:hover {
+    transform: translateY(-50%) scale(1.08);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.services-prev,
+.packages-prev {
+    left: -24px;
+}
+
+.services-next,
+.packages-next {
+    right: -24px;
+}
+
+/* Păstrează toate cardurile din fiecare carousel la aceeași înălțime vizuală */
+.services-carousel .service-card,
+.packages-carousel .package-card {
+    height: 100% !important;
+}
+
+@media (max-width: 991.98px) {
+    .section-carousel-item {
+        flex: 0 0 calc((100% - 1.5rem) / 2);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .section-carousel {
+        gap: 1rem;
+        padding-left: 0.15rem;
+        padding-right: 0.15rem;
+    }
+
+    .section-carousel-item {
+        flex: 0 0 85%;
+    }
+
+    .services-prev,
+    .packages-prev {
+        left: -10px;
+    }
+
+    .services-next,
+    .packages-next {
+        right: -10px;
+    }
+
+    .section-carousel-btn {
+        width: 42px;
+        height: 42px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .section-carousel {
+        scroll-behavior: auto;
+    }
+}
+
+
+/* =====================================
+   LOCALEVO — TIPURI DE AFACERI LOCALE
+   Scoped: nu afectează celelalte carousell-uri
+===================================== */
+
+.business-types-section {
+    position: relative;
+    overflow: hidden;
+    padding: 4.5rem 0;
+    background:
+        radial-gradient(circle at 8% 18%, rgba(249, 115, 22, 0.09) 0 3px, transparent 4px),
+        radial-gradient(circle at 92% 78%, rgba(249, 115, 22, 0.08) 0 3px, transparent 4px),
+        #ffffff;
+    background-size: 34px 34px, 42px 42px, auto;
+}
+
+.business-types-section::before,
+.business-types-section::after {
+    content: "";
+    position: absolute;
+    border: 2px solid rgba(249, 115, 22, 0.12);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.business-types-section::before {
+    width: 220px;
+    height: 220px;
+    left: -120px;
+    top: 28px;
+}
+
+.business-types-section::after {
+    width: 170px;
+    height: 170px;
+    right: -85px;
+    bottom: 15px;
+}
+
+.business-types-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.business-types-section .business-types-heading {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.business-types-section .section-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-bottom: 0.7rem;
+    padding: 0.4rem 0.85rem;
+    border: 1px solid rgba(249, 115, 22, 0.22);
+    border-radius: 999px;
+    background: #fff7ed;
+    color: #ea580c;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.business-types-section .section-eyebrow::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #f97316;
+}
+
+.business-types-section .business-carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.business-types-section .business-carousel {
+    display: flex;
+    gap: 0.85rem;
+    width: 100%;
+    overflow-x: auto;
+    padding: 0.75rem 0.15rem 1rem;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.business-types-section .business-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.business-types-section .business-carousel-item {
+    flex: 0 0 calc((100% - 4.25rem) / 6);
+    min-width: 0;
+    scroll-snap-align: start;
+}
+
+.business-types-section .business-type-card {
+    min-height: 118px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    padding: 1rem 0.75rem;
+    border: 1px solid rgba(33, 37, 41, 0.10);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 8px 22px rgba(33, 37, 41, 0.07);
+    color: #212529;
+    text-align: center;
+    transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.business-types-section .business-type-card i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 13px;
+    background: #fff7ed;
+    color: #f97316;
+    font-size: 1.45rem;
+}
+
+.business-types-section .business-type-card span {
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 0.88rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.business-types-section .business-type-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(249, 115, 22, 0.35);
+    box-shadow: 0 12px 28px rgba(33, 37, 41, 0.11);
+}
+
+.business-types-section .business-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: #f97316;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.05rem;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+    z-index: 4;
+}
+
+.business-types-section .business-prev {
+    left: -20px;
+}
+
+.business-types-section .business-next {
+    right: -20px;
+}
+
+.business-types-section .business-carousel-btn:hover {
+    background: #ea580c;
+}
+
+/* Accente discrete doar în secțiunile marcate explicit */
+.decorative-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.decorative-section::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 2px solid rgba(249, 115, 22, 0.08);
+    border-radius: 50%;
+    top: 35px;
+    right: -85px;
+    pointer-events: none;
+}
+
+.decorative-section > .container {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 1199.98px) {
+    .business-types-section .business-carousel-item {
+        flex-basis: calc((100% - 2.55rem) / 4);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .business-types-section {
+        padding: 3.5rem 0;
+    }
+
+    .business-types-section .business-carousel-item {
+        flex-basis: calc((100% - 0.85rem) / 2);
+    }
+
+    .business-types-section .business-prev {
+        left: -8px;
+    }
+
+    .business-types-section .business-next {
+        right: -8px;
+    }
+
+    .business-types-section .business-carousel-btn {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media (max-width: 420px) {
+    .business-types-section .business-carousel-item {
+        flex-basis: 78%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .business-types-section .business-carousel {
+        scroll-behavior: auto;
+    }
+
+    .business-types-section .business-type-card {
+        transition: none;
+    }
+}
