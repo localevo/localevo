@@ -14696,3 +14696,470 @@ section h2,
         font-size: 0.9rem;
     }
 }
+
+
+
+/* =========================================================
+   LOCALEVO — TIPOGRAFIE OPTIMIZATĂ V2
+   Scop: lizibilitate desktop + mobil, fără schimbări de layout
+========================================================= */
+
+:root {
+    --lv-font-sans: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --lv-font-serif: "Merriweather", Georgia, serif;
+
+    --lv-body-size: 1rem;          /* 16px */
+    --lv-body-line: 1.58;
+
+    --lv-section-title: 2rem;      /* 32px */
+    --lv-card-title: 1.15rem;      /* ~18px */
+    --lv-small-title: 1rem;        /* 16px */
+
+    --lv-dense-text: 0.94rem;      /* ~15px */
+    --lv-meta-text: 0.82rem;       /* ~13px */
+}
+
+
+/* ---------------------------------------------------------
+   BAZĂ
+--------------------------------------------------------- */
+
+body {
+    font-family: var(--lv-font-serif);
+    font-size: var(--lv-body-size);
+    line-height: var(--lv-body-line);
+}
+
+/* Titlurile și toate elementele de interfață */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar,
+.btn,
+.hero-trust-points,
+.benefit-box,
+.localevo-sector-tile,
+.review-author,
+.contact-label {
+    font-family: var(--lv-font-sans);
+}
+
+
+/* ---------------------------------------------------------
+   H1 + TITLURI DE SECȚIUNE
+--------------------------------------------------------- */
+
+.masthead h1 {
+    font-family: var(--lv-font-sans);
+    font-size: clamp(2.5rem, 4.3vw, 3.55rem);
+    font-weight: 700;
+    line-height: 1.08;
+}
+
+section h2,
+.localevo-sectors__heading h2,
+#pricing h2,
+#contact h2 {
+    font-family: var(--lv-font-sans);
+    font-size: var(--lv-section-title);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+
+/* ---------------------------------------------------------
+   HERO
+--------------------------------------------------------- */
+
+.masthead p {
+    font-family: var(--lv-font-serif);
+    font-size: 1.05rem;
+    line-height: 1.62;
+}
+
+.hero-trust-points {
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+
+
+/* ---------------------------------------------------------
+   TEXTE INTRODUCTIVE / NARATIVE
+   Serif-ul funcționează bine aici fiindcă liniile sunt mai lungi,
+   iar textele sunt citite continuu.
+--------------------------------------------------------- */
+
+.about-card p,
+#serviciilenoastre > .services-wide-container > p.text-center,
+#pacheteservicii > .row p,
+#contact > .container > .row:first-child p {
+    font-family: var(--lv-font-serif);
+    font-size: 1rem;
+    line-height: 1.62;
+}
+
+
+/* ---------------------------------------------------------
+   ECHIPĂ + BENEFICII
+--------------------------------------------------------- */
+
+.team-card h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.team-card p {
+    font-family: var(--lv-font-sans);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.benefit-box {
+    font-family: var(--lv-font-sans);
+    font-size: 0.94rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+
+/* ---------------------------------------------------------
+   DOMENII LOCALE
+--------------------------------------------------------- */
+
+.localevo-sector-tile__label {
+    font-family: var(--lv-font-sans);
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+
+/* ---------------------------------------------------------
+   INFOGRAFIC — PAȘII COLABORĂRII
+   Sans pentru scanare rapidă.
+--------------------------------------------------------- */
+
+#serviciilenoastre .collab-step__content h4 {
+    font-family: var(--lv-font-sans);
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.28;
+    color: #343a40;
+}
+
+#serviciilenoastre .collab-step__content p {
+    font-family: var(--lv-font-sans);
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #5f6870 !important;
+    opacity: 1 !important;
+}
+
+
+/* ---------------------------------------------------------
+   SERVICII
+   Înlocuim serif-ul din liste cu Sans:
+   este mai ușor de urmărit în rânduri scurte, repetitive.
+--------------------------------------------------------- */
+
+#serviciilenoastre .service-card h3,
+#serviciilenoastre .service-card h3.h4 {
+    font-family: var(--lv-font-sans);
+    font-size: var(--lv-card-title) !important;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+#serviciilenoastre .service-card li,
+#serviciilenoastre .service-card li span,
+#serviciilenoastre .service-card p,
+#serviciilenoastre .service-card .text-muted {
+    font-family: var(--lv-font-sans);
+    font-size: var(--lv-dense-text);
+    line-height: 1.45;
+}
+
+
+/* ---------------------------------------------------------
+   TESTIMONIAL
+   Păstrăm Merriweather serif — aici are sens editorial,
+   dar îl mărim pentru confort.
+--------------------------------------------------------- */
+
+.review-text {
+    font-family: var(--lv-font-serif);
+    font-size: 0.98rem;
+    line-height: 1.65;
+}
+
+.review-author strong {
+    font-family: var(--lv-font-sans);
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.review-author span {
+    font-family: var(--lv-font-sans);
+    font-size: 0.8rem;
+    line-height: 1.35;
+}
+
+
+/* ---------------------------------------------------------
+   PORTOFOLIU
+--------------------------------------------------------- */
+
+.portfolio-card h6 {
+    font-family: var(--lv-font-sans);
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+
+/* ---------------------------------------------------------
+   PACHETE SERVICII
+   Listele devin Sans pentru lizibilitate.
+--------------------------------------------------------- */
+
+#pacheteservicii .package-card .card-title,
+#pacheteservicii .package-card h3,
+#pacheteservicii .package-card h4,
+#pacheteservicii .package-card h5 {
+    font-family: var(--lv-font-sans);
+    font-size: var(--lv-card-title);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+#pacheteservicii .package-card li,
+#pacheteservicii .package-card p {
+    font-family: var(--lv-font-sans);
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
+#pacheteservicii .recommended-tag {
+    font-family: var(--lv-font-sans);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+
+/* Zona de preț rămâne Sans și compactă */
+.package-price,
+.package-price .price-currency,
+.package-price .price-value,
+.package-price .price-period {
+    font-family: var(--lv-font-sans);
+}
+
+
+/* ---------------------------------------------------------
+   CONTACT
+   Sans în carduri și informații practice.
+--------------------------------------------------------- */
+
+#contact .contact-card-text,
+#contact .contact-card p,
+#contact .contact-card a,
+#contact .contact-card span {
+    font-family: var(--lv-font-sans);
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+
+#contact .contact-card-title {
+    font-family: var(--lv-font-sans);
+    font-size: var(--lv-card-title);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+#contact .contact-label {
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+
+/* ---------------------------------------------------------
+   NAVIGAȚIE + BUTOANE
+--------------------------------------------------------- */
+
+#mainNav .navbar-nav .nav-item .nav-link {
+    font-family: var(--lv-font-sans);
+    font-size: 0.94rem;
+    font-weight: 700;
+}
+
+.btn,
+.btn-xl {
+    font-family: var(--lv-font-sans);
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   MOBIL — NU MAI MICȘORĂM AGRESIV
+========================================================= */
+
+@media (max-width: 575.98px) {
+
+    :root {
+        --lv-body-size: 1rem;          /* 16px */
+        --lv-section-title: 1.6rem;    /* ~25.6px */
+        --lv-card-title: 1.05rem;      /* ~16.8px */
+        --lv-dense-text: 0.9rem;       /* ~14.4px */
+        --lv-meta-text: 0.78rem;
+    }
+
+    body {
+        font-size: var(--lv-body-size);
+        line-height: 1.55;
+    }
+
+    .masthead h1 {
+        font-size: clamp(2rem, 8vw, 2.5rem);
+        line-height: 1.1;
+    }
+
+    .masthead p {
+        font-size: 0.96rem;
+        line-height: 1.55;
+    }
+
+    section h2,
+    .localevo-sectors__heading h2,
+    #pricing h2,
+    #contact h2 {
+        font-size: var(--lv-section-title);
+        line-height: 1.22;
+    }
+
+    .about-card p,
+    #serviciilenoastre > .services-wide-container > p.text-center,
+    #pacheteservicii > .row p,
+    #contact > .container > .row:first-child p {
+        font-size: 0.95rem;
+        line-height: 1.58;
+    }
+
+    .team-card h5 {
+        font-size: 0.95rem;
+    }
+
+    .team-card p {
+        font-size: 0.86rem;
+    }
+
+    .benefit-box {
+        font-size: 0.88rem;
+    }
+
+    .localevo-sector-tile__label {
+        font-size: 0.68rem;
+        line-height: 1.2;
+    }
+
+    #serviciilenoastre .collab-step__content h4 {
+        font-size: 0.82rem;
+        line-height: 1.25;
+    }
+
+    #serviciilenoastre .collab-step__content p {
+        font-size: 0.76rem;
+        line-height: 1.38;
+    }
+
+    #serviciilenoastre .service-card h3,
+    #serviciilenoastre .service-card h3.h4 {
+        font-size: 1.05rem !important;
+        line-height: 1.25;
+    }
+
+    #serviciilenoastre .service-card li,
+    #serviciilenoastre .service-card li span,
+    #serviciilenoastre .service-card p,
+    #serviciilenoastre .service-card .text-muted {
+        font-size: 0.9rem;
+        line-height: 1.42;
+    }
+
+    .review-text {
+        font-size: 0.94rem;
+        line-height: 1.58;
+    }
+
+    .review-author strong {
+        font-size: 0.86rem;
+    }
+
+    .review-author span {
+        font-size: 0.76rem;
+    }
+
+    .portfolio-card h6 {
+        font-size: 0.86rem;
+        line-height: 1.35;
+    }
+
+    #pacheteservicii .package-card .card-title,
+    #pacheteservicii .package-card h3,
+    #pacheteservicii .package-card h4,
+    #pacheteservicii .package-card h5 {
+        font-size: 1.05rem;
+    }
+
+    #pacheteservicii .package-card li,
+    #pacheteservicii .package-card p {
+        font-size: 0.88rem;
+        line-height: 1.42;
+    }
+
+    #contact .contact-card-text,
+    #contact .contact-card p,
+    #contact .contact-card a,
+    #contact .contact-card span {
+        font-size: 0.88rem;
+        line-height: 1.48;
+    }
+
+    #contact .contact-card-title {
+        font-size: 1.05rem;
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-link {
+        font-size: 0.92rem;
+    }
+}
+
+
+/* =========================================================
+   ECRANE FOARTE ÎNGUSTE
+   Menținem lizibilitatea; reducem doar elementele secundare.
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .localevo-sector-tile__label {
+        font-size: 0.64rem;
+    }
+
+    #serviciilenoastre .collab-step__content p {
+        font-size: 0.73rem;
+    }
+
+    #pacheteservicii .package-card li,
+    #pacheteservicii .package-card p,
+    #serviciilenoastre .service-card li,
+    #serviciilenoastre .service-card li span {
+        font-size: 0.86rem;
+    }
+}
+
