@@ -13872,3 +13872,335 @@ header.masthead::after {
         transition: none;
     }
 }
+
+/* =========================================================
+   SERVICII — PAȘII COLABORĂRII
+========================================================= */
+
+#serviciilenoastre .collab-process {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+
+    gap: 0;
+
+    width: min(100%, 1380px);
+
+    margin: 2rem auto 2.25rem;
+
+    padding: 0 1rem;
+}
+
+
+/* Linia orizontală dintre pași */
+
+#serviciilenoastre .collab-process::before {
+    content: "";
+
+    position: absolute;
+
+    top: 27px;
+    left: 8%;
+    right: 8%;
+
+    height: 2px;
+
+    background:
+        linear-gradient(
+            to right,
+            rgba(249, 115, 22, 0.22),
+            #f97316,
+            rgba(249, 115, 22, 0.22)
+        );
+
+    z-index: 0;
+}
+
+
+/* Pas individual */
+
+#serviciilenoastre .collab-step {
+    position: relative;
+    z-index: 1;
+
+    min-width: 0;
+
+    padding: 0 0.7rem;
+
+    text-align: center;
+}
+
+
+/* Marker */
+
+#serviciilenoastre .collab-step__marker {
+    position: relative;
+
+    width: 54px;
+    height: 54px;
+
+    margin: 0 auto 0.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    border: 2px solid #f97316;
+
+    box-shadow:
+        0 5px 14px rgba(0, 0, 0, 0.10);
+
+    color: #f97316;
+}
+
+
+/* Numărul mic */
+
+#serviciilenoastre .collab-step__number {
+    position: absolute;
+
+    top: -8px;
+    right: -8px;
+
+    min-width: 24px;
+    height: 24px;
+
+    padding: 0 5px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 999px;
+
+    background: #f97316;
+    color: #ffffff;
+
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+
+    box-shadow:
+        0 3px 8px rgba(0, 0, 0, 0.14);
+}
+
+
+/* Iconița */
+
+#serviciilenoastre .collab-step__marker i {
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+
+/* Titlu pas */
+
+#serviciilenoastre .collab-step__content h4 {
+    margin-bottom: 0.35rem;
+
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    color: #343a40;
+}
+
+
+/* Text */
+
+#serviciilenoastre .collab-step__content p {
+    margin: 0 auto;
+    max-width: 230px;
+
+    font-family: "Merriweather", serif;
+    font-size: 0.76rem;
+    font-weight: 400;
+    line-height: 1.35;
+
+    color: #6c757d !important;
+    opacity: 1 !important;
+}
+
+
+/* Hover discret */
+
+@media (hover: hover) {
+
+    #serviciilenoastre .collab-step__marker {
+        transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+    }
+
+    #serviciilenoastre .collab-step:hover .collab-step__marker {
+        transform: translateY(-3px);
+
+        box-shadow:
+            0 9px 18px rgba(0, 0, 0, 0.14);
+    }
+}
+
+
+/* =========================================================
+   TABLETĂ
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+    #serviciilenoastre .collab-process {
+        grid-template-columns:
+            repeat(5, minmax(0, 1fr));
+
+        margin-top: 1.75rem;
+        margin-bottom: 2rem;
+
+        padding: 0 0.25rem;
+    }
+
+    #serviciilenoastre .collab-step {
+        padding: 0 0.35rem;
+    }
+
+    #serviciilenoastre .collab-step__marker {
+        width: 48px;
+        height: 48px;
+    }
+
+    #serviciilenoastre .collab-process::before {
+        top: 24px;
+    }
+
+    #serviciilenoastre .collab-step__content h4 {
+        font-size: 0.78rem;
+    }
+
+    #serviciilenoastre .collab-step__content p {
+        font-size: 0.68rem;
+    }
+}
+
+
+/* =========================================================
+   MOBIL — TIMELINE VERTICAL COMPACT
+========================================================= */
+
+@media (max-width: 575.98px) {
+
+    #serviciilenoastre .collab-process {
+        display: block;
+
+        width: calc(100% - 20px);
+
+        margin: 1.8rem auto 1.6rem;
+
+        padding: 0;
+    }
+
+
+    /* Linia verticală */
+
+    #serviciilenoastre .collab-process::before {
+        top: 20px;
+        bottom: 20px;
+
+        left: 22px;
+        right: auto;
+
+        width: 2px;
+        height: auto;
+
+        background:
+            linear-gradient(
+                to bottom,
+                rgba(249, 115, 22, 0.20),
+                #f97316,
+                rgba(249, 115, 22, 0.20)
+            );
+    }
+
+
+    #serviciilenoastre .collab-step {
+        position: relative;
+
+        min-height: 60px;
+
+        display: grid;
+
+        grid-template-columns:
+            46px minmax(0, 1fr);
+
+        column-gap: 0.7rem;
+
+        align-items: center;
+
+        padding: 0.3rem 0;
+
+        text-align: left;
+    }
+
+
+    #serviciilenoastre .collab-step__marker {
+        width: 44px;
+        height: 44px;
+
+        margin: 0;
+
+        grid-column: 1;
+
+        border-width: 2px;
+    }
+
+
+    #serviciilenoastre .collab-step__number {
+        top: -5px;
+        right: -5px;
+
+        min-width: 20px;
+        height: 20px;
+
+        font-size: 0.58rem;
+    }
+
+
+    #serviciilenoastre .collab-step__marker i {
+        font-size: 1.05rem;
+    }
+
+
+    #serviciilenoastre .collab-step__content {
+        grid-column: 2;
+    }
+
+
+    #serviciilenoastre .collab-step__content h4 {
+        margin-bottom: 0.18rem;
+
+        font-size: 0.78rem;
+        line-height: 1.15;
+    }
+
+
+    #serviciilenoastre .collab-step__content p {
+        font-size: 0.68rem;
+        line-height: 1.25;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    #serviciilenoastre .collab-step__marker {
+        transition: none;
+    }
+}
