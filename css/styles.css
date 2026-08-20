@@ -15176,3 +15176,10 @@ section h2,
         line-height: 1.55;
     }
 }
+
+/* HERO — puțin mai înalt pe mobil */
+@media (max-width: 575.98px) {
+    header.masthead {
+        min-height: 78vh;
+    }
+}
