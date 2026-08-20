@@ -10954,10 +10954,10 @@ header.masthead h1, header.masthead .h1 {
 }
 @media (min-width: 992px) {
   header.masthead {
-    height: 100vh;
-    min-height: 40rem;
+    height: auto;
+    min-height: 90vh;
     padding-top: 4.5rem;
-    padding-bottom: 0;
+    padding-bottom: 2rem;
   }
   header.masthead p {
     font-size:1.15rem;
@@ -13040,9 +13040,9 @@ header.masthead::before {
 
 @media (max-width: 575.98px) {
     header.masthead {
-        min-height: 92svh;
+        min-height: 96svh;
         padding-top: 7.5rem;
-        padding-bottom: 4.5rem;
+        padding-bottom: 5.5rem;
         background-position: center center !important;
     }
 
@@ -15177,108 +15177,5 @@ section h2,
     }
 }
 
-/* =========================================================
-   LOCALEVO — LIZIBILITATE MOBIL FINAL
-   Suprascrie doar dimensiunile de text prea mici
-========================================================= */
 
-@media (max-width: 575.98px) {
-
-    /* Text general */
-    body {
-        font-size: 1rem;
-        line-height: 1.55;
-    }
-
-    /* Hero - subtitlu */
-    .masthead .hero-subtitle,
-    .masthead p {
-        font-size: 1rem;
-        line-height: 1.55;
-    }
-
-    /* Despre noi */
-    .about-card p {
-        font-size: 0.96rem;
-        line-height: 1.58;
-    }
-
-    /* Echipa */
-    .team-card p {
-        font-size: 0.92rem;
-        line-height: 1.45;
-    }
-
-    /* Beneficii */
-    .benefit-box {
-        font-size: 0.92rem;
-        line-height: 1.4;
-    }
-
-    /* Domenii de activitate */
-    .localevo-sector-tile__label {
-        font-size: 0.78rem;
-        line-height: 1.25;
-    }
-
-    /* Pașii colaborării */
-    #serviciilenoastre .collab-step__content h4 {
-        font-size: 0.9rem;
-        line-height: 1.3;
-    }
-
-    #serviciilenoastre .collab-step__content p {
-        font-size: 0.84rem;
-        line-height: 1.4;
-    }
-
-    /* Carduri servicii */
-    #serviciilenoastre .service-card li,
-    #serviciilenoastre .service-card li span,
-    #serviciilenoastre .service-card p,
-    #serviciilenoastre .service-card .text-muted {
-        font-size: 0.94rem;
-        line-height: 1.48;
-    }
-
-    /* Testimoniale */
-    .review-text {
-        font-size: 0.96rem;
-        line-height: 1.6;
-    }
-
-    .review-author strong {
-        font-size: 0.9rem;
-    }
-
-    .review-author span {
-        font-size: 0.82rem;
-    }
-
-    /* Portofoliu */
-    .portfolio-card h6 {
-        font-size: 0.92rem;
-        line-height: 1.4;
-    }
-
-    /* Pachete servicii */
-    #pacheteservicii .package-card li,
-    #pacheteservicii .package-card p {
-        font-size: 0.94rem;
-        line-height: 1.48;
-    }
-
-    /* Contact */
-    #contact .contact-card-text,
-    #contact .contact-card p,
-    #contact .contact-card a,
-    #contact .contact-card span {
-        font-size: 0.94rem;
-        line-height: 1.5;
-    }
-
-    #contact .contact-label {
-        font-size: 0.86rem;
-    }
-}
 
