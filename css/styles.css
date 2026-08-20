@@ -15177,9 +15177,11 @@ section h2,
     }
 }
 
-/* HERO — puțin mai înalt pe mobil */
 @media (max-width: 575.98px) {
     header.masthead {
-        min-height: 78vh;
+        height: auto !important;
+        min-height: 82vh !important;
+        padding-top: 8rem !important;
+        padding-bottom: 5rem !important;
     }
 }
