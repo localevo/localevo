@@ -13040,7 +13040,7 @@ header.masthead::before {
 
 @media (max-width: 575.98px) {
     header.masthead {
-        min-height: 86svh;
+        min-height: 92svh;
         padding-top: 7.5rem;
         padding-bottom: 4.5rem;
         background-position: center center !important;
@@ -15177,11 +15177,3 @@ section h2,
     }
 }
 
-@media (max-width: 575.98px) {
-    header.masthead {
-        height: auto !important;
-        min-height: 82vh !important;
-        padding-top: 8rem !important;
-        padding-bottom: 5rem !important;
-    }
-}
