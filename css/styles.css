@@ -15177,5 +15177,58 @@ section h2,
     }
 }
 
+/* =========================================================
+   CONTACT - PICTOGRAME RETELE SOCIALE
+========================================================= */
 
+#contact .contact-social .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.25rem;
+}
+
+#contact .contact-social .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    color: #6c757d;
+    text-decoration: none;
+
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+#contact .contact-social .social-links a i {
+    font-size: 1.6rem !important;
+    line-height: 1 !important;
+}
+
+#contact .contact-social .social-links a:hover {
+    color: #f97316;
+    transform: translateY(-2px);
+}
+
+
+/* MOBIL */
+@media (max-width: 575.98px) {
+
+    #contact .contact-social .social-links {
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    #contact .contact-social .social-links a {
+        width: 40px;
+        height: 40px;
+    }
+
+    #contact .contact-social .social-links a i {
+        font-size: 1.5rem !important;
+    }
+}
 
