@@ -15163,3 +15163,16 @@ section h2,
     }
 }
 
+/* Subtitlu Hero - lizibilitate */
+.masthead .hero-subtitle {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Mobil */
+@media (max-width: 575.98px) {
+    .masthead .hero-subtitle {
+        font-size: 1rem;
+        line-height: 1.55;
+    }
+}
