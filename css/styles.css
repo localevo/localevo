@@ -15232,3 +15232,180 @@ section h2,
     }
 }
 
+
+/* =========================================================
+   LOCALEVO — AJUSTĂRI LAYOUT 2026-08-22
+========================================================= */
+
+/* 1. HERO full-screen și conținut centrat */
+header.masthead {
+    height: 100vh !important;
+    height: 100svh !important;
+    min-height: 100vh !important;
+    min-height: 100svh !important;
+    padding-top: 64px !important;
+    padding-bottom: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    background-position: center center !important;
+    background-size: cover !important;
+}
+
+header.masthead > .container,
+header.masthead > .container > .row {
+    height: 100% !important;
+}
+
+header.masthead > .container > .row {
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+header.masthead .hero-content {
+    align-self: center !important;
+    margin: 0 auto;
+}
+
+header.masthead .hero-subtitle {
+    max-width: 760px;
+    margin: 0 auto 1.75rem;
+}
+
+header.masthead .hero-trust-points {
+    margin-top: 1.2rem;
+    margin-bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+    header.masthead {
+        height: 100svh !important;
+        min-height: 100svh !important;
+        padding-top: 60px !important;
+        padding-bottom: 0 !important;
+    }
+}
+
+/* 2. Separare mai clară Despre noi / Servicii */
+#desprenoi {
+    background: #ffffff !important;
+}
+
+#serviciilenoastre {
+    position: relative;
+    background: #fff4ea !important;
+    border-top: 1px solid rgba(249, 115, 22, 0.20);
+    box-shadow: inset 0 14px 28px -28px rgba(33, 37, 41, 0.42);
+}
+
+#serviciilenoastre::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: min(120px, 28vw);
+    height: 3px;
+    transform: translateX(-50%);
+    background: #f97316;
+    border-radius: 0 0 999px 999px;
+}
+
+/* 3. Servicii: 2 carduri desktop, 1 card mobil */
+#serviciilenoastre .services-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: 100%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: clamp(18px, 2.2vw, 30px);
+    align-items: stretch;
+    overflow: visible;
+}
+
+#serviciilenoastre .services-grid-item {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+}
+
+#serviciilenoastre .services-grid-item .service-card {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+}
+
+@media (max-width: 767.98px) {
+    #serviciilenoastre .services-grid {
+        grid-template-columns: 1fr !important;
+        max-width: 100%;
+        gap: 1rem;
+    }
+}
+
+/* 4. Secțiunea domenii + beneficii pe fundal închis */
+.localevo-sectors__heading h2 {
+    color: #ffffff !important;
+}
+
+.localevo-sectors__intro {
+    max-width: 780px;
+    margin: 0 auto 1.5rem;
+    font-family: "Merriweather", Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.62;
+    color: rgba(255, 255, 255, 0.92) !important;
+    text-align: center;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.22);
+}
+
+.localevo-sectors__benefits {
+    max-width: 1100px;
+    margin: 1.6rem auto 0;
+}
+
+.localevo-sectors__benefits .benefit-box {
+    min-height: 74px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    padding: 0.8rem 0.7rem;
+    background: rgba(255, 255, 255, 0.94);
+    color: #343a40 !important;
+    border: 1px solid rgba(249, 115, 22, 0.22);
+    border-radius: 12px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.14);
+    text-align: center;
+}
+
+.localevo-sectors__benefits .benefit-box i {
+    color: #f97316;
+    flex: 0 0 auto;
+}
+
+.localevo-sectors__benefits .benefit-box span {
+    color: #343a40 !important;
+}
+
+@media (max-width: 575.98px) {
+    .localevo-sectors__intro {
+        max-width: 100%;
+        margin-bottom: 1.15rem;
+        padding: 0 0.45rem;
+        font-size: 0.95rem;
+        line-height: 1.55;
+    }
+
+    .localevo-sectors__benefits {
+        margin-top: 1.25rem;
+    }
+
+    .localevo-sectors__benefits .benefit-box {
+        min-height: 68px;
+        padding: 0.65rem 0.45rem;
+        font-size: 0.84rem;
+        line-height: 1.3;
+    }
+}
