@@ -15409,3 +15409,137 @@ header.masthead .hero-trust-points {
         line-height: 1.3;
     }
 }
+
+/* =========================================================
+   CARD CABANA 2 ȘI 1 VIS - COMPACT
+========================================================= */
+
+#portfoliulnostru .portfolio-card-project {
+    overflow: hidden;
+    padding: 0;
+    border-radius: 14px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.16);
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Imagine */
+#portfoliulnostru .portfolio-project-image {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+#portfoliulnostru .portfolio-project-image img {
+    display: block;
+    width: 100%;
+    height: 150px;
+
+    object-fit: cover;
+
+    margin: 0;
+
+    transition: transform 0.3s ease;
+}
+
+#portfoliulnostru .portfolio-project-image:hover img {
+    transform: scale(1.025);
+}
+
+
+/* Zona de jos */
+#portfoliulnostru .portfolio-project-content {
+    padding: 0.8rem 0.9rem 0.9rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* Servicii pe un singur rând, unde permite spațiul */
+#portfoliulnostru .portfolio-project-services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 0.2rem 0.35rem;
+
+    margin-bottom: 0.6rem;
+
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    color: #6c757d;
+}
+
+#portfoliulnostru .portfolio-project-separator {
+    color: #f97316;
+    font-weight: 700;
+}
+
+
+/* Link */
+#portfoliulnostru .portfolio-project-link {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 0.35rem;
+
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 0.84rem;
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    color: #f97316;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+#portfoliulnostru .portfolio-project-link:hover {
+    color: #ea580c;
+}
+
+#portfoliulnostru .portfolio-project-link i {
+    font-size: 0.75rem;
+}
+
+
+/* Mobil */
+@media (max-width: 575.98px) {
+
+    #portfoliulnostru .portfolio-project-image img {
+        height: 145px;
+    }
+
+    #portfoliulnostru .portfolio-project-content {
+        padding: 0.7rem 0.75rem 0.8rem;
+    }
+
+    #portfoliulnostru .portfolio-project-services {
+        font-size: 0.76rem;
+    }
+
+    #portfoliulnostru .portfolio-project-link {
+        font-size: 0.82rem;
+    }
+}
