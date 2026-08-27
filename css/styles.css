@@ -15544,4 +15544,37 @@ header.masthead .hero-trust-points {
     }
 }
 
+/* =========================================================
+   TYPOGRAPHY — Montserrat headings / Inter body text
+   Only font families and requested weights are overridden.
+   Existing font sizes, line heights, spacing and layout stay unchanged.
+========================================================= */
+:root {
+    --bs-font-sans-serif: "Inter", sans-serif;
+    --bs-body-font-family: "Inter", sans-serif;
+    --localevo-font-heading: "Montserrat", sans-serif;
+    --localevo-font-body: "Inter", sans-serif;
+    --lv-font-sans: "Montserrat", sans-serif;
+    --lv-font-serif: "Inter", sans-serif;
+}
 
+body,
+button, input, select, optgroup, textarea,
+a, p, li, span, label, small, strong, b,
+div:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    font-family: "Inter", sans-serif !important;
+}
+
+h1, h1 *,
+h2, h2 *,
+h3, h3 *,
+h4, h4 *,
+h5, h5 *,
+h6, h6 * {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 700 !important;
+}
+
+p {
+    font-weight: 400 !important;
+}
