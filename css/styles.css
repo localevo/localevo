@@ -15718,3 +15718,296 @@ p {
         font-size: 0.92rem;
     }
 }
+
+/* =========================================================
+   LOCALEVO — DESPRE NOI / EDITORIAL
+   Varianta retusata: bloc echipa mai suplu, CTA mai aproape,
+   mai putin spatiu gol si fara accentul portocaliu superior.
+========================================================= */
+
+#desprenoi.localevo-about-editorial {
+    position: relative;
+    overflow: hidden;
+    padding: 76px 0 56px;
+    background: var(--localevo-light);
+}
+
+#desprenoi.localevo-about-editorial::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: -140px;
+    top: -120px;
+    border-radius: 50%;
+    background: rgba(249, 115, 22, 0.05);
+    pointer-events: none;
+}
+
+#desprenoi.localevo-about-editorial::after {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    left: -72px;
+    bottom: -72px;
+    border-radius: 50%;
+    border: 22px solid rgba(249, 115, 22, 0.045);
+    pointer-events: none;
+}
+
+.localevo-about-editorial__grid {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(0, 1.62fr) minmax(270px, 0.68fr);
+    gap: 54px;
+    align-items: center;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.localevo-about-editorial__story {
+    padding: 4px 0;
+}
+
+.localevo-about-editorial__heading {
+    margin-bottom: 30px;
+}
+
+.localevo-about-editorial__heading h2 {
+    max-width: 700px;
+    margin: 0;
+    color: var(--localevo-dark);
+    text-align: left;
+    line-height: 1.18;
+}
+
+.localevo-about-editorial__heading .divider {
+    margin: 18px 0 0;
+}
+
+.localevo-about-editorial__copy {
+    max-width: 720px;
+}
+
+.localevo-about-editorial__copy p {
+    margin: 0 0 18px;
+    color: #4b5563;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.72;
+    text-align: left;
+}
+
+.localevo-about-editorial__copy p:last-child {
+    margin-bottom: 0;
+}
+
+.localevo-about-editorial__team {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+    justify-self: end;
+    padding: 28px 28px;
+    border-radius: 16px;
+    background: var(--localevo-dark);
+    box-shadow: 0 14px 34px rgba(23, 32, 51, 0.10);
+}
+
+/* Accentul portocaliu superior a fost eliminat intentionat. */
+.localevo-about-editorial__team::before {
+    content: none;
+}
+
+.localevo-about-editorial__member {
+    display: grid;
+    grid-template-columns: 9px 1fr;
+    gap: 12px;
+    align-items: start;
+    padding: 18px 0;
+}
+
+.localevo-about-editorial__member:first-child {
+    padding-top: 8px;
+}
+
+.localevo-about-editorial__member:last-child {
+    padding-bottom: 8px;
+}
+
+.localevo-about-editorial__member + .localevo-about-editorial__member {
+    border-top: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+.localevo-about-editorial__dot {
+    width: 7px;
+    height: 7px;
+    margin-top: 7px;
+    border-radius: 50%;
+    background: var(--localevo-primary);
+}
+
+.localevo-about-editorial__member h5 {
+    margin: 0 0 4px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+.localevo-about-editorial__member p {
+    margin: 0;
+    color: #f7a173;
+    font-family: inherit;
+    font-size: 0.94rem;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+.localevo-about-editorial__cta {
+    position: relative;
+    z-index: 2;
+    max-width: 1040px;
+    margin: 22px auto 0;
+    text-align: left;
+}
+
+.localevo-about-editorial__cta .btn {
+    text-decoration: none;
+}
+
+@media (max-width: 991.98px) {
+    #desprenoi.localevo-about-editorial {
+        padding: 66px 0 54px;
+    }
+
+    .localevo-about-editorial__grid {
+        grid-template-columns: minmax(0, 1.35fr) minmax(255px, 0.72fr);
+        gap: 36px;
+        max-width: 920px;
+    }
+
+    .localevo-about-editorial__team {
+        max-width: 280px;
+        padding: 26px 24px;
+    }
+
+    .localevo-about-editorial__cta {
+        max-width: 920px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #desprenoi.localevo-about-editorial {
+        padding: 54px 0 46px;
+    }
+
+    #desprenoi.localevo-about-editorial::before {
+        width: 220px;
+        height: 220px;
+        right: -120px;
+        top: -90px;
+    }
+
+    #desprenoi.localevo-about-editorial::after {
+        display: none;
+    }
+
+    .localevo-about-editorial__grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        max-width: none;
+    }
+
+    .localevo-about-editorial__story {
+        padding: 0;
+    }
+
+    .localevo-about-editorial__heading {
+        margin-bottom: 26px;
+    }
+
+    .localevo-about-editorial__heading h2 {
+        max-width: 560px;
+        line-height: 1.22;
+    }
+
+    .localevo-about-editorial__copy p {
+        margin-bottom: 17px;
+        line-height: 1.66;
+    }
+
+    .localevo-about-editorial__team {
+        max-width: none;
+        justify-self: stretch;
+        padding: 22px 24px;
+        border-radius: 15px;
+        box-shadow: 0 12px 28px rgba(23, 32, 51, 0.09);
+    }
+
+    .localevo-about-editorial__member {
+        padding: 16px 0;
+    }
+
+    .localevo-about-editorial__member:first-child {
+        padding-top: 4px;
+    }
+
+    .localevo-about-editorial__member:last-child {
+        padding-bottom: 4px;
+    }
+
+    .localevo-about-editorial__cta {
+        margin-top: 22px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #desprenoi.localevo-about-editorial {
+        padding: 48px 0 42px;
+    }
+
+    .localevo-about-editorial__heading {
+        margin-bottom: 22px;
+    }
+
+    .localevo-about-editorial__heading .divider {
+        margin-top: 15px;
+    }
+
+    .localevo-about-editorial__copy p {
+        font-size: 0.98rem;
+        line-height: 1.62;
+    }
+
+    .localevo-about-editorial__team {
+        padding: 20px;
+        border-radius: 14px;
+    }
+
+    .localevo-about-editorial__member {
+        grid-template-columns: 8px 1fr;
+        gap: 11px;
+        padding: 15px 0;
+    }
+
+    .localevo-about-editorial__member h5 {
+        font-size: 0.98rem;
+    }
+
+    .localevo-about-editorial__member p {
+        font-size: 0.92rem;
+    }
+
+    .localevo-about-editorial__cta {
+        margin-top: 20px;
+    }
+}
