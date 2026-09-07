@@ -16011,3 +16011,57 @@ p {
         margin-top: 20px;
     }
 }
+
+/* =========================================================
+   MODIFICARE CERUTĂ — SERVICIILE NOASTRE
+   - fundal verde deschis pentru secțiune
+   - carduri cu același fundal și aceleași culori de text
+     ca în cardul echipei din secțiunea „Despre noi”
+   - restul elementelor rămân neschimbate
+========================================================= */
+
+#serviciilenoastre {
+    background: #EEF6F0 !important;
+}
+
+#serviciilenoastre .service-card {
+    background-color: var(--localevo-dark) !important;
+}
+
+/* Textul din cardurile Serviciile noastre */
+#serviciilenoastre .service-card h3,
+#serviciilenoastre .service-card p,
+#serviciilenoastre .service-card li,
+#serviciilenoastre .service-card li span,
+#serviciilenoastre .service-card span,
+#serviciilenoastre .service-card .text-muted {
+    color: #FFFFFF !important;
+}
+
+/* Bulinele rămân portocalii */
+#serviciilenoastre .service-card li::marker {
+    color: var(--localevo-primary) !important;
+}
+
+/* =========================================================
+   DOMENII DE ACTIVITATE — CARDURI BENEFICII
+   Fundal închis + text alb + grafică portocalie
+========================================================= */
+
+.localevo-sectors .benefit-box {
+    background: var(--localevo-dark) !important;
+    color: #FFFFFF !important;
+}
+
+.localevo-sectors .benefit-box span {
+    color: #FFFFFF !important;
+}
+
+.localevo-sectors .benefit-box i {
+    color: var(--localevo-primary) !important;
+}
+
+/* Contur alb discret pentru cardurile de beneficii */
+.localevo-sectors .benefit-box {
+    border: 1px solid rgba(255, 255, 255, 0.35) !important;
+}
