@@ -883,3 +883,48 @@
         line-height: 1.5;
     }
 }
+
+
+/* MOBILE HERO ORDER — CTA AFTER GRAPHIC
+   Pe mobil ordinea devine:
+   titlu + descriere -> grafică -> buton CTA.
+*/
+@media (max-width: 767.98px) {
+    .service-hero__grid {
+        display: contents;
+    }
+
+    .service-hero__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-hero__grid > div:first-child {
+        display: contents;
+    }
+
+    .service-back-link {
+        order: 0;
+    }
+
+    .service-hero h1 {
+        order: 1;
+    }
+
+    .service-hero p {
+        order: 2;
+    }
+
+    .service-hero-visual {
+        order: 3;
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 24px;
+    }
+
+    .service-hero .btn {
+        order: 4;
+        align-self: center;
+        margin-top: 0;
+    }
+}
