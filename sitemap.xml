@@ -3,9 +3,37 @@
 
     <url>
         <loc>https://localevo.ro/</loc>
-        <lastmod>2026-06-24</lastmod>
+        <lastmod>2026-09-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
-    
+
+    <url>
+        <loc>https://localevo.ro/website.html</loc>
+        <lastmod>2026-09-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://localevo.ro/social-media.html</loc>
+        <lastmod>2026-09-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://localevo.ro/instrumente-digitale.html</loc>
+        <lastmod>2026-09-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://localevo.ro/organizare.html</loc>
+        <lastmod>2026-09-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
 </urlset>

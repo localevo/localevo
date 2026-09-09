@@ -1,0 +1,885 @@
+
+/* =========================================================
+   LOCALEVO — PAGINI SERVICII
+   Extensie vizuală pentru website.html, social-media.html,
+   instrumente-digitale.html și organizare.html
+========================================================= */
+
+.service-page {
+    background: #fff;
+}
+
+.service-page #mainNav {
+    background-color: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 1px 18px rgba(33, 37, 41, 0.08);
+}
+
+.service-page #mainNav .navbar-nav .nav-item .nav-link {
+    color: #343a40;
+}
+
+.service-page #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: var(--localevo-primary);
+}
+
+.service-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 150px 0 95px;
+    background: #EEF6F0;
+}
+
+.service-hero__inner {
+    position: relative;
+    z-index: 2;
+}
+
+.service-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 36px;
+    color: #5f6870;
+    text-decoration: none;
+    font-family: var(--localevo-font-heading);
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.service-back-link:hover {
+    color: var(--localevo-primary);
+}
+
+.service-hero__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.85fr);
+    align-items: center;
+    gap: 72px;
+}
+
+.service-eyebrow,
+.service-section-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--localevo-primary);
+    font-family: var(--localevo-font-heading);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+.service-eyebrow {
+    margin-bottom: 18px;
+}
+
+.service-eyebrow i {
+    font-size: 1rem;
+}
+
+.service-hero h1 {
+    max-width: 720px;
+    margin-bottom: 22px;
+    color: var(--localevo-dark);
+    font-family: var(--localevo-font-heading);
+    font-size: clamp(2.45rem, 5vw, 4.65rem);
+    font-weight: 700;
+    line-height: 1.03;
+    letter-spacing: -0.035em;
+}
+
+.service-hero p {
+    max-width: 640px;
+    margin-bottom: 30px;
+    color: #5f6870;
+    font-family: var(--localevo-font-body);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.service-hero-visual {
+    position: relative;
+    min-height: 390px;
+    display: grid;
+    place-items: center;
+}
+
+.service-hero-visual__ring {
+    width: 310px;
+    height: 310px;
+    border: 1px solid rgba(249, 115, 22, 0.42);
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 32px rgba(255,255,255,.45),
+        0 0 0 64px rgba(249,115,22,.05);
+}
+
+.service-hero-visual__icon {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 34px;
+    display: grid;
+    place-items: center;
+    background: var(--localevo-dark);
+    box-shadow: 0 25px 55px rgba(33,37,41,.18);
+    transform: rotate(-4deg);
+}
+
+.service-hero-visual__icon i {
+    color: var(--localevo-primary);
+    font-size: 4.2rem;
+    transform: rotate(4deg);
+}
+
+.service-hero-visual__badge {
+    position: absolute;
+    padding: 10px 15px;
+    border-radius: 999px;
+    background: #fff;
+    box-shadow: 0 12px 30px rgba(33,37,41,.09);
+    color: #343a40;
+    font-family: var(--localevo-font-heading);
+    font-size: .76rem;
+    font-weight: 700;
+}
+
+.badge-one { top: 56px; right: 10px; }
+.badge-two { bottom: 65px; left: 5px; }
+.badge-three { bottom: 30px; right: 42px; }
+
+.service-hero__shape {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.service-hero__shape--one {
+    width: 380px;
+    height: 380px;
+    right: -170px;
+    top: -100px;
+    background: rgba(249,115,22,.08);
+}
+
+.service-hero__shape--two {
+    width: 220px;
+    height: 220px;
+    left: -90px;
+    bottom: -105px;
+    background: rgba(33,37,41,.04);
+}
+
+.service-section {
+    padding: 88px 0;
+}
+
+.service-section--light {
+    background: #F8F9FA;
+}
+
+.service-section--white {
+    background: #fff;
+}
+
+.service-section-heading {
+    max-width: 690px;
+    margin: 0 auto 42px;
+    text-align: center;
+}
+
+.service-section-heading--left {
+    margin: 0;
+    text-align: left;
+}
+
+.service-section-heading h2,
+.service-final-cta h2 {
+    margin-top: 10px;
+    color: var(--localevo-dark);
+    font-family: var(--localevo-font-heading);
+    font-size: clamp(1.8rem, 3vw, 2.65rem);
+    font-weight: 700;
+    line-height: 1.12;
+}
+
+.service-section-heading p,
+.service-final-cta p {
+    color: #5f6870;
+    font-family: var(--localevo-font-body);
+    font-size: .94rem;
+    line-height: 1.65;
+}
+
+.service-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.service-detail-card {
+    position: relative;
+    min-height: 205px;
+    padding: 32px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: var(--localevo-dark);
+    box-shadow: 0 18px 40px rgba(33,37,41,.08);
+}
+
+.service-detail-card::after {
+    content: "";
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    right: -30px;
+    bottom: -38px;
+    border-radius: 50%;
+    border: 1px solid rgba(249,115,22,.3);
+}
+
+.service-detail-card__dot {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 22px;
+    border-radius: 50%;
+    background: var(--localevo-primary);
+}
+
+.service-detail-card h3 {
+    margin-bottom: 12px;
+    color: #fff;
+    font-family: var(--localevo-font-heading);
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.service-detail-card p {
+    margin: 0;
+    color: rgba(255,255,255,.78);
+    font-family: var(--localevo-font-body);
+    font-size: .88rem;
+    line-height: 1.55;
+}
+
+.service-split {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.service-process-list {
+    position: relative;
+}
+
+.service-process-list::before {
+    content: "";
+    position: absolute;
+    left: 22px;
+    top: 22px;
+    bottom: 22px;
+    width: 1px;
+    background: rgba(249,115,22,.28);
+}
+
+.service-process-step {
+    position: relative;
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    gap: 22px;
+    padding: 0 0 28px;
+}
+
+.service-process-step:last-child {
+    padding-bottom: 0;
+}
+
+.service-process-step__number {
+    position: relative;
+    z-index: 2;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #EEF6F0;
+    border: 1px solid rgba(249,115,22,.28);
+    color: var(--localevo-primary);
+    font-family: var(--localevo-font-heading);
+    font-size: .7rem;
+    font-weight: 700;
+}
+
+.service-process-step h3 {
+    margin: 4px 0 7px;
+    color: var(--localevo-dark);
+    font-family: var(--localevo-font-heading);
+    font-size: .96rem;
+    font-weight: 700;
+}
+
+.service-process-step p {
+    margin: 0;
+    color: #677078;
+    font-family: var(--localevo-font-body);
+    font-size: .86rem;
+    line-height: 1.5;
+}
+
+.service-section--price {
+    background: #EEF6F0;
+}
+
+.service-price-card {
+    display: grid;
+    grid-template-columns: .85fr 1.15fr;
+    overflow: hidden;
+    border-radius: 22px;
+    background: #fff;
+    box-shadow: 0 22px 55px rgba(33,37,41,.09);
+}
+
+.service-price-card__main {
+    padding: 42px;
+    background: var(--localevo-dark);
+}
+
+.service-price-card__main h2 {
+    margin: 11px 0 8px;
+    color: #fff;
+    font-family: var(--localevo-font-heading);
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    font-weight: 700;
+}
+
+.service-price-card__main > p {
+    margin-bottom: 25px;
+    color: rgba(255,255,255,.72);
+    font-family: var(--localevo-font-body);
+    font-size: .9rem;
+}
+
+.service-price-note {
+    display: flex;
+    gap: 11px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,.14);
+    color: rgba(255,255,255,.72);
+    font-family: var(--localevo-font-body);
+    font-size: .78rem;
+    line-height: 1.48;
+}
+
+.service-price-note i {
+    flex: 0 0 auto;
+    margin-top: 2px;
+    color: var(--localevo-primary);
+}
+
+.service-price-card__factors {
+    padding: 42px;
+}
+
+.service-price-card__factors h3 {
+    margin-bottom: 22px;
+    color: var(--localevo-dark);
+    font-family: var(--localevo-font-heading);
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.service-price-card__factors ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 14px 22px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.service-price-card__factors li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    color: #5f6870;
+    font-family: var(--localevo-font-body);
+    font-size: .84rem;
+    line-height: 1.45;
+}
+
+.service-price-card__factors i {
+    margin-top: 2px;
+    color: var(--localevo-primary);
+}
+
+.service-final-cta {
+    background: #fff;
+}
+
+.service-final-cta .container {
+    max-width: 790px;
+}
+
+.service-final-cta h2 {
+    margin: 10px auto 14px;
+}
+
+.service-final-cta p {
+    margin-bottom: 27px;
+}
+
+@media (max-width: 991.98px) {
+    .service-hero__grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .service-hero-visual {
+        min-height: 300px;
+    }
+
+    .service-hero-visual__ring {
+        width: 235px;
+        height: 235px;
+    }
+
+    .service-hero-visual__icon {
+        width: 122px;
+        height: 122px;
+    }
+
+    .service-hero-visual__icon i {
+        font-size: 3.4rem;
+    }
+
+    .service-split,
+    .service-price-card {
+        grid-template-columns: 1fr;
+        gap: 42px;
+    }
+
+    .service-price-card {
+        gap: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .service-hero {
+        padding: 120px 0 65px;
+    }
+
+    .service-back-link {
+        margin-bottom: 24px;
+    }
+
+    .service-hero h1 {
+        font-size: clamp(2rem, 10vw, 3rem);
+    }
+
+    .service-hero p {
+        font-size: .9rem;
+    }
+
+    .service-detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-section {
+        padding: 64px 0;
+    }
+
+    .service-split {
+        gap: 36px;
+    }
+
+    .service-price-card__main,
+    .service-price-card__factors {
+        padding: 30px 24px;
+    }
+
+    .service-price-card__factors ul {
+        grid-template-columns: 1fr;
+    }
+
+    .service-hero-visual {
+        min-height: 255px;
+    }
+
+    .badge-one { top: 28px; right: 5px; }
+    .badge-two { bottom: 38px; left: 0; }
+    .badge-three { bottom: 8px; right: 28px; }
+}
+
+/* =========================================================
+   MOBILE OPTIMIZATION — service pages
+========================================================= */
+
+@media (max-width: 767.98px) {
+    .service-page {
+        overflow-x: hidden;
+    }
+
+    .service-page #mainNav .container {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .service-page #mainNav .navbar-logo {
+        max-width: 145px;
+        height: auto;
+    }
+
+    .service-page #mainNav .navbar-collapse {
+        margin-top: .65rem;
+        padding: .75rem 0 1rem;
+    }
+
+    .service-page #mainNav .nav-link {
+        padding-top: .7rem;
+        padding-bottom: .7rem;
+    }
+
+    .service-hero {
+        padding-top: 112px;
+        padding-bottom: 54px;
+    }
+
+    .service-hero__inner {
+        padding-left: 1.15rem !important;
+        padding-right: 1.15rem !important;
+    }
+
+    .service-back-link {
+        margin-bottom: 18px;
+        font-size: .76rem;
+    }
+
+    .service-eyebrow {
+        margin-bottom: 13px;
+        font-size: .72rem;
+    }
+
+    .service-hero h1 {
+        max-width: 100%;
+        margin-bottom: 16px;
+        font-size: clamp(2rem, 9.5vw, 2.8rem);
+        line-height: 1.06;
+        letter-spacing: -0.025em;
+    }
+
+    .service-hero p {
+        max-width: 100%;
+        margin-bottom: 23px;
+        font-size: .91rem;
+        line-height: 1.62;
+    }
+
+    .service-hero .btn,
+    .service-final-cta .btn {
+        width: 100%;
+        max-width: 360px;
+        min-height: 50px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: .9rem 1.25rem !important;
+    }
+
+    .service-hero__grid {
+        gap: 22px;
+    }
+
+    .service-hero-visual {
+        min-height: 220px;
+        margin-top: 4px;
+    }
+
+    .service-hero-visual__ring {
+        width: 180px;
+        height: 180px;
+        box-shadow:
+            0 0 0 22px rgba(255,255,255,.4),
+            0 0 0 42px rgba(249,115,22,.045);
+    }
+
+    .service-hero-visual__icon {
+        width: 94px;
+        height: 94px;
+        border-radius: 24px;
+    }
+
+    .service-hero-visual__icon i {
+        font-size: 2.65rem;
+    }
+
+    .service-hero-visual__badge {
+        padding: 7px 10px;
+        font-size: .65rem;
+    }
+
+    .badge-one { top: 22px; right: 8px; }
+    .badge-two { bottom: 34px; left: 4px; }
+    .badge-three { bottom: 4px; right: 20px; }
+
+    .service-section {
+        padding: 56px 0;
+    }
+
+    .service-section .container {
+        padding-left: 1.15rem !important;
+        padding-right: 1.15rem !important;
+    }
+
+    .service-section-heading {
+        margin-bottom: 30px;
+    }
+
+    .service-section-heading h2,
+    .service-final-cta h2 {
+        margin-top: 8px;
+        font-size: clamp(1.7rem, 7vw, 2.15rem);
+        line-height: 1.12;
+    }
+
+    .service-section-heading p,
+    .service-final-cta p {
+        font-size: .9rem;
+        line-height: 1.58;
+    }
+
+    .service-detail-grid {
+        gap: 16px;
+    }
+
+    .service-detail-card {
+        min-height: 0;
+        padding: 24px 22px;
+        border-radius: 16px;
+    }
+
+    .service-detail-card__dot {
+        margin-bottom: 16px;
+    }
+
+    .service-detail-card h3 {
+        font-size: 1rem;
+    }
+
+    .service-detail-card p {
+        font-size: .86rem;
+        line-height: 1.52;
+    }
+
+    .service-split {
+        gap: 30px;
+    }
+
+    .service-process-step {
+        grid-template-columns: 40px 1fr;
+        gap: 16px;
+        padding-bottom: 24px;
+    }
+
+    .service-process-list::before {
+        left: 19px;
+        top: 20px;
+        bottom: 20px;
+    }
+
+    .service-process-step__number {
+        width: 40px;
+        height: 40px;
+        font-size: .66rem;
+    }
+
+    .service-process-step h3 {
+        margin-top: 2px;
+        font-size: .94rem;
+    }
+
+    .service-process-step p {
+        font-size: .84rem;
+        line-height: 1.48;
+    }
+
+    .service-price-card {
+        border-radius: 18px;
+    }
+
+    .service-price-card__main,
+    .service-price-card__factors {
+        padding: 27px 22px;
+    }
+
+    .service-price-card__main h2 {
+        margin-top: 8px;
+        font-size: clamp(2rem, 9vw, 2.75rem);
+    }
+
+    .service-price-card__main > p {
+        font-size: .86rem;
+        margin-bottom: 20px;
+    }
+
+    .service-price-note {
+        font-size: .76rem;
+    }
+
+    .service-price-card__factors h3 {
+        margin-bottom: 18px;
+        font-size: 1rem;
+    }
+
+    .service-price-card__factors ul {
+        gap: 12px;
+    }
+
+    .service-price-card__factors li {
+        font-size: .82rem;
+    }
+
+    .service-final-cta {
+        padding-top: 54px;
+        padding-bottom: 64px;
+    }
+
+    .whatsapp-float {
+        right: 14px !important;
+        bottom: 14px !important;
+    }
+
+    .whatsapp-float span {
+        display: none;
+    }
+}
+
+@media (max-width: 390px) {
+    .service-hero h1 {
+        font-size: 1.95rem;
+    }
+
+    .service-hero-visual {
+        min-height: 205px;
+    }
+
+    .service-hero-visual__ring {
+        width: 160px;
+        height: 160px;
+    }
+
+    .service-hero-visual__icon {
+        width: 86px;
+        height: 86px;
+    }
+
+    .service-detail-card,
+    .service-price-card__main,
+    .service-price-card__factors {
+        padding-left: 19px;
+        padding-right: 19px;
+    }
+}
+
+
+
+/* LOCALEVO TYPOGRAPHY ALIGNMENT — MAIN PAGE
+   Folosește aceleași variabile tipografice definite în styles.css.
+*/
+.service-hero h1 {
+    font-family: var(--localevo-font-heading);
+    font-size: var(--localevo-title-section);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: normal;
+}
+
+.service-hero p,
+.service-section-heading p,
+.service-final-cta p {
+    font-family: var(--localevo-font-body);
+    font-size: var(--localevo-text);
+    line-height: var(--localevo-line-body);
+}
+
+.service-section-heading h2,
+.service-final-cta h2 {
+    font-family: var(--localevo-font-heading);
+    font-size: var(--localevo-title-section);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.service-detail-card h3,
+.service-price-card__factors h3 {
+    font-family: var(--localevo-font-heading);
+    font-size: var(--localevo-title-card);
+    font-weight: 700;
+    line-height: var(--localevo-line-compact);
+}
+
+.service-detail-card p,
+.service-process-step p,
+.service-price-card__main > p,
+.service-price-card__factors li {
+    font-family: var(--localevo-font-body);
+    font-size: var(--localevo-text-small);
+    line-height: var(--localevo-line-body);
+}
+
+.service-process-step h3 {
+    font-family: var(--localevo-font-heading);
+    font-size: var(--localevo-title-small);
+    font-weight: 700;
+    line-height: var(--localevo-line-compact);
+}
+
+/* Prețul rămâne evidențiat, dar nu supradimensionat. */
+.service-price-card__main h2 {
+    font-family: var(--localevo-font-heading);
+    font-size: var(--localevo-title-section);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Etichetele de tip "sprânceană" au fost eliminate din HTML. */
+.service-eyebrow,
+.service-section-kicker {
+    display: none !important;
+}
+
+@media (max-width: 575.98px) {
+    .service-hero h1,
+    .service-section-heading h2,
+    .service-final-cta h2,
+    .service-price-card__main h2 {
+        font-size: var(--localevo-title-section);
+        line-height: 1.2;
+    }
+
+    .service-hero p,
+    .service-section-heading p,
+    .service-final-cta p {
+        font-size: var(--localevo-text);
+        line-height: 1.5;
+    }
+
+    .service-detail-card h3,
+    .service-price-card__factors h3 {
+        font-size: var(--localevo-title-card);
+    }
+
+    .service-process-step h3 {
+        font-size: var(--localevo-title-small);
+    }
+
+    .service-detail-card p,
+    .service-process-step p,
+    .service-price-card__main > p,
+    .service-price-card__factors li {
+        font-size: var(--localevo-text-small);
+        line-height: 1.5;
+    }
+}

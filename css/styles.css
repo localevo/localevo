@@ -16099,3 +16099,44 @@ header.masthead {
         background-size: cover !important;
     }
 }
+
+/* =====================================
+   LOCALEVO — SERVICII: 4 CARDURI 2x2
+   Păstrează culorile, fonturile și fundalurile existente
+===================================== */
+
+#serviciilenoastre .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+#serviciilenoastre .service-card {
+    display: flex;
+    flex-direction: column;
+}
+
+#serviciilenoastre .service-card-link {
+    margin-top: auto;
+    padding-top: 1rem;
+    display: inline-block;
+    width: fit-content;
+
+    font-family: var(--localevo-font-body);
+    font-size: 0.88rem;
+    line-height: 1.42;
+    font-weight: 400;
+
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+#serviciilenoastre .service-card-link:hover,
+#serviciilenoastre .service-card-link:focus {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+
+@media (max-width: 767.98px) {
+    #serviciilenoastre .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
