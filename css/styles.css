@@ -11838,7 +11838,7 @@ header.masthead .divider{
 
 #portfoliulnostru {
     position: relative;
-    background-image: url("../assets/img/portfolio-bg.jpg");
+    background-image: url("../assets/img/portfolio-bg.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -13622,7 +13622,7 @@ header.masthead::after {
             rgba(20, 27, 32, 0.54),
             rgba(20, 27, 32, 0.60)
         ),
-        url("../assets/img/valea-jiului-business-bg.jpg");
+        url("../assets/img/valea-jiului-business-bg.webp");
 
     background-size: cover;
     background-position: center;
