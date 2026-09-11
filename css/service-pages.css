@@ -937,3 +937,196 @@
         margin-bottom: 36px;
     }
 }
+
+/* =========================================================
+   LOCALEVO — MICRO-ANIMAȚII DISCRETE
+   Variantă fluidă, fără efect de „clipire”
+========================================================= */
+
+/* HERO — mișcare ambientală foarte lentă */
+@media (prefers-reduced-motion: no-preference) {
+    .service-hero-visual__ring {
+        animation: localevo-ring-breathe 8s ease-in-out infinite;
+        transform-origin: center;
+        will-change: transform, opacity;
+    }
+
+    .service-hero-visual__icon {
+        animation: localevo-icon-float 7s ease-in-out infinite;
+        will-change: transform;
+    }
+
+    .service-hero-visual__badge.badge-one {
+        animation: localevo-badge-float-one 8.5s ease-in-out infinite;
+    }
+
+    .service-hero-visual__badge.badge-two {
+        animation: localevo-badge-float-two 9.2s ease-in-out infinite;
+    }
+
+    .service-hero-visual__badge.badge-three {
+        animation: localevo-badge-float-three 8.8s ease-in-out infinite;
+    }
+}
+
+@keyframes localevo-ring-breathe {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.018);
+        opacity: .94;
+    }
+}
+
+@keyframes localevo-icon-float {
+    0%, 100% {
+        transform: translateY(0) rotate(-4deg);
+    }
+    50% {
+        transform: translateY(-5px) rotate(-3deg);
+    }
+}
+
+@keyframes localevo-badge-float-one {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(0, -4px, 0); }
+}
+
+@keyframes localevo-badge-float-two {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(3px, -3px, 0); }
+}
+
+@keyframes localevo-badge-float-three {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(-3px, -4px, 0); }
+}
+
+/* REVEAL — doar dacă JS este activ și utilizatorul permite mișcare */
+@media (prefers-reduced-motion: no-preference) {
+    html.service-reveal-ready .service-section-heading:not(.is-revealed),
+    html.service-reveal-ready .service-detail-card:not(.is-revealed),
+    html.service-reveal-ready .service-process-step:not(.is-revealed),
+    html.service-reveal-ready .service-price-card:not(.is-revealed),
+    html.service-reveal-ready .service-final-cta .container:not(.is-revealed) {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+    }
+
+    html.service-reveal-ready .service-section-heading,
+    html.service-reveal-ready .service-detail-card,
+    html.service-reveal-ready .service-process-step,
+    html.service-reveal-ready .service-price-card,
+    html.service-reveal-ready .service-final-cta .container {
+        transition:
+            opacity .9s cubic-bezier(.22, .61, .36, 1),
+            transform .9s cubic-bezier(.22, .61, .36, 1);
+        transition-delay: var(--reveal-delay, 0ms);
+    }
+
+    html.service-reveal-ready .is-revealed {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* HOVER — doar pe dispozitive cu mouse; fără a concura cu reveal-ul */
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+    .service-detail-card {
+        transition-property: opacity, transform, box-shadow;
+        transition-duration: .9s, .9s, .28s;
+        transition-timing-function: cubic-bezier(.22, .61, .36, 1), cubic-bezier(.22, .61, .36, 1), ease;
+    }
+
+    .service-detail-card.is-revealed:hover {
+        box-shadow: 0 22px 48px rgba(33,37,41,.13);
+    }
+
+    .service-detail-card::after {
+        transition: transform .35s ease, border-color .35s ease;
+    }
+
+    .service-detail-card__dot {
+        transition: transform .28s ease;
+    }
+
+    .service-detail-card:hover::after {
+        transform: translate(-4px, -4px) scale(1.05);
+        border-color: rgba(249,115,22,.48);
+    }
+
+    .service-detail-card:hover .service-detail-card__dot {
+        transform: scale(1.15);
+    }
+
+    .service-process-step__number {
+        transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .service-process-step:hover .service-process-step__number {
+        transform: translateY(-2px);
+        box-shadow: 0 7px 18px rgba(249,115,22,.12);
+    }
+}
+
+/* MOBIL — mișcare mai mică și mai lentă */
+@media (max-width: 767.98px) and (prefers-reduced-motion: no-preference) {
+    .service-hero-visual__ring {
+        animation-duration: 10s;
+    }
+
+    .service-hero-visual__icon {
+        animation-name: localevo-icon-float-mobile;
+        animation-duration: 9s;
+    }
+
+    .service-hero-visual__badge.badge-one,
+    .service-hero-visual__badge.badge-two,
+    .service-hero-visual__badge.badge-three {
+        animation-duration: 11s;
+    }
+
+    html.service-reveal-ready .service-section-heading:not(.is-revealed),
+    html.service-reveal-ready .service-detail-card:not(.is-revealed),
+    html.service-reveal-ready .service-process-step:not(.is-revealed),
+    html.service-reveal-ready .service-price-card:not(.is-revealed),
+    html.service-reveal-ready .service-final-cta .container:not(.is-revealed) {
+        transform: translate3d(0, 12px, 0);
+    }
+
+    html.service-reveal-ready .service-section-heading,
+    html.service-reveal-ready .service-detail-card,
+    html.service-reveal-ready .service-process-step,
+    html.service-reveal-ready .service-price-card,
+    html.service-reveal-ready .service-final-cta .container {
+        transition-duration: .75s;
+    }
+}
+
+@keyframes localevo-icon-float-mobile {
+    0%, 100% {
+        transform: translateY(0) rotate(-4deg);
+    }
+    50% {
+        transform: translateY(-3px) rotate(-3.5deg);
+    }
+}
+
+/* ACCESIBILITATE */
+@media (prefers-reduced-motion: reduce) {
+    .service-hero-visual__ring,
+    .service-hero-visual__icon,
+    .service-hero-visual__badge,
+    .service-section-heading,
+    .service-detail-card,
+    .service-process-step,
+    .service-price-card,
+    .service-final-cta .container {
+        animation: none !important;
+        transition: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
