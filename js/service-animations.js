@@ -1,12 +1,11 @@
 /* =========================================================
    LOCALEVO — MICRO-ANIMAȚII PAGINI SERVICII
-   Reveal progresiv și discret la scroll
+   Reveal progresiv pe desktop și mobil
 ========================================================= */
 
 (() => {
     'use strict';
 
-    /* Respectă setarea "Reduce Motion" a utilizatorului */
     const reduceMotion = window.matchMedia(
         '(prefers-reduced-motion: reduce)'
     ).matches;
@@ -15,7 +14,6 @@
         return;
     }
 
-    /* Elementele care apar progresiv la scroll */
     const revealSelectors = [
         '.service-section-heading',
         '.service-detail-card',
@@ -24,8 +22,10 @@
         '.service-final-cta .container'
     ];
 
-    const revealItems = document.querySelectorAll(
-        revealSelectors.join(',')
+    const revealItems = Array.from(
+        document.querySelectorAll(
+            revealSelectors.join(',')
+        )
     );
 
     if (!revealItems.length) {
@@ -33,12 +33,25 @@
     }
 
 
+    /* Activează sistemul de reveal */
+    document.documentElement.classList.add(
+        'service-reveal-ready'
+    );
+
+
+    /* Detectăm mobilul */
+    const isMobile = window.matchMedia(
+        '(max-width: 767.98px)'
+    ).matches;
+
+
     /* =====================================================
-       CARDURI SERVICII
-       Apar succesiv, cu o întârziere discretă
+       CARDURI
     ===================================================== */
 
-    document.querySelectorAll('.service-detail-grid').forEach((grid) => {
+    document.querySelectorAll(
+        '.service-detail-grid'
+    ).forEach((grid) => {
 
         const cards = grid.querySelectorAll(
             '.service-detail-card'
@@ -46,10 +59,9 @@
 
         cards.forEach((card, index) => {
 
-            const delay = Math.min(
-                index * 110,
-                330
-            );
+            const delay = isMobile
+                ? Math.min(index * 140, 420)
+                : Math.min(index * 110, 330);
 
             card.style.setProperty(
                 '--reveal-delay',
@@ -63,10 +75,11 @@
 
     /* =====================================================
        PAȘII PROCESULUI
-       Apar progresiv 01 → 02 → 03 → 04
     ===================================================== */
 
-    document.querySelectorAll('.service-process-list').forEach((list) => {
+    document.querySelectorAll(
+        '.service-process-list'
+    ).forEach((list) => {
 
         const steps = list.querySelectorAll(
             '.service-process-step'
@@ -74,10 +87,9 @@
 
         steps.forEach((step, index) => {
 
-            const delay = Math.min(
-                index * 90,
-                270
-            );
+            const delay = isMobile
+                ? Math.min(index * 120, 360)
+                : Math.min(index * 90, 270);
 
             step.style.setProperty(
                 '--reveal-delay',
@@ -91,7 +103,6 @@
 
     /* =====================================================
        FALLBACK
-       Pentru browsere care nu suportă IntersectionObserver
     ===================================================== */
 
     if (!('IntersectionObserver' in window)) {
@@ -105,10 +116,7 @@
 
 
     /* =====================================================
-       INTERSECTION OBSERVER
-
-       Detectează când elementul intră în zona vizibilă.
-       Elementul este animat o singură dată.
+       OBSERVER
     ===================================================== */
 
     const observer = new IntersectionObserver(
@@ -122,25 +130,21 @@
                 }
 
                 /*
-                 * requestAnimationFrame permite browserului
-                 * să înregistreze starea inițială înainte
-                 * de activarea tranziției.
-                 *
-                 * Ajută la evitarea efectului de "clipire".
+                 * Două frame-uri pentru ca browserul
+                 * să aplice întâi starea invizibilă.
                  */
                 requestAnimationFrame(() => {
 
-                    entry.target.classList.add(
-                        'is-revealed'
-                    );
+                    requestAnimationFrame(() => {
+
+                        entry.target.classList.add(
+                            'is-revealed'
+                        );
+
+                    });
 
                 });
 
-                /*
-                 * Oprim observarea după prima apariție.
-                 * Elementul nu se va anima din nou când
-                 * utilizatorul urcă sau coboară pagina.
-                 */
                 revealObserver.unobserve(
                     entry.target
                 );
@@ -150,28 +154,30 @@
         },
 
         {
-            /*
-             * Animația începe când o mică parte din element
-             * a intrat deja în viewport.
-             */
-            threshold: 0.08,
+            threshold: isMobile ? 0.03 : 0.05,
 
-            /*
-             * Pornire naturală, aproape de marginea
-             * inferioară a ecranului.
-             */
-            rootMargin: '0px 0px -3% 0px'
+            rootMargin: isMobile
+                ? '0px 0px -4% 0px'
+                : '0px 0px -1% 0px'
         }
 
     );
 
 
     /* =====================================================
-       ACTIVARE OBSERVER
+       PORNIRE
     ===================================================== */
 
-    revealItems.forEach((item) => {
-        observer.observe(item);
+    requestAnimationFrame(() => {
+
+        requestAnimationFrame(() => {
+
+            revealItems.forEach((item) => {
+                observer.observe(item);
+            });
+
+        });
+
     });
 
 })();

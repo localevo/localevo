@@ -1071,8 +1071,9 @@
     }
 }
 
-/* MOBIL — mișcare mai mică și mai lentă */
+/* MOBIL — reveal progresiv, clar și fluid */
 @media (max-width: 767.98px) and (prefers-reduced-motion: no-preference) {
+
     .service-hero-visual__ring {
         animation-duration: 10s;
     }
@@ -1093,7 +1094,8 @@
     html.service-reveal-ready .service-process-step:not(.is-revealed),
     html.service-reveal-ready .service-price-card:not(.is-revealed),
     html.service-reveal-ready .service-final-cta .container:not(.is-revealed) {
-        transform: translate3d(0, 12px, 0);
+        opacity: 0;
+        transform: translate3d(0, 24px, 0);
     }
 
     html.service-reveal-ready .service-section-heading,
@@ -1101,7 +1103,20 @@
     html.service-reveal-ready .service-process-step,
     html.service-reveal-ready .service-price-card,
     html.service-reveal-ready .service-final-cta .container {
-        transition-duration: .75s;
+        transition:
+            opacity .9s cubic-bezier(.22, .61, .36, 1),
+            transform .9s cubic-bezier(.22, .61, .36, 1);
+
+        transition-delay: var(--reveal-delay, 0ms);
+    }
+
+    html.service-reveal-ready .service-section-heading.is-revealed,
+    html.service-reveal-ready .service-detail-card.is-revealed,
+    html.service-reveal-ready .service-process-step.is-revealed,
+    html.service-reveal-ready .service-price-card.is-revealed,
+    html.service-reveal-ready .service-final-cta .container.is-revealed {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
 }
 
