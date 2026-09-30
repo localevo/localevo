@@ -19804,14 +19804,42 @@ body header.masthead .hero-local-note i {
 }
 
 /* =========================================================
-   HERO MOBIL — DISTANȚĂ TITLU / SUBTITLU
+   HERO MOBIL — BUTON + SPAȚIERE
    ========================================================= */
 
 @media screen and (max-width: 767.98px) {
 
-    body header.masthead .hero-content > p.hero-subtitle {
-        margin-top: 0 !important;
-        padding-top: 30px !important;
+    /* Spațiu mai mare între descriere și buton */
+    body header.masthead .hero-actions {
+        margin-top: 34px !important;
+        gap: 22px !important;
+    }
+
+    /* Butonul principal — aceeași scară cu celelalte CTA-uri */
+    body header.masthead .hero-content .hero-primary-cta,
+    body header.masthead .hero-content a.btn.btn-primary.btn-xl.hero-primary-cta {
+        width: auto !important;
+        min-width: 0 !important;
+        max-width: none !important;
+
+        height: auto !important;
+        min-height: 0 !important;
+
+        margin: 0 auto !important;
+
+        padding: 1.25rem 2.25rem !important;
+
+        font-size: 0.85rem !important;
+        font-weight: 700 !important;
+        line-height: 1.2 !important;
+
+        border-radius: 10rem !important;
+    }
+
+    /* Linkul de sub buton */
+    body header.masthead .hero-content .hero-secondary-cta {
+        margin: 0 auto !important;
+        padding: 5px 0 8px !important;
     }
 
 }
