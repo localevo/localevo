@@ -19804,34 +19804,14 @@ body header.masthead .hero-local-note i {
 }
 
 /* =========================================================
-   HERO MOBIL — SPAȚIU TITLU / SUBTITLU
+   HERO MOBIL — DISTANȚĂ TITLU / SUBTITLU
    ========================================================= */
 
 @media screen and (max-width: 767.98px) {
 
-    body header.masthead .hero-subtitle,
-    body header.masthead p.hero-subtitle {
-        margin-top: 28px !important;
-    }
-
-}
-
-/* Telefoane înguste */
-@media screen and (max-width: 390px) {
-
-    body header.masthead .hero-subtitle,
-    body header.masthead p.hero-subtitle {
-        margin-top: 25px !important;
-    }
-
-}
-
-/* Ecrane foarte joase */
-@media screen and (max-width: 767.98px) and (max-height: 700px) {
-
-    body header.masthead .hero-subtitle,
-    body header.masthead p.hero-subtitle {
-        margin-top: 21px !important;
+    body header.masthead .hero-content > p.hero-subtitle {
+        margin-top: 0 !important;
+        padding-top: 30px !important;
     }
 
 }
