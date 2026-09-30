@@ -19843,3 +19843,16 @@ body header.masthead .hero-local-note i {
     }
 
 }
+
+/* =========================================================
+   HERO MOBIL — DISTANȚĂ TITLU / TEXT
+   ========================================================= */
+
+@media screen and (max-width: 767.98px) {
+
+    body header.masthead .hero-content > p.hero-subtitle {
+        margin-top: 0 !important;
+        padding-top: 32px !important;
+    }
+
+}
