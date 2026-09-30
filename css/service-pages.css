@@ -2414,3 +2414,681 @@
 .service-price-card__factors {
   background: #F8F9FA !important;
 }
+
+/* Proces contact — text mai lizibil pe fundal închis */
+#contact .contact-flow span {
+    color: rgba(255, 255, 255, .90) !important;
+}
+
+#contact .contact-flow strong {
+    color: #FFFFFF !important;
+}
+
+#contact .contact-flow > i {
+    color: #F97316 !important;
+}
+
+/* =========================================================
+   LOCALEVO — SERVICE PAGES VISUAL REFRESH
+   Aceeași logică vizuală ca homepage:
+   portocaliu = acțiune
+   verde = suprafață calmă
+   alb = conținut
+   dark = contrast
+   ========================================================= */
+
+:root {
+    --lv-orange: #F97316;
+    --lv-orange-dark: #D95F0E;
+    --lv-orange-soft: #FFF1E7;
+
+    --lv-dark: #212529;
+    --lv-dark-soft: #2B3035;
+
+    --lv-text: #3F474E;
+    --lv-muted: #687078;
+
+    --lv-green: #EEF6F0;
+    --lv-green-strong: #DCEDE1;
+
+    --lv-grey: #F8F9FA;
+    --lv-white: #FFFFFF;
+
+    --lv-border: rgba(33, 37, 41, .09);
+
+    --lv-shadow: 0 14px 34px rgba(23, 32, 51, .09);
+    --lv-shadow-hover: 0 20px 44px rgba(23, 32, 51, .14);
+
+    --lv-radius: 18px;
+}
+
+
+/* =========================================================
+   HERO
+   Păstrăm verdele și grafica actuală
+   ========================================================= */
+
+.service-hero {
+    background: var(--lv-green) !important;
+}
+
+.service-back-link {
+    color: var(--lv-muted);
+}
+
+.service-back-link:hover {
+    color: var(--lv-orange);
+}
+
+.service-hero h1 {
+    color: var(--lv-dark);
+}
+
+.service-hero p {
+    color: var(--lv-text);
+}
+
+
+/* Buton principal hero */
+
+.service-hero .btn-primary {
+    background: var(--lv-orange) !important;
+    border-color: var(--lv-orange) !important;
+
+    box-shadow:
+        0 10px 26px rgba(249, 115, 22, .28);
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        background-color .2s ease;
+}
+
+.service-hero .btn-primary:hover {
+    background: #FF812B !important;
+    border-color: #FF812B !important;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 15px 34px rgba(249, 115, 22, .38);
+}
+
+
+/* =========================================================
+   GRAFICA HERO
+   ========================================================= */
+
+.service-hero-visual__ring {
+    border-color: rgba(249, 115, 22, .46);
+
+    box-shadow:
+        0 0 0 32px rgba(255,255,255,.50),
+        0 0 0 64px rgba(249,115,22,.06);
+}
+
+.service-hero-visual__icon {
+    background:
+        linear-gradient(
+            145deg,
+            var(--lv-dark) 0%,
+            var(--lv-dark-soft) 100%
+        );
+
+    box-shadow:
+        0 24px 52px rgba(33,37,41,.20);
+}
+
+.service-hero-visual__icon i {
+    color: var(--lv-orange);
+}
+
+.service-hero-visual__badge {
+    background: rgba(255,255,255,.96);
+
+    color: var(--lv-dark);
+
+    border: 1px solid rgba(33,37,41,.06);
+
+    box-shadow:
+        0 10px 26px rgba(33,37,41,.10);
+}
+
+
+/* =========================================================
+   PRIMA SECȚIUNE — CE FACEM
+   Fundal neutru + carduri dark
+   ========================================================= */
+
+.service-section--light {
+    background: var(--lv-grey) !important;
+}
+
+.service-detail-grid .service-detail-card,
+.service-detail-grid .service-detail-card:nth-child(odd),
+.service-detail-grid .service-detail-card:nth-child(even) {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--lv-dark) 0%,
+            var(--lv-dark-soft) 100%
+        ) !important;
+
+    border:
+        1px solid rgba(255,255,255,.06) !important;
+
+    border-radius: var(--lv-radius) !important;
+
+    box-shadow:
+        0 16px 36px rgba(23,32,51,.12) !important;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease;
+}
+
+
+/* Accent discret sus */
+
+.service-detail-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 4px;
+
+    background: var(--lv-orange);
+}
+
+
+.service-detail-card h3 {
+    color: #FFFFFF !important;
+}
+
+.service-detail-card p {
+    color: rgba(255,255,255,.76) !important;
+}
+
+.service-detail-card__dot {
+    background: var(--lv-orange) !important;
+
+    box-shadow:
+        0 0 0 5px rgba(249,115,22,.12);
+}
+
+
+/* Elementul decorativ existent */
+
+.service-detail-card::after {
+    opacity: .8;
+
+    border-color:
+        rgba(249,115,22,.35);
+}
+
+
+/* Hover desktop */
+
+@media (hover: hover) and (pointer: fine) {
+
+    .service-detail-card.is-revealed:hover,
+    .service-detail-card:hover {
+        transform: translateY(-5px);
+
+        border-color:
+            rgba(249,115,22,.20) !important;
+
+        box-shadow:
+            0 22px 46px rgba(23,32,51,.17) !important;
+    }
+}
+
+
+/* =========================================================
+   PROCES
+   Fundal alb — proces aerisit
+   ========================================================= */
+
+.service-section--white {
+    background: var(--lv-white) !important;
+}
+
+.service-process-list::before {
+    background:
+        rgba(249,115,22,.28);
+}
+
+.service-process-step__number {
+    background: var(--lv-orange-soft) !important;
+
+    border:
+        1px solid rgba(249,115,22,.28);
+
+    color: var(--lv-orange-dark) !important;
+
+    font-weight: 800;
+}
+
+.service-process-step h3 {
+    color: var(--lv-dark);
+}
+
+.service-process-step p {
+    color: var(--lv-muted);
+}
+
+
+/* Interacțiune discretă */
+
+@media (hover: hover) and (pointer: fine) {
+
+    .service-process-step:hover
+    .service-process-step__number {
+
+        background: var(--lv-orange) !important;
+        color: #FFFFFF !important;
+
+        border-color:
+            var(--lv-orange);
+
+        box-shadow:
+            0 8px 20px rgba(249,115,22,.20);
+    }
+}
+
+
+/* =========================================================
+   PREȚ
+   Verde exterior + card contrastant
+   ========================================================= */
+
+.service-section--price {
+    background: var(--lv-green) !important;
+}
+
+.service-price-card {
+    overflow: hidden;
+
+    background: var(--lv-white);
+
+    border:
+        1px solid rgba(33,37,41,.07);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 20px 48px rgba(23,32,51,.11);
+}
+
+
+/*
+   Readucem contrastul pe panoul principal.
+   Prețul devine din nou un element important.
+*/
+
+.service-price-card__main {
+    background:
+        linear-gradient(
+            145deg,
+            var(--lv-dark) 0%,
+            var(--lv-dark-soft) 100%
+        ) !important;
+
+    border-right: 0 !important;
+}
+
+.service-price-card__main h2 {
+    color: #FFFFFF !important;
+}
+
+.service-price-card__main > p {
+    color:
+        rgba(255,255,255,.76) !important;
+}
+
+.service-price-note {
+    color:
+        rgba(255,255,255,.72) !important;
+
+    border-top-color:
+        rgba(255,255,255,.14) !important;
+}
+
+.service-price-note i {
+    color: var(--lv-orange) !important;
+}
+
+
+/* Partea explicativă */
+
+.service-price-card__factors {
+    background: var(--lv-white) !important;
+}
+
+.service-price-card__factors h3 {
+    color: var(--lv-dark);
+}
+
+.service-price-card__factors li {
+    color: var(--lv-text);
+}
+
+.service-price-card__factors i {
+    color: var(--lv-orange);
+}
+
+
+/* =========================================================
+   CTA FINAL
+   Final dark, ca homepage
+   ========================================================= */
+
+.service-final-cta {
+    position: relative;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--lv-dark) 0%,
+            var(--lv-dark-soft) 100%
+        ) !important;
+
+    color: #FFFFFF;
+}
+
+.service-final-cta h2 {
+    color: #FFFFFF !important;
+}
+
+.service-final-cta p,
+.service-final-cta .service-cta-note {
+    color:
+        rgba(255,255,255,.76) !important;
+}
+
+.service-final-cta .btn-primary {
+    background: var(--lv-orange) !important;
+    border-color: var(--lv-orange) !important;
+
+    box-shadow:
+        0 10px 26px rgba(249,115,22,.30);
+}
+
+.service-final-cta .btn-primary:hover {
+    background: #FF812B !important;
+    border-color: #FF812B !important;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 15px 34px rgba(249,115,22,.40);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767.98px) {
+
+    /*
+       Hero:
+       nu schimbăm ordinea existentă.
+       Rămâne text -> grafică -> CTA.
+    */
+
+    .service-hero {
+        padding-bottom: 56px !important;
+    }
+
+    .service-hero h1 {
+        font-size:
+            clamp(1.85rem, 8.5vw, 2.35rem) !important;
+
+        line-height: 1.10 !important;
+
+        letter-spacing: -.02em;
+    }
+
+    .service-hero p {
+        font-size: .94rem !important;
+        line-height: 1.58 !important;
+    }
+
+
+    /* Grafică hero */
+
+    .service-hero-visual {
+        min-height: 215px;
+    }
+
+    .service-hero-visual__ring {
+        box-shadow:
+            0 0 0 20px rgba(255,255,255,.42),
+            0 0 0 40px rgba(249,115,22,.045);
+    }
+
+
+    /* CTA hero */
+
+    .service-hero .btn,
+    .service-final-cta .btn {
+
+        width: auto !important;
+
+        min-width: 210px;
+        max-width: 100%;
+
+        min-height: 48px;
+
+        padding:
+            14px 24px !important;
+
+        border-radius:
+            999px !important;
+
+        font-size:
+            .85rem !important;
+    }
+
+
+    /* Secțiuni */
+
+    .service-section {
+        padding-top: 56px !important;
+        padding-bottom: 56px !important;
+    }
+
+    .service-section-heading {
+        margin-bottom: 28px;
+    }
+
+    .service-section-heading h2,
+    .service-final-cta h2 {
+
+        font-size:
+            clamp(1.55rem, 6.5vw, 1.85rem) !important;
+
+        line-height: 1.18 !important;
+    }
+
+    .service-section-heading p,
+    .service-final-cta p {
+
+        font-size: .91rem !important;
+        line-height: 1.58 !important;
+    }
+
+
+    /* Carduri servicii */
+
+    .service-detail-grid {
+        gap: 14px !important;
+    }
+
+    .service-detail-card {
+        min-height: 0 !important;
+
+        padding:
+            25px 21px !important;
+
+        border-radius:
+            15px !important;
+    }
+
+    .service-detail-card h3 {
+        font-size:
+            1.05rem !important;
+    }
+
+    .service-detail-card p {
+        font-size:
+            .86rem !important;
+
+        line-height:
+            1.55 !important;
+    }
+
+    .service-detail-card__dot {
+        margin-bottom:
+            15px !important;
+    }
+
+
+    /* Proces */
+
+    .service-split {
+        gap: 30px !important;
+    }
+
+    .service-process-step {
+        grid-template-columns:
+            40px minmax(0,1fr);
+
+        gap: 15px;
+
+        padding-bottom: 23px;
+    }
+
+    .service-process-list::before {
+        left: 19px;
+    }
+
+    .service-process-step__number {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    /* Preț */
+
+    .service-price-card {
+        border-radius:
+            17px !important;
+    }
+
+    .service-price-card__main,
+    .service-price-card__factors {
+
+        padding:
+            27px 21px !important;
+    }
+
+    .service-price-card__main h2 {
+        font-size:
+            1.8rem !important;
+    }
+
+    .service-price-card__factors ul {
+        grid-template-columns:
+            1fr !important;
+
+        gap: 12px;
+    }
+
+
+    /* CTA final */
+
+    .service-final-cta {
+        padding-top:
+            58px !important;
+
+        padding-bottom:
+            62px !important;
+    }
+
+    .service-final-cta .container {
+        padding-left:
+            1.25rem !important;
+
+        padding-right:
+            1.25rem !important;
+    }
+}
+
+
+/* =========================================================
+   TELEFOANE MICI
+   ========================================================= */
+
+@media (max-width: 390px) {
+
+    .service-hero h1 {
+        font-size:
+            1.75rem !important;
+    }
+
+    .service-hero p {
+        font-size:
+            .90rem !important;
+    }
+
+    .service-detail-card,
+    .service-price-card__main,
+    .service-price-card__factors {
+
+        padding-left:
+            18px !important;
+
+        padding-right:
+            18px !important;
+    }
+
+    .service-hero .btn,
+    .service-final-cta .btn {
+
+        min-width:
+            190px;
+    }
+}
+
+
+/* =========================================================
+   TOUCH + ACCESSIBILITY
+   ========================================================= */
+
+@media (hover: none) {
+
+    .service-detail-card:hover {
+        transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .service-detail-card,
+    .service-process-step__number,
+    .service-hero .btn,
+    .service-final-cta .btn {
+
+        transition: none !important;
+    }
+}
