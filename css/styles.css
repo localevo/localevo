@@ -17109,3 +17109,90 @@ header.masthead {
     }
 }
 
+/* =========================================================
+   LOCALEVO — MOBILE CONTENT BALANCE 2026-09-30
+   DOAR text + elemente grafice. Imaginea/hero-ul NU sunt modificate.
+   PĂSTREAZĂ ACEST BLOC ULTIMUL ÎN FIȘIER.
+========================================================= */
+@media screen and (max-width: 767.98px) {
+
+    /* Titlul: mai mic decât în captura 20:06. */
+    body header.masthead .hero-content h1,
+    body header.masthead h1 {
+        max-width: 350px !important;
+        font-size: 1.58rem !important;
+        line-height: 1.10 !important;
+        letter-spacing: -0.02em !important;
+    }
+
+    /* Text descriptiv: semnificativ mai lizibil. */
+    body header.masthead .hero-content .hero-subtitle,
+    body header.masthead .hero-content p.hero-subtitle {
+        max-width: 350px !important;
+        font-size: .96rem !important;
+        line-height: 1.50 !important;
+        font-weight: 400 !important;
+        margin-bottom: 18px !important;
+    }
+
+    /* CTA: păstrat echilibrat, cu text mai lizibil. */
+    body header.masthead .hero-content a.btn,
+    body header.masthead .hero-content .btn,
+    body header.masthead .hero-content .btn.btn-primary,
+    body header.masthead .hero-content .btn.btn-xl {
+        min-width: 210px !important;
+        max-width: 235px !important;
+        padding: 13px 20px !important;
+        font-size: .90rem !important;
+        line-height: 1.15 !important;
+    }
+
+    /* Beneficii: text și iconuri mai mari, cu spațiere clară. */
+    body header.masthead .hero-content .hero-trust-points {
+        max-width: 390px !important;
+        margin-top: 17px !important;
+        gap: 9px 16px !important;
+    }
+
+    body header.masthead .hero-content .hero-trust-points span {
+        gap: 6px !important;
+        font-size: .82rem !important;
+        line-height: 1.20 !important;
+        font-weight: 700 !important;
+    }
+
+    body header.masthead .hero-content .hero-trust-points i {
+        font-size: 1.02rem !important;
+        line-height: 1 !important;
+    }
+}
+
+/* Pe telefoanele înguste păstrăm lizibilitatea; beneficiile pot trece natural pe 2 rânduri. */
+@media screen and (max-width: 390px) {
+    body header.masthead .hero-content h1,
+    body header.masthead h1 {
+        max-width: 335px !important;
+        font-size: 1.50rem !important;
+    }
+
+    body header.masthead .hero-content .hero-subtitle,
+    body header.masthead .hero-content p.hero-subtitle {
+        max-width: 325px !important;
+        font-size: .92rem !important;
+        line-height: 1.48 !important;
+    }
+
+    body header.masthead .hero-content .hero-trust-points {
+        max-width: 330px !important;
+        gap: 8px 13px !important;
+    }
+
+    body header.masthead .hero-content .hero-trust-points span {
+        font-size: .78rem !important;
+    }
+
+    body header.masthead .hero-content .hero-trust-points i {
+        font-size: .96rem !important;
+    }
+}
+
