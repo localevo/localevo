@@ -17197,23 +17197,22 @@ header.masthead {
 }
 
 /* =========================================================
-   LOCALEVO — CTA HERO MOBIL, DIMENSIUNE STANDARD
-   Folosește proporțiile butoanelor obișnuite din pagină,
-   nu dimensiunea btn-xl.
+   LOCALEVO — HERO CTA = ACEEAȘI DIMENSIUNE CA .btn-xl DIN PAGINĂ
 ========================================================= */
 @media screen and (max-width: 767.98px) {
-    body header.masthead .hero-content a.btn,
-    body header.masthead .hero-content .btn,
-    body header.masthead .hero-content .btn.btn-primary,
+    body header.masthead .hero-content a.btn.btn-xl,
     body header.masthead .hero-content .btn.btn-xl {
         width: auto !important;
         min-width: 0 !important;
         max-width: none !important;
-        min-height: 0 !important;
         height: auto !important;
-        padding: 0.75rem 1.25rem !important;
-        font-size: 0.875rem !important;
-        line-height: 1.2 !important;
+        min-height: 0 !important;
+
+        padding: 1.25rem 2.25rem !important;
+        font-size: 0.85rem !important;
+        font-weight: 700 !important;
+        line-height: 1.5 !important;
+        border-radius: 10rem !important;
     }
 }
 
