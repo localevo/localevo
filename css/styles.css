@@ -605,7 +605,7 @@ progress {
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "— ";
 }
 
 .img-fluid {
@@ -16140,3 +16140,537 @@ header.masthead {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* =========================================================
+   LOCALEVO — CLARITATE, INCREDERE & CONVERSIE 2026-09
+========================================================= */
+.hero-cta-note {
+    max-width: 560px;
+    margin: .85rem auto 0;
+    color: rgba(255,255,255,.82) !important;
+    font-size: .86rem !important;
+    line-height: 1.45 !important;
+}
+.localevo-section-label,
+.service-card-outcome,
+.portfolio-case-label {
+    display: inline-block;
+    font-family: var(--localevo-font-heading);
+    color: var(--localevo-primary);
+    font-size: .76rem;
+    font-weight: 700;
+    letter-spacing: .055em;
+    text-transform: uppercase;
+}
+.localevo-section-label { margin-bottom: 12px; }
+#serviciilenoastre .service-card { text-align: left; }
+#serviciilenoastre .service-card-icon { text-align: left !important; }
+#serviciilenoastre .service-card h3 { text-align: left !important; margin-top: 7px; }
+#serviciilenoastre .service-card-outcome { color: #f7a173; margin-top: 8px; }
+#serviciilenoastre .service-card-link { position: relative; }
+#serviciilenoastre .service-card-link::after { content: ""; position:absolute; left:0; bottom:-5px; width:34px; height:2px; background:var(--localevo-primary); transition:width .25s ease; }
+#serviciilenoastre .service-card-link:hover::after { width:100%; }
+
+.localevo-fit { background:#fff; }
+.localevo-fit__grid { display:grid; grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr); gap:64px; align-items:start; }
+.localevo-fit__intro h2 { margin:0 0 18px; color:var(--localevo-dark); font-family:var(--localevo-font-heading); font-size:var(--localevo-title-section); line-height:1.2; }
+.localevo-fit__intro p { margin:0; color:#5f6870; max-width:520px; }
+.localevo-fit__lists { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+.localevo-fit__list { padding:28px; border-radius:16px; background:#EEF6F0; border:1px solid rgba(33,37,41,.06); }
+.localevo-fit__list--no { background:#F8F9FA; }
+.localevo-fit__list h3 { margin:0 0 17px; font-family:var(--localevo-font-heading); font-size:1rem; color:var(--localevo-dark); }
+.localevo-fit__list ul { list-style:none; padding:0; margin:0; }
+.localevo-fit__list li { position:relative; padding-left:24px; margin:0 0 13px; color:#5f6870; font-size:.9rem; line-height:1.5; }
+.localevo-fit__list li:last-child { margin-bottom:0; }
+.localevo-fit__list li::before { content:"✓"; position:absolute; left:0; top:0; color:var(--localevo-primary); font-family:var(--localevo-font-heading); font-weight:700; }
+.localevo-fit__list--no li::before { content:"—"; color:#6c757d; }
+
+.portfolio-case-label { margin-bottom:7px; }
+#portfoliulnostru .portfolio-case-title { margin:0 0 8px; color:var(--localevo-dark); font-family:var(--localevo-font-heading); font-size:1.12rem; }
+#portfoliulnostru .portfolio-case-summary { margin:0 0 14px; color:#5f6870; font-size:.9rem; line-height:1.55; }
+
+.contact-flow { display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap; margin:0 auto 38px; }
+.contact-flow span { display:inline-flex; align-items:center; gap:8px; font-family:var(--localevo-font-heading); color:#4f5961; font-size:.84rem; font-weight:600; }
+.contact-flow strong { width:25px; height:25px; border-radius:50%; display:grid; place-items:center; background:var(--localevo-dark); color:#fff; font-size:.72rem; }
+.contact-flow > i { color:var(--localevo-primary); }
+
+@media (max-width: 991.98px) {
+    .localevo-fit__grid { grid-template-columns:1fr; gap:34px; }
+    .localevo-fit__intro { max-width:680px; }
+}
+@media (max-width: 767.98px) {
+    .hero-cta-note { max-width:310px; font-size:.82rem !important; margin-top:.75rem; }
+    header.masthead .hero-trust-points { display:grid; grid-template-columns:1fr; justify-items:center; gap:8px; margin-top:1rem; }
+    .localevo-fit { padding-top:58px; padding-bottom:58px; }
+    .localevo-fit__lists { grid-template-columns:1fr; }
+    .localevo-fit__list { padding:22px 20px; }
+    .contact-flow { display:grid; grid-template-columns:1fr; justify-items:start; max-width:310px; gap:9px; margin-bottom:30px; }
+    .contact-flow > i { display:none; }
+    .contact-flow span { font-size:.86rem; }
+    #serviciilenoastre .service-card { padding-left:22px; padding-right:22px; }
+}
+@media (max-width: 390px) {
+    .localevo-fit__list { padding:19px 17px; border-radius:14px; }
+    .localevo-fit__list li { font-size:.88rem; }
+}
+
+/* =========================================================
+   LOCALEVO — NAVBAR STABILITY PATCH 2026-09-30
+   Prevents anonymous whitespace/flex wrapping from breaking
+   the desktop header and keeps the mobile collapse predictable.
+========================================================= */
+#mainNav > .container,
+#mainNav > .container-fluid {
+    flex-wrap: nowrap;
+}
+
+#mainNav .navbar-brand {
+    flex: 0 0 auto;
+}
+
+#mainNav .navbar-collapse {
+    min-width: 0;
+}
+
+@media (min-width: 992px) {
+    #mainNav .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+
+    #mainNav .navbar-nav {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    #mainNav .navbar-nav .nav-item {
+        flex: 0 0 auto;
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-link {
+        white-space: nowrap;
+        padding-left: 0.68rem;
+        padding-right: 0.68rem;
+        font-size: clamp(0.82rem, 0.82vw, 0.94rem);
+    }
+}
+
+@media (max-width: 1199.98px) and (min-width: 992px) {
+    #mainNav .navbar-brand img {
+        height: 50px !important;
+        max-height: 50px;
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-link {
+        padding-left: 0.48rem;
+        padding-right: 0.48rem;
+        font-size: 0.82rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    #mainNav > .container,
+    #mainNav > .container-fluid {
+        flex-wrap: wrap;
+    }
+
+    #mainNav .navbar-collapse {
+        flex-basis: 100%;
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-link {
+        white-space: normal;
+    }
+}
+
+/* ==========================================================
+   LOCALEVO — FINAL POLISH 2026-09
+   Finisare proporții, densitate și responsive.
+   ========================================================== */
+
+/* Hero: mai aerisit, dar mai puțin dominant pe desktop */
+@media (min-width: 992px) {
+  header.masthead {
+    min-height: calc(100svh - 86px) !important;
+    height: auto !important;
+    padding-top: 4.75rem !important;
+    padding-bottom: 4.25rem !important;
+  }
+  header.masthead h1 {
+    font-size: clamp(2.8rem, 4.45vw, 4.45rem) !important;
+    line-height: 1.08 !important;
+    max-width: 980px;
+    margin-inline: auto;
+  }
+  header.masthead .hero-subtitle {
+    max-width: 920px;
+    margin-inline: auto;
+  }
+}
+
+/* Despre noi: apropiem povestea de echipă și reducem golul lateral */
+@media (min-width: 992px) {
+  .localevo-about-editorial__grid {
+    grid-template-columns: minmax(0, 1.35fr) minmax(330px, .65fr) !important;
+    gap: clamp(3rem, 5vw, 5.5rem) !important;
+    max-width: 1460px;
+    margin-inline: auto;
+  }
+  .localevo-about-editorial__story { max-width: 900px; }
+  .localevo-about-editorial__team { max-width: 430px; justify-self: end; }
+}
+
+/* Servicii: păstrăm impactul, reducem masa vizuală */
+#serviciilenoastre .services-grid { gap: 26px !important; }
+#serviciilenoastre .service-card {
+  min-height: 0 !important;
+  padding: 34px 38px 32px !important;
+}
+#serviciilenoastre .service-card-intro {
+  max-width: 650px;
+  margin-bottom: 1.15rem !important;
+}
+#serviciilenoastre .service-card-link { margin-top: .35rem; }
+
+/* Proces: grup mai compact, fără senzația de elemente împrăștiate */
+.collab-process {
+  max-width: 1500px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+@media (min-width: 1200px) {
+  .collab-process { padding-inline: 24px; }
+  .collab-step { padding-inline: 10px; }
+}
+
+/* Domenii: puțin mai compact pentru a nu concura cu serviciile */
+.localevo-sectors__grid { row-gap: 14px !important; }
+.localevo-sectors__item { min-height: 92px !important; }
+.localevo-sectors__benefits { margin-top: 34px !important; }
+.localevo-sectors__benefits .benefit-box {
+  min-height: 104px !important;
+  padding: 24px 26px !important;
+}
+
+/* Potrivire: secțiunea rămâne editorială, cu proporții controlate */
+.localevo-fit__grid {
+  max-width: 1500px;
+  margin-inline: auto;
+}
+
+/* Recenzie: o singură dovadă reală = testimonial editorial, nu card mic */
+#recenzii .container { max-width: 1280px; }
+#recenzii .row.g-4 { margin-inline: auto; }
+#recenzii .row.g-4 > [class*="col-"] {
+  width: min(100%, 880px) !important;
+  max-width: 880px !important;
+  flex: 0 0 auto !important;
+}
+#recenzii .review-card {
+  padding: clamp(32px, 4vw, 54px) !important;
+  border-radius: 22px !important;
+}
+#recenzii .review-text {
+  font-size: clamp(1rem, 1.35vw, 1.16rem) !important;
+  line-height: 1.75 !important;
+  max-width: 720px;
+}
+#recenzii .review-author { margin-top: 24px; }
+
+/* Portofoliu: un singur proiect real este prezentat ca studiu de caz amplu */
+#portfoliulnostru .portfolio-carousel-wrapper {
+  max-width: 1180px !important;
+  margin-inline: auto !important;
+  display: block !important;
+}
+#portfoliulnostru .portfolio-carousel-btn { display: none !important; }
+#portfoliulnostru .portfolio-carousel-item {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+#portfoliulnostru .portfolio-card-project {
+  width: 100% !important;
+  max-width: none !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr) !important;
+  overflow: hidden;
+}
+#portfoliulnostru .portfolio-project-image {
+  min-height: 420px !important;
+  height: 100% !important;
+}
+#portfoliulnostru .portfolio-project-image img {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 420px !important;
+  object-fit: cover !important;
+}
+#portfoliulnostru .portfolio-project-content {
+  padding: clamp(34px, 4vw, 58px) !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left !important;
+}
+#portfoliulnostru .portfolio-case-title { font-size: clamp(1.55rem, 2.1vw, 2.15rem) !important; }
+#portfoliulnostru .portfolio-case-summary { font-size: 1rem !important; line-height: 1.7 !important; }
+#portfoliulnostru .portfolio-project-services { text-align: left !important; }
+
+/* Contact: cei 3 pași rămân pe o singură linie pe desktop */
+@media (min-width: 768px) {
+  .contact-flow {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 16px !important;
+    max-width: 860px;
+  }
+  .contact-flow span { white-space: nowrap; }
+}
+
+/* WhatsApp: mai discret, fără halo supradimensionat */
+.whatsapp-float,
+.whatsapp-btn,
+.floating-whatsapp {
+  box-shadow: 0 8px 22px rgba(20, 28, 32, .16) !important;
+}
+
+/* Tabletă */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  header.masthead h1 { font-size: clamp(2.55rem, 5.4vw, 3.7rem) !important; }
+  #serviciilenoastre .service-card { padding: 30px !important; }
+  #portfoliulnostru .portfolio-card-project { grid-template-columns: 1fr 1fr !important; }
+  #portfoliulnostru .portfolio-project-image,
+  #portfoliulnostru .portfolio-project-image img { min-height: 360px !important; }
+  .contact-flow { gap: 10px !important; }
+  .contact-flow span { font-size: .78rem !important; }
+}
+
+/* Mobil: ordine, touch targets și densitate dedicate */
+@media (max-width: 767.98px) {
+  header.masthead {
+    min-height: calc(100svh - 68px) !important;
+    height: auto !important;
+    padding: 4.5rem 0 3.25rem !important;
+  }
+  header.masthead h1 {
+    font-size: clamp(2.05rem, 10.4vw, 3rem) !important;
+    line-height: 1.08 !important;
+  }
+  header.masthead .hero-subtitle {
+    font-size: .98rem !important;
+    line-height: 1.6 !important;
+  }
+  header.masthead .btn { width: min(100%, 310px); }
+
+  #desprenoi.localevo-about-editorial,
+  #serviciilenoastre,
+  #recenzii,
+  #portfoliulnostru,
+  #contact { padding-top: 64px !important; padding-bottom: 64px !important; }
+
+  .localevo-about-editorial__grid { gap: 32px !important; }
+  .localevo-about-editorial__team { padding: 28px 24px !important; }
+
+  #serviciilenoastre .services-grid { gap: 16px !important; }
+  #serviciilenoastre .service-card { padding: 26px 22px 24px !important; border-radius: 16px !important; }
+  #serviciilenoastre .service-card h3 { font-size: 1.4rem !important; }
+
+  .collab-process { margin-top: 34px !important; }
+
+  .localevo-sectors__item { min-height: 78px !important; }
+  .localevo-sectors__benefits .benefit-box { min-height: 0 !important; padding: 20px !important; }
+
+  #recenzii .text-center.mb-5,
+  #portfoliulnostru .text-center.mb-5 { margin-bottom: 2rem !important; }
+  #recenzii .review-card { padding: 28px 24px !important; }
+
+  #portfoliulnostru .portfolio-card-project { grid-template-columns: 1fr !important; }
+  #portfoliulnostru .portfolio-project-image,
+  #portfoliulnostru .portfolio-project-image img { min-height: 230px !important; max-height: 280px; }
+  #portfoliulnostru .portfolio-project-content { padding: 28px 24px 30px !important; }
+
+  .contact-flow {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-items: start !important;
+    max-width: 320px !important;
+    margin-inline: auto !important;
+  }
+  .contact-flow > i { display: none !important; }
+  .contact-flow span { white-space: normal !important; }
+  #contact .contact-card { padding-left: 22px !important; padding-right: 22px !important; }
+}
+
+@media (max-width: 390px) {
+  header.masthead h1 { font-size: 2rem !important; }
+  #serviciilenoastre .service-card { padding-inline: 19px !important; }
+  #portfoliulnostru .portfolio-project-content { padding-inline: 20px !important; }
+}
+
+/* =========================================================
+   LOCALEVO — CARDURI DESCHISE ÎN ALTERNANȚĂ
+   Paletă preluată din secțiunea „Localevo este potrivit...”
+   Verde: #EEF6F0 | Gri: #F8F9FA
+========================================================= */
+
+/* Cardul echipei */
+.localevo-about-editorial__team {
+  background: #EEF6F0 !important;
+  border: 1px solid rgba(33,37,41,.07) !important;
+  box-shadow: 0 14px 34px rgba(23,32,51,.07) !important;
+}
+.localevo-about-editorial__member + .localevo-about-editorial__member {
+  border-top-color: rgba(33,37,41,.09) !important;
+}
+.localevo-about-editorial__member h5 { color: var(--localevo-dark) !important; }
+.localevo-about-editorial__member p { color: #5f6870 !important; }
+
+/* Servicii — verde / gri / verde / gri */
+#serviciilenoastre .services-grid-item:nth-child(odd) .service-card { background: #EEF6F0 !important; }
+#serviciilenoastre .services-grid-item:nth-child(even) .service-card { background: #F8F9FA !important; }
+#serviciilenoastre .service-card {
+  border: 1px solid rgba(33,37,41,.07) !important;
+  box-shadow: 0 14px 32px rgba(23,32,51,.07) !important;
+}
+#serviciilenoastre .service-card h3,
+#serviciilenoastre .service-card p,
+#serviciilenoastre .service-card li,
+#serviciilenoastre .service-card li span,
+#serviciilenoastre .service-card span,
+#serviciilenoastre .service-card .text-muted,
+#serviciilenoastre .service-card-link {
+  color: var(--localevo-dark) !important;
+}
+#serviciilenoastre .service-card-outcome { color: var(--localevo-primary) !important; }
+#serviciilenoastre .service-card-icon,
+#serviciilenoastre .service-card-icon i { color: var(--localevo-primary) !important; }
+#serviciilenoastre .service-card-link:hover,
+#serviciilenoastre .service-card-link:focus { color: var(--localevo-primary-dark) !important; }
+
+/* Beneficii domenii — aceeași alternanță */
+.localevo-sectors__benefits .benefit-box:nth-child(odd) { background: #EEF6F0 !important; }
+.localevo-sectors__benefits .benefit-box:nth-child(even) { background: #F8F9FA !important; }
+.localevo-sectors .benefit-box {
+  color: var(--localevo-dark) !important;
+  border: 1px solid rgba(33,37,41,.08) !important;
+  box-shadow: 0 12px 28px rgba(23,32,51,.06) !important;
+}
+.localevo-sectors .benefit-box span { color: var(--localevo-dark) !important; }
+.localevo-sectors .benefit-box i { color: var(--localevo-primary) !important; }
+/* Alternanța beneficiilor se aplică pe coloanele Bootstrap, nu pe .benefit-box direct. */
+.localevo-sectors__benefits > [class*="col-"]:nth-child(odd) .benefit-box { background: #EEF6F0 !important; }
+.localevo-sectors__benefits > [class*="col-"]:nth-child(even) .benefit-box { background: #F8F9FA !important; }
+
+/* =========================================================
+   LOCALEVO — CORECȚIE CONTRAST CARDURI / FUNDAL SECȚIUNE
+   Servicii are fundal verde #EEF6F0, deci cardurile alternează
+   alb / gri deschis pentru separare vizuală clară.
+========================================================= */
+#serviciilenoastre .services-grid-item:nth-child(odd) .service-card {
+  background: #FFFFFF !important;
+}
+#serviciilenoastre .services-grid-item:nth-child(even) .service-card {
+  background: #F8F9FA !important;
+}
+#serviciilenoastre .service-card {
+  border-color: rgba(33, 37, 41, .08) !important;
+  box-shadow: 0 12px 28px rgba(23, 32, 51, .065) !important;
+}
+
+/* =========================================================
+   LOCALEVO — RITM FINAL AL FUNDALURILOR
+   Fiecare sectiune consecutiva are o suprafata clar distincta.
+========================================================= */
+/* Hero: fotografie / overlay (neschimbat)
+   Despre noi: gri foarte deschis
+   Servicii: verde pal
+   Domenii: fotografie / overlay
+   Potrivire: alb
+   Recenzii: crem cald
+   Portofoliu: fotografie / overlay
+   Contact: alb
+*/
+#desprenoi.localevo-about-editorial {
+  background: #F8F9FA !important;
+}
+#serviciilenoastre {
+  background: #EEF6F0 !important;
+}
+.localevo-fit {
+  background: #FFFFFF !important;
+}
+#recenzii {
+  background: #FFF7ED !important;
+}
+#recenzii .review-card {
+  background: #FFFFFF !important;
+}
+#contact {
+  background: #FFFFFF !important;
+}
+
+/* Cardurile din Servicii contrasteaza cu verdele sectiunii. */
+#serviciilenoastre .services-grid-item:nth-child(odd) .service-card {
+  background: #FFFFFF !important;
+}
+#serviciilenoastre .services-grid-item:nth-child(even) .service-card {
+  background: #F8F9FA !important;
+}
+
+/* ==========================================================
+   LOCALEVO — HERO POSITION FIX 2026-09-30
+   Această regulă trebuie să rămână LA FINALUL fișierului.
+   Corectează override-ul "FINAL POLISH" care ridica hero-ul.
+   ========================================================== */
+@media (min-width: 992px) {
+    header.masthead {
+        /* Hero-ul ocupă din nou înălțimea viewport-ului. */
+        height: 100svh !important;
+        min-height: 100svh !important;
+
+        /* Navbar-ul este separat de hero; nu îl compensăm încă o dată. */
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    header.masthead > .container,
+    header.masthead > .container > .row {
+        height: 100% !important;
+        min-height: 100% !important;
+    }
+
+    header.masthead > .container > .row {
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    header.masthead .hero-content {
+        align-self: center !important;
+
+        /* Mutăm întregul bloc în jos, fără să schimbăm distanțele interne. */
+        transform: translateY(36px) !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* Pe laptopuri cu viewport mai scund, deplasarea trebuie să fie mai mică. */
+@media (min-width: 992px) and (max-height: 820px) {
+    header.masthead .hero-content {
+        transform: translateY(22px) !important;
+    }
+}
+
+/* Mobil/tabletă: păstrăm comportamentul existent și nu forțăm offsetul desktop. */
+@media (max-width: 991.98px) {
+    header.masthead .hero-content {
+        transform: none !important;
+    }
+}
+
