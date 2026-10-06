@@ -13430,7 +13430,7 @@ header.masthead::after {
 
 #portfoliulnostru h2 {
     color: rgba(255, 255, 255, 0.96);
-    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.24);
+    text-shadow: none;
 }
 
 #portfoliulnostru .divider {
@@ -21979,3 +21979,10 @@ html body #serviciilenoastre .service-card-icon {
     box-shadow: none !important;
 }
 
+
+/* PORTOFOLIU — titlu fără umbră */
+#portfoliulnostru h2,
+#portfoliulnostru.localevo-portfolio-v2 .text-center.mb-5 h2 {
+    text-shadow: none !important;
+    filter: none !important;
+}
