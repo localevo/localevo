@@ -1,24 +1,18 @@
-
-
 /* =========================================================
 
-   LOCALEVO — PAGINI SERVICII
+    LOCALEVO — PAGINI SERVICII
 
-   Extensie vizuală pentru website.html, social-media.html,
+    Extensie vizuală pentru website.html, social-media.html,
 
-   instrumente-digitale.html și organizare.html
+    instrumente-digitale.html și organizare.html
 
-========================================================= */
-
-
+\========================================================= */
 
 .service-page {
 
     background: #fff;
 
 }
-
-
 
 .service-page #mainNav {
 
@@ -28,23 +22,17 @@
 
 }
 
-
-
 .service-page #mainNav .navbar-nav .nav-item .nav-link {
 
     color: #343a40;
 
 }
 
-
-
 .service-page #mainNav .navbar-nav .nav-item .nav-link:hover {
 
     color: var(--localevo-primary);
 
 }
-
-
 
 .service-hero {
 
@@ -58,8 +46,6 @@
 
 }
 
-
-
 .service-hero__inner {
 
     position: relative;
@@ -67,8 +53,6 @@
     z-index: 2;
 
 }
-
-
 
 .service-back-link {
 
@@ -92,15 +76,11 @@
 
 }
 
-
-
 .service-back-link:hover {
 
     color: var(--localevo-primary);
 
 }
-
-
 
 .service-hero__grid {
 
@@ -113,8 +93,6 @@
     gap: 72px;
 
 }
-
-
 
 .service-eyebrow,
 
@@ -140,23 +118,17 @@
 
 }
 
-
-
 .service-eyebrow {
 
     margin-bottom: 18px;
 
 }
 
-
-
 .service-eyebrow i {
 
     font-size: 1rem;
 
 }
-
-
 
 .service-hero h1 {
 
@@ -178,8 +150,6 @@
 
 }
 
-
-
 .service-hero p {
 
     max-width: 640px;
@@ -196,8 +166,6 @@
 
 }
 
-
-
 .service-hero-visual {
 
     position: relative;
@@ -209,8 +177,6 @@
     place-items: center;
 
 }
-
-
 
 .service-hero-visual__ring {
 
@@ -229,8 +195,6 @@
         0 0 0 64px rgba(249,115,22,.05);
 
 }
-
-
 
 .service-hero-visual__icon {
 
@@ -254,8 +218,6 @@
 
 }
 
-
-
 .service-hero-visual__icon i {
 
     color: var(--localevo-primary);
@@ -265,8 +227,6 @@
     transform: rotate(4deg);
 
 }
-
-
 
 .service-hero-visual__badge {
 
@@ -290,15 +250,11 @@
 
 }
 
-
-
 .badge-one { top: 56px; right: 10px; }
 
 .badge-two { bottom: 65px; left: 5px; }
 
 .badge-three { bottom: 30px; right: 42px; }
-
-
 
 .service-hero__shape {
 
@@ -309,8 +265,6 @@
     pointer-events: none;
 
 }
-
-
 
 .service-hero__shape--one {
 
@@ -326,8 +280,6 @@
 
 }
 
-
-
 .service-hero__shape--two {
 
     width: 220px;
@@ -342,15 +294,11 @@
 
 }
 
-
-
 .service-section {
 
     padding: 88px 0;
 
 }
-
-
 
 .service-section--light {
 
@@ -358,15 +306,11 @@
 
 }
 
-
-
 .service-section--white {
 
     background: #fff;
 
 }
-
-
 
 .service-section-heading {
 
@@ -378,8 +322,6 @@
 
 }
 
-
-
 .service-section-heading--left {
 
     margin: 0;
@@ -387,8 +329,6 @@
     text-align: left;
 
 }
-
-
 
 .service-section-heading h2,
 
@@ -408,8 +348,6 @@
 
 }
 
-
-
 .service-section-heading p,
 
 .service-final-cta p {
@@ -424,8 +362,6 @@
 
 }
 
-
-
 .service-detail-grid {
 
     display: grid;
@@ -435,8 +371,6 @@
     gap: 24px;
 
 }
-
-
 
 .service-detail-card {
 
@@ -455,8 +389,6 @@
     box-shadow: 0 18px 40px rgba(33,37,41,.08);
 
 }
-
-
 
 .service-detail-card::after {
 
@@ -478,8 +410,6 @@
 
 }
 
-
-
 .service-detail-card__dot {
 
     display: block;
@@ -496,8 +426,6 @@
 
 }
 
-
-
 .service-detail-card h3 {
 
     margin-bottom: 12px;
@@ -511,8 +439,6 @@
     font-weight: 700;
 
 }
-
-
 
 .service-detail-card p {
 
@@ -528,8 +454,6 @@
 
 }
 
-
-
 .service-split {
 
     display: grid;
@@ -542,15 +466,11 @@
 
 }
 
-
-
 .service-process-list {
 
     position: relative;
 
 }
-
-
 
 .service-process-list::before {
 
@@ -570,8 +490,6 @@
 
 }
 
-
-
 .service-process-step {
 
     position: relative;
@@ -586,15 +504,11 @@
 
 }
 
-
-
 .service-process-step:last-child {
 
     padding-bottom: 0;
 
 }
-
-
 
 .service-process-step__number {
 
@@ -626,8 +540,6 @@
 
 }
 
-
-
 .service-process-step h3 {
 
     margin: 4px 0 7px;
@@ -641,8 +553,6 @@
     font-weight: 700;
 
 }
-
-
 
 .service-process-step p {
 
@@ -658,15 +568,11 @@
 
 }
 
-
-
 .service-section--price {
 
     background: #EEF6F0;
 
 }
-
-
 
 .service-price-card {
 
@@ -684,8 +590,6 @@
 
 }
 
-
-
 .service-price-card__main {
 
     padding: 42px;
@@ -693,8 +597,6 @@
     background: var(--localevo-dark);
 
 }
-
-
 
 .service-price-card__main h2 {
 
@@ -710,8 +612,6 @@
 
 }
 
-
-
 .service-price-card__main > p {
 
     margin-bottom: 25px;
@@ -723,8 +623,6 @@
     font-size: .9rem;
 
 }
-
-
 
 .service-price-note {
 
@@ -746,8 +644,6 @@
 
 }
 
-
-
 .service-price-note i {
 
     flex: 0 0 auto;
@@ -758,15 +654,11 @@
 
 }
 
-
-
 .service-price-card__factors {
 
     padding: 42px;
 
 }
-
-
 
 .service-price-card__factors h3 {
 
@@ -781,8 +673,6 @@
     font-weight: 700;
 
 }
-
-
 
 .service-price-card__factors ul {
 
@@ -799,8 +689,6 @@
     list-style: none;
 
 }
-
-
 
 .service-price-card__factors li {
 
@@ -820,8 +708,6 @@
 
 }
 
-
-
 .service-price-card__factors i {
 
     margin-top: 2px;
@@ -830,15 +716,11 @@
 
 }
 
-
-
 .service-final-cta {
 
     background: #fff;
 
 }
-
-
 
 .service-final-cta .container {
 
@@ -846,23 +728,17 @@
 
 }
 
-
-
 .service-final-cta h2 {
 
     margin: 10px auto 14px;
 
 }
 
-
-
 .service-final-cta p {
 
     margin-bottom: 27px;
 
 }
-
-
 
 @media (max-width: 991.98px) {
 
@@ -874,15 +750,11 @@
 
     }
 
-
-
     .service-hero-visual {
 
         min-height: 300px;
 
     }
-
-
 
     .service-hero-visual__ring {
 
@@ -892,8 +764,6 @@
 
     }
 
-
-
     .service-hero-visual__icon {
 
         width: 122px;
@@ -902,15 +772,11 @@
 
     }
 
-
-
     .service-hero-visual__icon i {
 
         font-size: 3.4rem;
 
     }
-
-
 
     .service-split,
 
@@ -922,8 +788,6 @@
 
     }
 
-
-
     .service-price-card {
 
         gap: 0;
@@ -931,8 +795,6 @@
     }
 
 }
-
-
 
 @media (max-width: 767.98px) {
 
@@ -942,15 +804,11 @@
 
     }
 
-
-
     .service-back-link {
 
         margin-bottom: 24px;
 
     }
-
-
 
     .service-hero h1 {
 
@@ -958,15 +816,11 @@
 
     }
 
-
-
     .service-hero p {
 
         font-size: .9rem;
 
     }
-
-
 
     .service-detail-grid {
 
@@ -974,23 +828,17 @@
 
     }
 
-
-
     .service-section {
 
         padding: 64px 0;
 
     }
 
-
-
     .service-split {
 
         gap: 36px;
 
     }
-
-
 
     .service-price-card__main,
 
@@ -1000,23 +848,17 @@
 
     }
 
-
-
     .service-price-card__factors ul {
 
         grid-template-columns: 1fr;
 
     }
 
-
-
     .service-hero-visual {
 
         min-height: 255px;
 
     }
-
-
 
     .badge-one { top: 28px; right: 5px; }
 
@@ -1026,15 +868,11 @@
 
 }
 
-
-
 /* =========================================================
 
-   MOBILE OPTIMIZATION — service pages
+    MOBILE OPTIMIZATION — service pages
 
-========================================================= */
-
-
+\========================================================= */
 
 @media (max-width: 767.98px) {
 
@@ -1044,8 +882,6 @@
 
     }
 
-
-
     .service-page #mainNav .container {
 
         padding-left: 1rem !important;
@@ -1053,8 +889,6 @@
         padding-right: 1rem !important;
 
     }
-
-
 
     .service-page #mainNav .navbar-logo {
 
@@ -1064,8 +898,6 @@
 
     }
 
-
-
     .service-page #mainNav .navbar-collapse {
 
         margin-top: .65rem;
@@ -1073,8 +905,6 @@
         padding: .75rem 0 1rem;
 
     }
-
-
 
     .service-page #mainNav .nav-link {
 
@@ -1084,8 +914,6 @@
 
     }
 
-
-
     .service-hero {
 
         padding-top: 112px;
@@ -1093,8 +921,6 @@
         padding-bottom: 54px;
 
     }
-
-
 
     .service-hero__inner {
 
@@ -1104,8 +930,6 @@
 
     }
 
-
-
     .service-back-link {
 
         margin-bottom: 18px;
@@ -1114,8 +938,6 @@
 
     }
 
-
-
     .service-eyebrow {
 
         margin-bottom: 13px;
@@ -1123,8 +945,6 @@
         font-size: .72rem;
 
     }
-
-
 
     .service-hero h1 {
 
@@ -1140,8 +960,6 @@
 
     }
 
-
-
     .service-hero p {
 
         max-width: 100%;
@@ -1153,8 +971,6 @@
         line-height: 1.62;
 
     }
-
-
 
     .service-hero .btn,
 
@@ -1176,15 +992,11 @@
 
     }
 
-
-
     .service-hero__grid {
 
         gap: 22px;
 
     }
-
-
 
     .service-hero-visual {
 
@@ -1193,8 +1005,6 @@
         margin-top: 4px;
 
     }
-
-
 
     .service-hero-visual__ring {
 
@@ -1210,8 +1020,6 @@
 
     }
 
-
-
     .service-hero-visual__icon {
 
         width: 94px;
@@ -1222,15 +1030,11 @@
 
     }
 
-
-
     .service-hero-visual__icon i {
 
         font-size: 2.65rem;
 
     }
-
-
 
     .service-hero-visual__badge {
 
@@ -1240,23 +1044,17 @@
 
     }
 
-
-
     .badge-one { top: 22px; right: 8px; }
 
     .badge-two { bottom: 34px; left: 4px; }
 
     .badge-three { bottom: 4px; right: 20px; }
 
-
-
     .service-section {
 
         padding: 56px 0;
 
     }
-
-
 
     .service-section .container {
 
@@ -1266,15 +1064,11 @@
 
     }
 
-
-
     .service-section-heading {
 
         margin-bottom: 30px;
 
     }
-
-
 
     .service-section-heading h2,
 
@@ -1288,8 +1082,6 @@
 
     }
 
-
-
     .service-section-heading p,
 
     .service-final-cta p {
@@ -1300,15 +1092,11 @@
 
     }
 
-
-
     .service-detail-grid {
 
         gap: 16px;
 
     }
-
-
 
     .service-detail-card {
 
@@ -1320,23 +1108,17 @@
 
     }
 
-
-
     .service-detail-card__dot {
 
         margin-bottom: 16px;
 
     }
 
-
-
     .service-detail-card h3 {
 
         font-size: 1rem;
 
     }
-
-
 
     .service-detail-card p {
 
@@ -1346,15 +1128,11 @@
 
     }
 
-
-
     .service-split {
 
         gap: 30px;
 
     }
-
-
 
     .service-process-step {
 
@@ -1366,8 +1144,6 @@
 
     }
 
-
-
     .service-process-list::before {
 
         left: 19px;
@@ -1377,8 +1153,6 @@
         bottom: 20px;
 
     }
-
-
 
     .service-process-step__number {
 
@@ -1390,8 +1164,6 @@
 
     }
 
-
-
     .service-process-step h3 {
 
         margin-top: 2px;
@@ -1399,8 +1171,6 @@
         font-size: .94rem;
 
     }
-
-
 
     .service-process-step p {
 
@@ -1410,15 +1180,11 @@
 
     }
 
-
-
     .service-price-card {
 
         border-radius: 18px;
 
     }
-
-
 
     .service-price-card__main,
 
@@ -1428,8 +1194,6 @@
 
     }
 
-
-
     .service-price-card__main h2 {
 
         margin-top: 8px;
@@ -1437,8 +1201,6 @@
         font-size: clamp(2rem, 9vw, 2.75rem);
 
     }
-
-
 
     .service-price-card__main > p {
 
@@ -1448,15 +1210,11 @@
 
     }
 
-
-
     .service-price-note {
 
         font-size: .76rem;
 
     }
-
-
 
     .service-price-card__factors h3 {
 
@@ -1466,23 +1224,17 @@
 
     }
 
-
-
     .service-price-card__factors ul {
 
         gap: 12px;
 
     }
 
-
-
     .service-price-card__factors li {
 
         font-size: .82rem;
 
     }
-
-
 
     .service-final-cta {
 
@@ -1492,8 +1244,6 @@
 
     }
 
-
-
     .whatsapp-float {
 
         right: 14px !important;
@@ -1501,8 +1251,6 @@
         bottom: 14px !important;
 
     }
-
-
 
     .whatsapp-float span {
 
@@ -1512,8 +1260,6 @@
 
 }
 
-
-
 @media (max-width: 390px) {
 
     .service-hero h1 {
@@ -1522,15 +1268,11 @@
 
     }
 
-
-
     .service-hero-visual {
 
         min-height: 205px;
 
     }
-
-
 
     .service-hero-visual__ring {
 
@@ -1540,8 +1282,6 @@
 
     }
 
-
-
     .service-hero-visual__icon {
 
         width: 86px;
@@ -1549,8 +1289,6 @@
         height: 86px;
 
     }
-
-
 
     .service-detail-card,
 
@@ -1566,15 +1304,9 @@
 
 }
 
-
-
-
-
-
-
 /* LOCALEVO TYPOGRAPHY ALIGNMENT — MAIN PAGE
 
-   Folosește aceleași variabile tipografice definite în styles.css.
+    Folosește aceleași variabile tipografice definite în styles.css.
 
 */
 
@@ -1592,8 +1324,6 @@
 
 }
 
-
-
 .service-hero p,
 
 .service-section-heading p,
@@ -1607,8 +1337,6 @@
     line-height: var(--localevo-line-body);
 
 }
-
-
 
 .service-section-heading h2,
 
@@ -1624,8 +1352,6 @@
 
 }
 
-
-
 .service-detail-card h3,
 
 .service-price-card__factors h3 {
@@ -1639,8 +1365,6 @@
     line-height: var(--localevo-line-compact);
 
 }
-
-
 
 .service-detail-card p,
 
@@ -1658,8 +1382,6 @@
 
 }
 
-
-
 .service-process-step h3 {
 
     font-family: var(--localevo-font-heading);
@@ -1671,8 +1393,6 @@
     line-height: var(--localevo-line-compact);
 
 }
-
-
 
 /* Prețul rămâne evidențiat, dar nu supradimensionat. */
 
@@ -1688,8 +1408,6 @@
 
 }
 
-
-
 /* Etichetele de tip "sprânceană" au fost eliminate din HTML. */
 
 .service-eyebrow,
@@ -1699,8 +1417,6 @@
     display: none !important;
 
 }
-
-
 
 @media (max-width: 575.98px) {
 
@@ -1718,8 +1434,6 @@
 
     }
 
-
-
     .service-hero p,
 
     .service-section-heading p,
@@ -1732,8 +1446,6 @@
 
     }
 
-
-
     .service-detail-card h3,
 
     .service-price-card__factors h3 {
@@ -1742,15 +1454,11 @@
 
     }
 
-
-
     .service-process-step h3 {
 
         font-size: var(--localevo-title-small);
 
     }
-
-
 
     .service-detail-card p,
 
@@ -1768,15 +1476,11 @@
 
 }
 
-
-
-
-
 /* MOBILE HERO ORDER — CTA AFTER GRAPHIC
 
-   Pe mobil ordinea devine:
+    Pe mobil ordinea devine:
 
-   titlu + descriere -> grafică -> buton CTA.
+    titlu + descriere -> grafică -> buton CTA.
 
 */
 
@@ -1788,8 +1492,6 @@
 
     }
 
-
-
     .service-hero__inner {
 
         display: flex;
@@ -1798,15 +1500,11 @@
 
     }
 
-
-
     .service-hero__grid > div:first-child {
 
         display: contents;
 
     }
-
-
 
     .service-back-link {
 
@@ -1814,23 +1512,17 @@
 
     }
 
-
-
     .service-hero h1 {
 
         order: 1;
 
     }
 
-
-
     .service-hero p {
 
         order: 2;
 
     }
-
-
 
     .service-hero-visual {
 
@@ -1844,8 +1536,6 @@
 
     }
 
-
-
     .service-hero .btn {
 
         order: 4;
@@ -1857,12 +1547,6 @@
     }
 
 }
-
-
-
-
-
-
 
 /* MOBILE HERO CTA SPACING */
 
@@ -1876,17 +1560,13 @@
 
 }
 
-
-
 /* =========================================================
 
-   LOCALEVO — MICRO-ANIMAȚII DISCRETE
+    LOCALEVO — MICRO-ANIMAȚII DISCRETE
 
-   Variantă fluidă, fără efect de „clipire”
+    Variantă fluidă, fără efect de „clipire”
 
-========================================================= */
-
-
+\========================================================= */
 
 /* HERO — mișcare ambientală foarte lentă */
 
@@ -1902,8 +1582,6 @@
 
     }
 
-
-
     .service-hero-visual__icon {
 
         animation: localevo-icon-float 7s ease-in-out infinite;
@@ -1912,23 +1590,17 @@
 
     }
 
-
-
     .service-hero-visual__badge.badge-one {
 
         animation: localevo-badge-float-one 8.5s ease-in-out infinite;
 
     }
 
-
-
     .service-hero-visual__badge.badge-two {
 
         animation: localevo-badge-float-two 9.2s ease-in-out infinite;
 
     }
-
-
 
     .service-hero-visual__badge.badge-three {
 
@@ -1937,8 +1609,6 @@
     }
 
 }
-
-
 
 @keyframes localevo-ring-breathe {
 
@@ -1960,8 +1630,6 @@
 
 }
 
-
-
 @keyframes localevo-icon-float {
 
     0%, 100% {
@@ -1978,8 +1646,6 @@
 
 }
 
-
-
 @keyframes localevo-badge-float-one {
 
     0%, 100% { transform: translate3d(0, 0, 0); }
@@ -1987,8 +1653,6 @@
     50% { transform: translate3d(0, -4px, 0); }
 
 }
-
-
 
 @keyframes localevo-badge-float-two {
 
@@ -1998,8 +1662,6 @@
 
 }
 
-
-
 @keyframes localevo-badge-float-three {
 
     0%, 100% { transform: translate3d(0, 0, 0); }
@@ -2007,8 +1669,6 @@
     50% { transform: translate3d(-3px, -4px, 0); }
 
 }
-
-
 
 /* REVEAL — doar dacă JS este activ și utilizatorul permite mișcare */
 
@@ -2030,8 +1690,6 @@
 
     }
 
-
-
     html.service-reveal-ready .service-section-heading,
 
     html.service-reveal-ready .service-detail-card,
@@ -2052,8 +1710,6 @@
 
     }
 
-
-
     html.service-reveal-ready .is-revealed {
 
         opacity: 1;
@@ -2063,8 +1719,6 @@
     }
 
 }
-
-
 
 /* HOVER — doar pe dispozitive cu mouse; fără a concura cu reveal-ul */
 
@@ -2080,15 +1734,11 @@
 
     }
 
-
-
     .service-detail-card.is-revealed:hover {
 
         box-shadow: 0 22px 48px rgba(33,37,41,.13);
 
     }
-
-
 
     .service-detail-card::after {
 
@@ -2096,15 +1746,11 @@
 
     }
 
-
-
     .service-detail-card__dot {
 
         transition: transform .28s ease;
 
     }
-
-
 
     .service-detail-card:hover::after {
 
@@ -2114,23 +1760,17 @@
 
     }
 
-
-
     .service-detail-card:hover .service-detail-card__dot {
 
         transform: scale(1.15);
 
     }
 
-
-
     .service-process-step__number {
 
         transition: transform .25s ease, box-shadow .25s ease;
 
     }
-
-
 
     .service-process-step:hover .service-process-step__number {
 
@@ -2142,21 +1782,15 @@
 
 }
 
-
-
 /* MOBIL — reveal progresiv, clar și fluid */
 
 @media (max-width: 767.98px) and (prefers-reduced-motion: no-preference) {
-
-
 
     .service-hero-visual__ring {
 
         animation-duration: 10s;
 
     }
-
-
 
     .service-hero-visual__icon {
 
@@ -2165,8 +1799,6 @@
         animation-duration: 9s;
 
     }
-
-
 
     .service-hero-visual__badge.badge-one,
 
@@ -2177,8 +1809,6 @@
         animation-duration: 11s;
 
     }
-
-
 
     html.service-reveal-ready .service-section-heading:not(.is-revealed),
 
@@ -2196,8 +1826,6 @@
 
     }
 
-
-
     html.service-reveal-ready .service-section-heading,
 
     html.service-reveal-ready .service-detail-card,
@@ -2214,13 +1842,9 @@
 
             transform .9s cubic-bezier(.22, .61, .36, 1);
 
-
-
         transition-delay: var(--reveal-delay, 0ms);
 
     }
-
-
 
     html.service-reveal-ready .service-section-heading.is-revealed,
 
@@ -2240,8 +1864,6 @@
 
 }
 
-
-
 @keyframes localevo-icon-float-mobile {
 
     0%, 100% {
@@ -2257,8 +1879,6 @@
     }
 
 }
-
-
 
 /* ACCESIBILITATE */
 
@@ -2292,258 +1912,418 @@
 
 }
 
-
 /* =========================================================
-   LOCALEVO — SERVICII DIFERENTIATE + MOBILE 2026-09
-========================================================= */
+
+    LOCALEVO — SERVICII DIFERENTIATE + MOBILE 2026-09
+
+\========================================================= */
+
 .service-hero-visual::before,
+
 .service-hero-visual::after {
+
     content:"";
+
     position:absolute;
+
     z-index:0;
+
     pointer-events:none;
+
 }
+
 .service-hero-visual::before { width:72%; height:1px; background:linear-gradient(90deg, transparent, rgba(249,115,22,.45), transparent); transform:rotate(-18deg); }
+
 .service-hero-visual::after { width:1px; height:62%; background:linear-gradient(180deg, transparent, rgba(33,37,41,.18), transparent); transform:rotate(28deg); }
+
 .service-hero-visual__ring,
+
 .service-hero-visual__icon,
+
 .service-hero-visual__badge { z-index:1; }
+
 .service-hero-visual--website .service-hero-visual__icon { border-radius:24px; }
+
 .service-hero-visual--website .service-hero-visual__ring { border-radius:28px; transform:rotate(3deg); }
+
 .service-hero-visual--social .service-hero-visual__ring { border-style:dashed; }
+
 .service-hero-visual--social .service-hero-visual__icon { border-radius:50%; }
+
 .service-hero-visual--digital .service-hero-visual__ring { border-radius:34% 66% 58% 42% / 42% 38% 62% 58%; }
+
 .service-hero-visual--organizare .service-hero-visual__ring { border-radius:22px; transform:rotate(-3deg); }
+
 .service-hero-visual--organizare .service-hero-visual__icon { border-radius:18px; transform:rotate(0); }
+
 .service-hero-visual--organizare .service-hero-visual__icon i { transform:none; }
+
 .service-cta-note { max-width:620px; margin:0 auto 18px !important; color:#5f6870; font-size:.86rem !important; }
 
 @media (max-width:767.98px) {
+
     .service-hero__grid { gap:18px; }
+
     .service-hero-visual { min-height:225px; }
+
     .service-hero-visual__badge { padding:8px 11px; font-size:.68rem; }
+
     .service-hero-visual--website .service-hero-visual__ring,
+
     .service-hero-visual--organizare .service-hero-visual__ring { transform:none; }
+
     .service-cta-note { max-width:320px; font-size:.82rem !important; line-height:1.5; }
+
 }
+
 @media (max-width:390px) {
+
     .service-hero-visual { min-height:190px; }
+
     .service-hero-visual__badge { max-width:128px; white-space:normal; text-align:center; line-height:1.2; }
+
 }
 
 /* ==========================================================
-   LOCALEVO — SERVICE PAGES FINAL POLISH 2026-09
-   ========================================================== */
+
+    LOCALEVO — SERVICE PAGES FINAL POLISH 2026-09
+
+    ========================================================== */
+
 @media (min-width: 992px) {
-  .service-hero { padding-top: 132px !important; padding-bottom: 82px !important; }
-  .service-hero__grid { gap: clamp(3rem, 6vw, 6rem) !important; }
-  .service-hero__copy { max-width: 720px; }
-  .service-detail-card { padding: 34px !important; }
+
+    .service-hero { padding-top: 132px !important; padding-bottom: 82px !important; }
+
+    .service-hero__grid { gap: clamp(3rem, 6vw, 6rem) !important; }
+
+    .service-hero__copy { max-width: 720px; }
+
+    .service-detail-card { padding: 34px !important; }
+
 }
 
 @media (max-width: 991.98px) {
-  .service-hero { padding-top: 112px !important; padding-bottom: 66px !important; }
-  .service-hero__visual { transform: scale(.92); transform-origin: center; }
+
+    .service-hero { padding-top: 112px !important; padding-bottom: 66px !important; }
+
+    .service-hero__visual { transform: scale(.92); transform-origin: center; }
+
 }
 
 @media (max-width: 767.98px) {
-  .service-hero { padding-top: 94px !important; padding-bottom: 54px !important; }
-  .service-hero__grid { gap: 34px !important; }
-  .service-hero h1 { line-height: 1.12 !important; }
-  .service-hero__visual { transform: scale(.82); margin-block: -22px !important; }
-  .service-detail-card { padding: 26px 22px !important; border-radius: 16px !important; }
-  .service-section { padding-top: 62px !important; padding-bottom: 62px !important; }
-  .service-final-cta { padding-top: 64px !important; padding-bottom: 64px !important; }
+
+    .service-hero { padding-top: 94px !important; padding-bottom: 54px !important; }
+
+    .service-hero__grid { gap: 34px !important; }
+
+    .service-hero h1 { line-height: 1.12 !important; }
+
+    .service-hero__visual { transform: scale(.82); margin-block: -22px !important; }
+
+    .service-detail-card { padding: 26px 22px !important; border-radius: 16px !important; }
+
+    .service-section { padding-top: 62px !important; padding-bottom: 62px !important; }
+
+    .service-final-cta { padding-top: 64px !important; padding-bottom: 64px !important; }
+
 }
 
 @media (max-width: 390px) {
-  .service-hero__visual { transform: scale(.74); margin-block: -36px !important; }
-  .service-detail-card { padding-inline: 19px !important; }
+
+    .service-hero__visual { transform: scale(.74); margin-block: -36px !important; }
+
+    .service-detail-card { padding-inline: 19px !important; }
+
 }
 
 /* =========================================================
-   LOCALEVO — CARDURI DESCHISE ÎN ALTERNANȚĂ
-   Verde: #EEF6F0 | Gri: #F8F9FA
-   Elementele grafice ale hero-ului rămân intenționat dark.
-========================================================= */
+
+    LOCALEVO — CARDURI DESCHISE ÎN ALTERNANȚĂ
+
+    Verde: #EEF6F0 | Gri: #F8F9FA
+
+    Elementele grafice ale hero-ului rămân intenționat dark.
+
+\========================================================= */
+
 .service-detail-grid .service-detail-card:nth-child(odd) { background: #EEF6F0 !important; }
+
 .service-detail-grid .service-detail-card:nth-child(even) { background: #F8F9FA !important; }
+
 .service-detail-card {
-  border: 1px solid rgba(33,37,41,.07) !important;
-  box-shadow: 0 14px 32px rgba(23,32,51,.07) !important;
+
+    border: 1px solid rgba(33,37,41,.07) !important;
+
+    box-shadow: 0 14px 32px rgba(23,32,51,.07) !important;
+
 }
+
 .service-detail-card h3 { color: var(--localevo-dark) !important; }
+
 .service-detail-card p { color: #5f6870 !important; }
+
 .service-detail-card__dot { background: var(--localevo-primary) !important; }
+
 .service-detail-card::after { opacity: .45; }
 
 /* Panoul de preț care era dark devine verde pal; panoul alăturat rămâne alb/gri */
+
 .service-price-card__main {
-  background: #EEF6F0 !important;
-  border-right: 1px solid rgba(33,37,41,.07);
+
+    background: #EEF6F0 !important;
+
+    border-right: 1px solid rgba(33,37,41,.07);
+
 }
+
 .service-price-card__main h2 { color: var(--localevo-dark) !important; }
+
 .service-price-card__main > p,
+
 .service-price-note { color: #5f6870 !important; }
+
 .service-price-note { border-top-color: rgba(33,37,41,.10) !important; }
 
 /* =========================================================
-   LOCALEVO — RITM FINAL FUNDALURI PAGINI SERVICII
-   Hero verde -> sectiune gri -> sectiune alba -> pret verde -> CTA alb.
-   Cardurile sunt alese in contrast cu suprafata parinte.
-========================================================= */
+
+    LOCALEVO — RITM FINAL FUNDALURI PAGINI SERVICII
+
+    Hero verde -> sectiune gri -> sectiune alba -> pret verde -> CTA alb.
+
+    Cardurile sunt alese in contrast cu suprafata parinte.
+
+\========================================================= */
+
 .service-hero { background: #EEF6F0 !important; }
+
 .service-section--light { background: #F8F9FA !important; }
+
 .service-section--white { background: #FFFFFF !important; }
+
 .service-section--price { background: #EEF6F0 !important; }
+
 .service-final-cta { background: #FFFFFF !important; }
 
 /* Pe fundalul gri al primei sectiuni: alb / verde, nu gri pe gri. */
+
 .service-detail-grid .service-detail-card:nth-child(odd) {
-  background: #FFFFFF !important;
+
+    background: #FFFFFF !important;
+
 }
+
 .service-detail-grid .service-detail-card:nth-child(even) {
-  background: #EEF6F0 !important;
+
+    background: #EEF6F0 !important;
+
 }
 
 /* Pe fundalul verde al pretului, panourile interioare raman distincte. */
+
 .service-price-card__main {
-  background: #FFFFFF !important;
-  border-right: 1px solid rgba(33,37,41,.08) !important;
+
+    background: #FFFFFF !important;
+
+    border-right: 1px solid rgba(33,37,41,.08) !important;
+
 }
+
 .service-price-card__factors {
-  background: #F8F9FA !important;
+
+    background: #F8F9FA !important;
+
 }
 
 /* Proces contact — text mai lizibil pe fundal închis */
+
 #contact .contact-flow span {
+
     color: rgba(255, 255, 255, .90) !important;
+
 }
 
 #contact .contact-flow strong {
+
     color: #FFFFFF !important;
+
 }
 
 #contact .contact-flow > i {
+
     color: #F97316 !important;
+
 }
 
 /* =========================================================
-   LOCALEVO — SERVICE PAGES VISUAL REFRESH
-   Aceeași logică vizuală ca homepage:
-   portocaliu = acțiune
-   verde = suprafață calmă
-   alb = conținut
-   dark = contrast
-   ========================================================= */
+
+    LOCALEVO — SERVICE PAGES VISUAL REFRESH
+
+    Aceeași logică vizuală ca homepage:
+
+    portocaliu = acțiune
+
+    verde = suprafață calmă
+
+    alb = conținut
+
+    dark = contrast
+
+    ========================================================= */
 
 :root {
+
     --lv-orange: #F97316;
+
     --lv-orange-dark: #D95F0E;
+
     --lv-orange-soft: #FFF1E7;
 
     --lv-dark: #212529;
+
     --lv-dark-soft: #2B3035;
 
     --lv-text: #3F474E;
+
     --lv-muted: #687078;
 
     --lv-green: #EEF6F0;
+
     --lv-green-strong: #DCEDE1;
 
     --lv-grey: #F8F9FA;
+
     --lv-white: #FFFFFF;
 
     --lv-border: rgba(33, 37, 41, .09);
 
     --lv-shadow: 0 14px 34px rgba(23, 32, 51, .09);
+
     --lv-shadow-hover: 0 20px 44px rgba(23, 32, 51, .14);
 
     --lv-radius: 18px;
+
 }
 
-
 /* =========================================================
-   HERO
-   Păstrăm verdele și grafica actuală
-   ========================================================= */
+
+    HERO
+
+    Păstrăm verdele și grafica actuală
+
+    ========================================================= */
 
 .service-hero {
+
     background: var(--lv-green) !important;
+
 }
 
 .service-back-link {
+
     color: var(--lv-muted);
+
 }
 
 .service-back-link:hover {
+
     color: var(--lv-orange);
+
 }
 
 .service-hero h1 {
+
     color: var(--lv-dark);
+
 }
 
 .service-hero p {
-    color: var(--lv-text);
-}
 
+    color: var(--lv-text);
+
+}
 
 /* Buton principal hero */
 
 .service-hero .btn-primary {
+
     background: var(--lv-orange) !important;
+
     border-color: var(--lv-orange) !important;
 
     box-shadow:
+
         0 10px 26px rgba(249, 115, 22, .28);
 
     transition:
+
         transform .2s ease,
+
         box-shadow .2s ease,
+
         background-color .2s ease;
+
 }
 
 .service-hero .btn-primary:hover {
+
     background: #FF812B !important;
+
     border-color: #FF812B !important;
 
     transform: translateY(-2px);
 
     box-shadow:
+
         0 15px 34px rgba(249, 115, 22, .38);
+
 }
 
-
 /* =========================================================
-   GRAFICA HERO
-   ========================================================= */
+
+    GRAFICA HERO
+
+    ========================================================= */
 
 .service-hero-visual__ring {
+
     border-color: rgba(249, 115, 22, .46);
 
     box-shadow:
+
         0 0 0 32px rgba(255,255,255,.50),
+
         0 0 0 64px rgba(249,115,22,.06);
+
 }
 
 .service-hero-visual__icon {
+
     background:
+
         linear-gradient(
+
             145deg,
+
             var(--lv-dark) 0%,
+
             var(--lv-dark-soft) 100%
+
         );
 
     box-shadow:
+
         0 24px 52px rgba(33,37,41,.20);
+
 }
 
 .service-hero-visual__icon i {
+
     color: var(--lv-orange);
+
 }
 
 .service-hero-visual__badge {
+
     background: rgba(255,255,255,.96);
 
     color: var(--lv-dark);
@@ -2551,544 +2331,809 @@
     border: 1px solid rgba(33,37,41,.06);
 
     box-shadow:
+
         0 10px 26px rgba(33,37,41,.10);
+
 }
 
-
 /* =========================================================
-   PRIMA SECȚIUNE — CE FACEM
-   Fundal neutru + carduri dark
-   ========================================================= */
+
+    PRIMA SECȚIUNE — CE FACEM
+
+    Fundal neutru + carduri dark
+
+    ========================================================= */
 
 .service-section--light {
+
     background: var(--lv-grey) !important;
+
 }
 
 .service-detail-grid .service-detail-card,
+
 .service-detail-grid .service-detail-card:nth-child(odd),
+
 .service-detail-grid .service-detail-card:nth-child(even) {
+
     position: relative;
+
     overflow: hidden;
 
     background:
+
         linear-gradient(
+
             145deg,
+
             var(--lv-dark) 0%,
+
             var(--lv-dark-soft) 100%
+
         ) !important;
 
     border:
+
         1px solid rgba(255,255,255,.06) !important;
 
     border-radius: var(--lv-radius) !important;
 
     box-shadow:
+
         0 16px 36px rgba(23,32,51,.12) !important;
 
     transition:
-        transform .25s ease,
-        box-shadow .25s ease,
-        border-color .25s ease;
-}
 
+        transform .25s ease,
+
+        box-shadow .25s ease,
+
+        border-color .25s ease;
+
+}
 
 /* Accent discret sus */
 
 .service-detail-card::before {
+
     content: "";
 
     position: absolute;
 
     top: 0;
+
     left: 0;
+
     right: 0;
 
     height: 4px;
 
     background: var(--lv-orange);
+
 }
 
-
 .service-detail-card h3 {
+
     color: #FFFFFF !important;
+
 }
 
 .service-detail-card p {
+
     color: rgba(255,255,255,.76) !important;
+
 }
 
 .service-detail-card__dot {
+
     background: var(--lv-orange) !important;
 
     box-shadow:
-        0 0 0 5px rgba(249,115,22,.12);
-}
 
+        0 0 0 5px rgba(249,115,22,.12);
+
+}
 
 /* Elementul decorativ existent */
 
 .service-detail-card::after {
+
     opacity: .8;
 
     border-color:
-        rgba(249,115,22,.35);
-}
 
+        rgba(249,115,22,.35);
+
+}
 
 /* Hover desktop */
 
 @media (hover: hover) and (pointer: fine) {
 
     .service-detail-card.is-revealed:hover,
+
     .service-detail-card:hover {
+
         transform: translateY(-5px);
 
         border-color:
+
             rgba(249,115,22,.20) !important;
 
         box-shadow:
+
             0 22px 46px rgba(23,32,51,.17) !important;
+
     }
+
 }
 
-
 /* =========================================================
-   PROCES
-   Fundal alb — proces aerisit
-   ========================================================= */
+
+    PROCES
+
+    Fundal alb — proces aerisit
+
+    ========================================================= */
 
 .service-section--white {
+
     background: var(--lv-white) !important;
+
 }
 
 .service-process-list::before {
+
     background:
+
         rgba(249,115,22,.28);
+
 }
 
 .service-process-step__number {
+
     background: var(--lv-orange-soft) !important;
 
     border:
+
         1px solid rgba(249,115,22,.28);
 
     color: var(--lv-orange-dark) !important;
 
     font-weight: 800;
+
 }
 
 .service-process-step h3 {
+
     color: var(--lv-dark);
+
 }
 
 .service-process-step p {
-    color: var(--lv-muted);
-}
 
+    color: var(--lv-muted);
+
+}
 
 /* Interacțiune discretă */
 
 @media (hover: hover) and (pointer: fine) {
 
     .service-process-step:hover
+
     .service-process-step__number {
 
         background: var(--lv-orange) !important;
+
         color: #FFFFFF !important;
 
         border-color:
+
             var(--lv-orange);
 
         box-shadow:
+
             0 8px 20px rgba(249,115,22,.20);
+
     }
+
 }
 
-
 /* =========================================================
-   PREȚ
-   Verde exterior + card contrastant
-   ========================================================= */
+
+    PREȚ
+
+    Verde exterior + card contrastant
+
+    ========================================================= */
 
 .service-section--price {
+
     background: var(--lv-green) !important;
+
 }
 
 .service-price-card {
+
     overflow: hidden;
 
     background: var(--lv-white);
 
     border:
+
         1px solid rgba(33,37,41,.07);
 
     border-radius: 22px;
 
     box-shadow:
+
         0 20px 48px rgba(23,32,51,.11);
+
 }
 
-
 /*
-   Readucem contrastul pe panoul principal.
-   Prețul devine din nou un element important.
+
+    Readucem contrastul pe panoul principal.
+
+    Prețul devine din nou un element important.
+
 */
 
 .service-price-card__main {
+
     background:
+
         linear-gradient(
+
             145deg,
+
             var(--lv-dark) 0%,
+
             var(--lv-dark-soft) 100%
+
         ) !important;
 
     border-right: 0 !important;
+
 }
 
 .service-price-card__main h2 {
+
     color: #FFFFFF !important;
+
 }
 
 .service-price-card__main > p {
+
     color:
+
         rgba(255,255,255,.76) !important;
+
 }
 
 .service-price-note {
+
     color:
+
         rgba(255,255,255,.72) !important;
 
     border-top-color:
+
         rgba(255,255,255,.14) !important;
+
 }
 
 .service-price-note i {
-    color: var(--lv-orange) !important;
-}
 
+    color: var(--lv-orange) !important;
+
+}
 
 /* Partea explicativă */
 
 .service-price-card__factors {
+
     background: var(--lv-white) !important;
+
 }
 
 .service-price-card__factors h3 {
+
     color: var(--lv-dark);
+
 }
 
 .service-price-card__factors li {
+
     color: var(--lv-text);
+
 }
 
 .service-price-card__factors i {
+
     color: var(--lv-orange);
+
 }
 
-
 /* =========================================================
-   CTA FINAL
-   Final dark, ca homepage
-   ========================================================= */
+
+    CTA FINAL
+
+    Final dark, ca homepage
+
+    ========================================================= */
 
 .service-final-cta {
+
     position: relative;
 
     background:
+
         linear-gradient(
+
             135deg,
+
             var(--lv-dark) 0%,
+
             var(--lv-dark-soft) 100%
+
         ) !important;
 
     color: #FFFFFF;
+
 }
 
 .service-final-cta h2 {
+
     color: #FFFFFF !important;
+
 }
 
 .service-final-cta p,
+
 .service-final-cta .service-cta-note {
+
     color:
+
         rgba(255,255,255,.76) !important;
+
 }
 
 .service-final-cta .btn-primary {
+
     background: var(--lv-orange) !important;
+
     border-color: var(--lv-orange) !important;
 
     box-shadow:
+
         0 10px 26px rgba(249,115,22,.30);
+
 }
 
 .service-final-cta .btn-primary:hover {
+
     background: #FF812B !important;
+
     border-color: #FF812B !important;
 
     transform: translateY(-2px);
 
     box-shadow:
+
         0 15px 34px rgba(249,115,22,.40);
+
 }
 
-
 /* =========================================================
-   MOBILE
-   ========================================================= */
+
+    MOBILE
+
+    ========================================================= */
 
 @media (max-width: 767.98px) {
 
     /*
-       Hero:
-       nu schimbăm ordinea existentă.
-       Rămâne text -> grafică -> CTA.
+
+        Hero:
+
+        nu schimbăm ordinea existentă.
+
+        Rămâne text -> grafică -> CTA.
+
     */
 
     .service-hero {
+
         padding-bottom: 56px !important;
+
     }
 
     .service-hero h1 {
+
         font-size:
+
             clamp(1.85rem, 8.5vw, 2.35rem) !important;
 
         line-height: 1.10 !important;
 
         letter-spacing: -.02em;
+
     }
 
     .service-hero p {
-        font-size: .94rem !important;
-        line-height: 1.58 !important;
-    }
 
+        font-size: .94rem !important;
+
+        line-height: 1.58 !important;
+
+    }
 
     /* Grafică hero */
 
     .service-hero-visual {
+
         min-height: 215px;
+
     }
 
     .service-hero-visual__ring {
-        box-shadow:
-            0 0 0 20px rgba(255,255,255,.42),
-            0 0 0 40px rgba(249,115,22,.045);
-    }
 
+        box-shadow:
+
+            0 0 0 20px rgba(255,255,255,.42),
+
+            0 0 0 40px rgba(249,115,22,.045);
+
+    }
 
     /* CTA hero */
 
     .service-hero .btn,
+
     .service-final-cta .btn {
 
         width: auto !important;
 
         min-width: 210px;
+
         max-width: 100%;
 
         min-height: 48px;
 
         padding:
+
             14px 24px !important;
 
         border-radius:
+
             999px !important;
 
         font-size:
-            .85rem !important;
-    }
 
+            .85rem !important;
+
+    }
 
     /* Secțiuni */
 
     .service-section {
+
         padding-top: 56px !important;
+
         padding-bottom: 56px !important;
+
     }
 
     .service-section-heading {
+
         margin-bottom: 28px;
+
     }
 
     .service-section-heading h2,
+
     .service-final-cta h2 {
 
         font-size:
+
             clamp(1.55rem, 6.5vw, 1.85rem) !important;
 
         line-height: 1.18 !important;
+
     }
 
     .service-section-heading p,
+
     .service-final-cta p {
 
         font-size: .91rem !important;
-        line-height: 1.58 !important;
-    }
 
+        line-height: 1.58 !important;
+
+    }
 
     /* Carduri servicii */
 
     .service-detail-grid {
+
         gap: 14px !important;
+
     }
 
     .service-detail-card {
+
         min-height: 0 !important;
 
         padding:
+
             25px 21px !important;
 
         border-radius:
+
             15px !important;
+
     }
 
     .service-detail-card h3 {
+
         font-size:
+
             1.05rem !important;
+
     }
 
     .service-detail-card p {
+
         font-size:
+
             .86rem !important;
 
         line-height:
+
             1.55 !important;
+
     }
 
     .service-detail-card__dot {
-        margin-bottom:
-            15px !important;
-    }
 
+        margin-bottom:
+
+            15px !important;
+
+    }
 
     /* Proces */
 
     .service-split {
+
         gap: 30px !important;
+
     }
 
     .service-process-step {
+
         grid-template-columns:
+
             40px minmax(0,1fr);
 
         gap: 15px;
 
         padding-bottom: 23px;
+
     }
 
     .service-process-list::before {
+
         left: 19px;
+
     }
 
     .service-process-step__number {
-        width: 40px;
-        height: 40px;
-    }
 
+        width: 40px;
+
+        height: 40px;
+
+    }
 
     /* Preț */
 
     .service-price-card {
+
         border-radius:
+
             17px !important;
+
     }
 
     .service-price-card__main,
+
     .service-price-card__factors {
 
         padding:
+
             27px 21px !important;
+
     }
 
     .service-price-card__main h2 {
+
         font-size:
+
             1.8rem !important;
+
     }
 
     .service-price-card__factors ul {
+
         grid-template-columns:
+
             1fr !important;
 
         gap: 12px;
-    }
 
+    }
 
     /* CTA final */
 
     .service-final-cta {
+
         padding-top:
+
             58px !important;
 
         padding-bottom:
+
             62px !important;
+
     }
 
     .service-final-cta .container {
+
         padding-left:
+
             1.25rem !important;
 
         padding-right:
+
             1.25rem !important;
+
     }
+
 }
 
-
 /* =========================================================
-   TELEFOANE MICI
-   ========================================================= */
+
+    TELEFOANE MICI
+
+    ========================================================= */
 
 @media (max-width: 390px) {
 
     .service-hero h1 {
+
         font-size:
+
             1.75rem !important;
+
     }
 
     .service-hero p {
+
         font-size:
+
             .90rem !important;
+
     }
 
     .service-detail-card,
+
     .service-price-card__main,
+
     .service-price-card__factors {
 
         padding-left:
+
             18px !important;
 
         padding-right:
+
             18px !important;
+
     }
 
     .service-hero .btn,
+
     .service-final-cta .btn {
 
         min-width:
+
             190px;
+
     }
+
 }
 
-
 /* =========================================================
-   TOUCH + ACCESSIBILITY
-   ========================================================= */
+
+    TOUCH + ACCESSIBILITY
+
+    ========================================================= */
 
 @media (hover: none) {
 
     .service-detail-card:hover {
+
         transform: none;
+
     }
+
 }
 
 @media (prefers-reduced-motion: reduce) {
 
     .service-detail-card,
+
     .service-process-step__number,
+
     .service-hero .btn,
+
     .service-final-cta .btn {
 
         transition: none !important;
+
     }
+
+}
+
+/* =========================================================
+    LOCALEVO — CULORI MAMĂ PE PAGINILE SERVICIILOR
+    Hero + secțiunea de preț preiau culoarea cardului din homepage.
+
+    Website              = albastru pal
+    Social Media         = piersică pal
+    Instrumente digitale = verde/mint pal
+    Organizare           = lavandă pal
+    ========================================================= */
+
+/* Culori implicite; sunt suprascrise automat după tipul graficii Hero. */
+.service-page {
+    --service-mother-color: #FBFDFF;
+}
+
+/* Funcționează fără modificări în HTML-ul paginilor:
+    fiecare pagină are deja una dintre aceste clase în Hero. */
+.service-page:has(.service-hero-visual--website) {
+    --service-mother-color: #FBFDFF;
+}
+
+.service-page:has(.service-hero-visual--social) {
+    --service-mother-color: #FFFAF7;
+}
+
+.service-page:has(.service-hero-visual--digital) {
+    --service-mother-color: #FBFEFC;
+}
+
+.service-page:has(.service-hero-visual--organizare) {
+    --service-mother-color: #FCFBFF;
+}
+
+/* HERO — culoarea mamă a serviciului */
+.service-page .service-hero {
+    background: var(--service-mother-color) !important;
+    background-color: var(--service-mother-color) !important;
+}
+
+/* PREȚ — aceeași culoare mamă */
+.service-page .service-section--price {
+    background: var(--service-mother-color) !important;
+    background-color: var(--service-mother-color) !important;
+}
+
+/* Păstrăm cardul de preț contrastant și lizibil. */
+.service-page .service-section--price .service-price-card {
+    background: #FFFFFF;
 }

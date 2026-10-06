@@ -19856,3 +19856,2126 @@ body header.masthead .hero-local-note i {
     }
 
 }
+
+/* =========================================================
+   LOCALEVO — REDESIGN SECȚIUNI PRINCIPALE 2026-10
+   Servicii / Domenii / Portofoliu / Contact
+   Păstrează textele și funcționalitatea; schimbă doar designul.
+   ========================================================= */
+
+:root {
+    --lv-redesign-ink: #172033;
+    --lv-redesign-muted: #5d6875;
+    --lv-redesign-orange: #f97316;
+    --lv-redesign-orange-dark: #d95f0b;
+    --lv-redesign-green: #2f7d68;
+    --lv-redesign-green-soft: #edf6f1;
+    --lv-redesign-line: rgba(23, 32, 51, .12);
+    --lv-redesign-paper: #fbfaf7;
+    --lv-redesign-dark: #20262b;
+}
+
+/* ---------------------------------------------------------
+   SERVICII — carduri mai editoriale, mai puțin "dashboard"
+   --------------------------------------------------------- */
+
+#serviciilenoastre {
+    background: #f3f7f4 !important;
+}
+
+#serviciilenoastre .services-wide-container {
+    max-width: 1320px !important;
+}
+
+#serviciilenoastre .services-grid {
+    gap: clamp(18px, 2vw, 28px) !important;
+}
+
+#serviciilenoastre .service-card {
+    position: relative !important;
+    overflow: hidden !important;
+    min-height: 100% !important;
+    padding: clamp(30px, 3vw, 46px) !important;
+    background: rgba(255, 255, 255, .88) !important;
+    border: 1px solid rgba(23, 32, 51, .09) !important;
+    border-radius: 22px !important;
+    box-shadow: 0 18px 45px rgba(23, 32, 51, .055) !important;
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease !important;
+}
+
+#serviciilenoastre .services-grid-item:nth-child(odd) .service-card,
+#serviciilenoastre .services-grid-item:nth-child(even) .service-card {
+    background: rgba(255, 255, 255, .88) !important;
+}
+
+#serviciilenoastre .service-card::before {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 auto 0 0 !important;
+    width: 4px !important;
+    background: linear-gradient(180deg, var(--lv-redesign-orange), #ffb16f) !important;
+    opacity: .9 !important;
+}
+
+#serviciilenoastre .service-card::after {
+    content: "" !important;
+    position: absolute !important;
+    width: 150px !important;
+    height: 150px !important;
+    right: -72px !important;
+    top: -72px !important;
+    border: 1px solid rgba(249, 115, 22, .16) !important;
+    border-radius: 50% !important;
+    pointer-events: none !important;
+}
+
+#serviciilenoastre .service-card:hover {
+    transform: translateY(-5px) !important;
+    border-color: rgba(249, 115, 22, .24) !important;
+    box-shadow: 0 24px 55px rgba(23, 32, 51, .10) !important;
+}
+
+#serviciilenoastre .service-card-icon {
+    width: 52px !important;
+    height: 52px !important;
+    border-radius: 15px !important;
+    background: #fff3e9 !important;
+    color: var(--lv-redesign-orange) !important;
+    box-shadow: none !important;
+}
+
+#serviciilenoastre .service-card-kicker,
+#serviciilenoastre .service-card-eyebrow {
+    color: #68727d !important;
+    letter-spacing: .08em !important;
+}
+
+#serviciilenoastre .service-card h3,
+#serviciilenoastre .service-card h3.h4 {
+    color: var(--lv-redesign-ink) !important;
+}
+
+#serviciilenoastre .service-card p,
+#serviciilenoastre .service-card li,
+#serviciilenoastre .service-card li span {
+    color: #46515e !important;
+}
+
+#serviciilenoastre .service-card-link {
+    color: var(--lv-redesign-orange-dark) !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid rgba(249, 115, 22, .45) !important;
+    padding-bottom: 4px !important;
+}
+
+#serviciilenoastre .collab-process {
+    border-top: 1px solid rgba(23, 32, 51, .10) !important;
+    padding-top: clamp(34px, 4vw, 54px) !important;
+}
+
+/* ---------------------------------------------------------
+   DOMENII — index editorial, fără carduri
+   --------------------------------------------------------- */
+
+.localevo-sectors {
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.localevo-sectors::after {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    background:
+        linear-gradient(90deg, rgba(14, 27, 24, .93), rgba(14, 27, 24, .76)),
+        linear-gradient(180deg, rgba(14, 27, 24, .12), rgba(14, 27, 24, .32)) !important;
+    pointer-events: none !important;
+    z-index: 0 !important;
+}
+
+.localevo-sectors > .container {
+    position: relative !important;
+    z-index: 1 !important;
+    max-width: 1320px !important;
+}
+
+.localevo-sectors__list {
+    counter-reset: localevo-sector !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 0 clamp(28px, 4vw, 64px) !important;
+    margin-top: clamp(42px, 5vw, 70px) !important;
+}
+
+.localevo-sector {
+    counter-increment: localevo-sector !important;
+    position: relative !important;
+    display: grid !important;
+    grid-template-columns: 34px 48px minmax(0, 1fr) !important;
+    align-items: center !important;
+    gap: 14px !important;
+    min-height: 82px !important;
+    padding: 15px 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, .17) !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.localevo-sector::before {
+    content: counter(localevo-sector, decimal-leading-zero) !important;
+    font-family: var(--localevo-font-heading) !important;
+    font-size: .72rem !important;
+    font-weight: 700 !important;
+    letter-spacing: .08em !important;
+    color: rgba(255, 255, 255, .42) !important;
+}
+
+.localevo-sector__icon {
+    width: 42px !important;
+    height: 42px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border: 1px solid rgba(249, 115, 22, .58) !important;
+    border-radius: 50% !important;
+    background: rgba(249, 115, 22, .07) !important;
+    color: #ff8a3d !important;
+}
+
+.localevo-sector__label {
+    color: #fff !important;
+    font-weight: 700 !important;
+}
+
+.localevo-benefits {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 0 !important;
+    width: 100% !important;
+    margin-top: clamp(48px, 6vw, 78px) !important;
+    padding: 24px 0 0 !important;
+    border-top: 1px solid rgba(255, 255, 255, .20) !important;
+}
+
+.localevo-benefit,
+.localevo-benefit--blue,
+.localevo-benefit--orange,
+.localevo-benefit--green,
+.localevo-benefit--purple {
+    min-height: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    padding: 8px clamp(18px, 2vw, 30px) !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-right: 1px solid rgba(255, 255, 255, .16) !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.localevo-benefit:first-child {
+    padding-left: 0 !important;
+}
+
+.localevo-benefit:last-child {
+    border-right: 0 !important;
+    padding-right: 0 !important;
+}
+
+.localevo-benefit__icon {
+    flex: 0 0 40px !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    background: rgba(249, 115, 22, .12) !important;
+    color: #ff8a3d !important;
+}
+
+.localevo-benefit__label {
+    color: rgba(255, 255, 255, .94) !important;
+    font-weight: 700 !important;
+}
+
+/* ---------------------------------------------------------
+   COLABORĂRI — grid extensibil cu 3 proiecte / rând
+   --------------------------------------------------------- */
+
+#portfoliulnostru.localevo-portfolio-redesign {
+    background: var(--lv-redesign-paper) !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+#portfoliulnostru.localevo-portfolio-redesign > .container {
+    width: min(calc(100% - 64px), 1500px) !important;
+    max-width: 1500px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+#portfoliulnostru .portfolio-projects-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    align-items: start !important;
+    gap: clamp(28px, 3vw, 46px) !important;
+    width: 100% !important;
+}
+
+#portfoliulnostru .portfolio-project-item {
+    min-width: 0 !important;
+}
+
+#portfoliulnostru .portfolio-card-project {
+    display: block !important;
+    overflow: visible !important;
+    min-height: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+#portfoliulnostru .portfolio-project-image {
+    position: relative !important;
+    display: block !important;
+    overflow: hidden !important;
+    aspect-ratio: 4 / 3 !important;
+    min-height: 0 !important;
+    border-radius: 18px !important;
+    background: #dde2df !important;
+}
+
+#portfoliulnostru .portfolio-project-image img {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    object-fit: cover !important;
+    transition: transform .45s ease !important;
+}
+
+#portfoliulnostru .portfolio-project-item:hover .portfolio-project-image img {
+    transform: scale(1.025) !important;
+}
+
+#portfoliulnostru .portfolio-project-content {
+    padding: 24px 2px 0 !important;
+    background: transparent !important;
+}
+
+#portfoliulnostru .portfolio-case-label {
+    display: inline-flex !important;
+    margin-bottom: 12px !important;
+    padding: 0 !important;
+    background: transparent !important;
+    color: var(--lv-redesign-orange-dark) !important;
+    letter-spacing: .08em !important;
+}
+
+#portfoliulnostru .portfolio-case-title {
+    color: var(--lv-redesign-ink) !important;
+    font-size: clamp(1.45rem, 2vw, 2rem) !important;
+    line-height: 1.15 !important;
+}
+
+#portfoliulnostru .portfolio-case-summary {
+    color: var(--lv-redesign-muted) !important;
+    line-height: 1.65 !important;
+}
+
+#portfoliulnostru .portfolio-project-services {
+    color: #66717d !important;
+}
+
+#portfoliulnostru .portfolio-project-link {
+    color: var(--lv-redesign-orange-dark) !important;
+}
+
+/* ---------------------------------------------------------
+   CONTACT — integrat direct în secțiune, fără carduri
+   --------------------------------------------------------- */
+
+#contact.localevo-contact-redesign {
+    position: relative !important;
+    overflow: hidden !important;
+    background: var(--lv-redesign-dark) !important;
+}
+
+#contact.localevo-contact-redesign::before {
+    content: "" !important;
+    position: absolute !important;
+    width: 420px !important;
+    height: 420px !important;
+    right: -220px !important;
+    bottom: -230px !important;
+    border: 1px solid rgba(249, 115, 22, .13) !important;
+    border-radius: 50% !important;
+    pointer-events: none !important;
+}
+
+#contact > .container {
+    position: relative !important;
+    z-index: 1 !important;
+    max-width: 1180px !important;
+}
+
+#contact h2,
+#contact > .container > .row:first-child p {
+    color: #fff !important;
+}
+
+#contact .contact-flow {
+    color: rgba(255, 255, 255, .88) !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch {
+    position: relative !important;
+    margin-top: clamp(34px, 4vw, 54px) !important;
+    --bs-gutter-x: 0 !important;
+    border-top: 1px solid rgba(255, 255, 255, .13) !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"] {
+    flex: 0 0 50% !important;
+    width: 50% !important;
+    max-width: none !important;
+    padding: clamp(38px, 5vw, 64px) clamp(30px, 5vw, 72px) 0 !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child {
+    padding-left: 0 !important;
+    border-right: 1px solid rgba(255, 255, 255, .13) !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:last-child {
+    padding-right: 0 !important;
+}
+
+#contact .contact-card {
+    height: auto !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+#contact .contact-card-title {
+    color: #fff !important;
+    text-align: left !important;
+}
+
+#contact .contact-card-text,
+#contact .contact-label {
+    color: rgba(255, 255, 255, .70) !important;
+    text-align: left !important;
+}
+
+#contact .contact-info-item {
+    color: #fff !important;
+}
+
+#contact .contact-info-item a,
+#contact .contact-social a {
+    color: #fff !important;
+}
+
+#contact .contact-info-item a:hover,
+#contact .contact-social a:hover {
+    color: #ff9a55 !important;
+}
+
+#contact .contact-icon {
+    background: rgba(249, 115, 22, .12) !important;
+    color: #ff8a3d !important;
+    border: 1px solid rgba(249, 115, 22, .22) !important;
+}
+
+#contact .form-control {
+    min-height: 50px !important;
+    background: rgba(255, 255, 255, .055) !important;
+    color: #fff !important;
+    border: 1px solid rgba(255, 255, 255, .18) !important;
+    border-radius: 10px !important;
+}
+
+#contact textarea.form-control {
+    min-height: 130px !important;
+}
+
+#contact .form-control::placeholder {
+    color: rgba(255, 255, 255, .58) !important;
+    opacity: 1 !important;
+}
+
+#contact .form-control:focus {
+    background: rgba(255, 255, 255, .075) !important;
+    color: #fff !important;
+    border-color: #ff8a3d !important;
+    box-shadow: 0 0 0 .2rem rgba(249, 115, 22, .14) !important;
+}
+
+#contact .btn-primary {
+    border-radius: 10px !important;
+}
+
+/* ---------------------------------------------------------
+   TABLETĂ
+   --------------------------------------------------------- */
+
+@media (max-width: 991.98px) {
+    .localevo-sectors__list {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .localevo-benefits {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        row-gap: 24px !important;
+    }
+
+    .localevo-benefit {
+        border-right: 0 !important;
+        padding: 8px 20px !important;
+    }
+
+    .localevo-benefit:nth-child(odd) {
+        padding-left: 0 !important;
+        border-right: 1px solid rgba(255, 255, 255, .16) !important;
+    }
+
+    #portfoliulnostru .portfolio-projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    #contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"] {
+        padding-left: 34px !important;
+        padding-right: 34px !important;
+    }
+
+    #contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child {
+        padding-left: 0 !important;
+    }
+
+    #contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:last-child {
+        padding-right: 0 !important;
+    }
+}
+
+/* ---------------------------------------------------------
+   MOBIL
+   --------------------------------------------------------- */
+
+@media (max-width: 767.98px) {
+    #serviciilenoastre .service-card {
+        padding: 26px 22px 24px !important;
+        border-radius: 17px !important;
+    }
+
+    #serviciilenoastre .service-card:hover {
+        transform: none !important;
+    }
+
+    .localevo-sectors__list {
+        grid-template-columns: 1fr !important;
+        gap: 0 !important;
+        margin-top: 34px !important;
+    }
+
+    .localevo-sector {
+        grid-template-columns: 32px 42px minmax(0, 1fr) !important;
+        min-height: 70px !important;
+        padding: 12px 0 !important;
+    }
+
+    .localevo-sector__icon {
+        width: 38px !important;
+        height: 38px !important;
+    }
+
+    .localevo-benefits {
+        grid-template-columns: 1fr !important;
+        row-gap: 0 !important;
+        margin-top: 40px !important;
+        padding-top: 10px !important;
+    }
+
+    .localevo-benefit,
+    .localevo-benefit:first-child,
+    .localevo-benefit:last-child,
+    .localevo-benefit:nth-child(odd) {
+        min-height: 66px !important;
+        padding: 12px 0 !important;
+        border-right: 0 !important;
+        border-bottom: 1px solid rgba(255, 255, 255, .13) !important;
+    }
+
+    .localevo-benefit:last-child {
+        border-bottom: 0 !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-redesign > .container {
+        width: min(calc(100% - 36px), 1500px) !important;
+    }
+
+    #portfoliulnostru .portfolio-projects-grid {
+        grid-template-columns: 1fr !important;
+        gap: 42px !important;
+    }
+
+    #portfoliulnostru .portfolio-project-image {
+        aspect-ratio: 16 / 11 !important;
+        border-radius: 15px !important;
+    }
+
+    #portfoliulnostru .portfolio-project-content {
+        padding: 20px 0 0 !important;
+    }
+
+    #contact .row.g-4.justify-content-center.align-items-stretch {
+        display: block !important;
+        border-top: 1px solid rgba(255, 255, 255, .13) !important;
+    }
+
+    #contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 34px 0 0 !important;
+    }
+
+    #contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child {
+        border-right: 0 !important;
+        border-bottom: 1px solid rgba(255, 255, 255, .13) !important;
+        padding-bottom: 36px !important;
+    }
+
+    #contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:last-child {
+        padding-top: 36px !important;
+    }
+
+    #contact .contact-card-title,
+    #contact .contact-card-text {
+        text-align: left !important;
+    }
+
+    #contact .contact-social {
+        text-align: left !important;
+    }
+
+    #contact .contact-social .social-links {
+        justify-content: flex-start !important;
+    }
+}
+
+@media (max-width: 390px) {
+    #portfoliulnostru.localevo-portfolio-redesign > .container {
+        width: min(calc(100% - 28px), 1500px) !important;
+    }
+
+    .localevo-sector {
+        grid-template-columns: 28px 38px minmax(0, 1fr) !important;
+        gap: 10px !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #serviciilenoastre .service-card,
+    #portfoliulnostru .portfolio-project-image img {
+        transition: none !important;
+    }
+}
+
+/* =========================================================
+   LOCALEVO — DESIGN V2
+   Servicii + Colaborări
+   ========================================================= */
+
+/* =========================
+   SERVICII V2
+   ========================= */
+#serviciilenoastre.localevo-services-v2 {
+    position: relative !important;
+    overflow: hidden !important;
+    background:
+        radial-gradient(circle at 8% 12%, rgba(47,125,104,.09), transparent 28%),
+        radial-gradient(circle at 92% 86%, rgba(249,115,22,.08), transparent 30%),
+        #f7f8f5 !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .services-wide-container {
+    max-width: 1280px !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .services-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1px !important;
+    overflow: hidden !important;
+    background: rgba(23,32,51,.13) !important;
+    border: 1px solid rgba(23,32,51,.11) !important;
+    border-radius: 28px !important;
+    box-shadow: 0 28px 80px rgba(23,32,51,.08) !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .services-grid-item {
+    min-width: 0 !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card {
+    position: relative !important;
+    min-height: 330px !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    padding: clamp(34px,4vw,56px) !important;
+    background: rgba(255,255,255,.94) !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    transform: none !important;
+    transition: background .25s ease !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card::before {
+    content: "" !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    bottom: auto !important;
+    width: 100% !important;
+    height: 3px !important;
+    background: var(--lv-redesign-orange) !important;
+    transform: scaleX(0) !important;
+    transform-origin: left !important;
+    transition: transform .3s ease !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card::after {
+    content: "" !important;
+    position: absolute !important;
+    right: 28px !important;
+    top: 24px !important;
+    width: 72px !important;
+    height: 72px !important;
+    border: 1px solid rgba(23,32,51,.07) !important;
+    border-radius: 50% !important;
+    pointer-events: none !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card:hover {
+    background: #fff !important;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card:hover::before {
+    transform: scaleX(1) !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card-icon {
+    width: 48px !important;
+    height: 48px !important;
+    margin: 0 0 34px !important;
+    border-radius: 50% !important;
+    background: #172033 !important;
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(2) .service-card-icon,
+#serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(4) .service-card-icon {
+    background: var(--lv-redesign-orange) !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card-kicker,
+#serviciilenoastre.localevo-services-v2 .service-card-eyebrow {
+    margin-bottom: 8px !important;
+    color: #7a8490 !important;
+    font-size: .72rem !important;
+    font-weight: 800 !important;
+    letter-spacing: .11em !important;
+    text-transform: uppercase !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card h3,
+#serviciilenoastre.localevo-services-v2 .service-card h3.h4 {
+    margin-bottom: 13px !important;
+    color: #172033 !important;
+    font-size: clamp(1.35rem,1.8vw,1.75rem) !important;
+    line-height: 1.12 !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card p {
+    max-width: 510px !important;
+    color: #53606c !important;
+    font-size: .98rem !important;
+    line-height: 1.7 !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card-link {
+    margin-top: auto !important;
+    padding-top: 28px !important;
+    color: #d95f0b !important;
+    border: 0 !important;
+    text-decoration: none !important;
+    font-weight: 800 !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card-link::after {
+    content: "  →" !important;
+    display: inline !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .collab-process {
+    margin-top: clamp(48px,6vw,78px) !important;
+    padding-top: clamp(32px,4vw,48px) !important;
+    border-top: 1px solid rgba(23,32,51,.13) !important;
+}
+
+/* =========================
+   COLABORĂRI V2
+   ========================= */
+#portfoliulnostru.localevo-portfolio-v2 {
+    position: relative !important;
+    overflow: hidden !important;
+    background: #f6f3ed !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2::before {
+    content: "" !important;
+    position: absolute !important;
+    width: 430px !important;
+    height: 430px !important;
+    left: -250px !important;
+    top: -240px !important;
+    border: 1px solid rgba(249,115,22,.16) !important;
+    border-radius: 50% !important;
+    pointer-events: none !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 > .container {
+    position: relative !important;
+    z-index: 1 !important;
+    width: min(calc(100% - 80px), 1560px) !important;
+    max-width: 1560px !important;
+    padding: 0 !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .text-center.mb-5 {
+    text-align: left !important;
+    margin-bottom: clamp(42px,5vw,70px) !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .text-center.mb-5 h2 {
+    max-width: 720px !important;
+    color: #172033 !important;
+    font-size: clamp(2rem,3vw,3.3rem) !important;
+    line-height: 1.05 !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .text-center.mb-5 .divider {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-projects-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0,1fr)) !important;
+    gap: clamp(24px,2.6vw,42px) !important;
+    width: 100% !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-project-item {
+    min-width: 0 !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-card-project {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 590px !important;
+    overflow: hidden !important;
+    background: #172033 !important;
+    border: 0 !important;
+    border-radius: 24px !important;
+    box-shadow: 0 28px 70px rgba(23,32,51,.16) !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-project-image {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    aspect-ratio: auto !important;
+    border-radius: 0 !important;
+    background: #172033 !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-project-image::after {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    background: linear-gradient(180deg,
+        rgba(8,15,22,.04) 12%,
+        rgba(8,15,22,.28) 46%,
+        rgba(8,15,22,.94) 100%) !important;
+    pointer-events: none !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-project-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    transform: scale(1.01) !important;
+    transition: transform .55s ease !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-card-project:hover .portfolio-project-image img {
+    transform: scale(1.055) !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-project-content {
+    position: relative !important;
+    z-index: 2 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    min-height: 590px !important;
+    padding: clamp(30px,3vw,42px) !important;
+    background: transparent !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-case-label {
+    width: fit-content !important;
+    margin: 0 0 13px !important;
+    padding: 7px 10px !important;
+    background: #f97316 !important;
+    border-radius: 999px !important;
+    color: #fff !important;
+    font-size: .68rem !important;
+    font-weight: 800 !important;
+    letter-spacing: .10em !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-case-title {
+    margin: 0 0 13px !important;
+    color: #fff !important;
+    font-size: clamp(1.65rem,2.2vw,2.35rem) !important;
+    line-height: 1.08 !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-case-summary {
+    max-width: 460px !important;
+    margin-bottom: 16px !important;
+    color: rgba(255,255,255,.80) !important;
+    font-size: .96rem !important;
+    line-height: 1.6 !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-project-services {
+    margin-bottom: 20px !important;
+    color: rgba(255,255,255,.64) !important;
+    font-size: .78rem !important;
+    line-height: 1.55 !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-project-link {
+    width: fit-content !important;
+    color: #fff !important;
+    font-weight: 800 !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid rgba(255,255,255,.45) !important;
+    padding-bottom: 4px !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-project-link:hover {
+    color: #ff9a55 !important;
+    border-color: #ff9a55 !important;
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+    #serviciilenoastre.localevo-services-v2 .service-card {
+        min-height: 300px !important;
+        padding: 34px !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 > .container {
+        width: min(calc(100% - 48px), 1560px) !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 .portfolio-projects-grid {
+        grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 .portfolio-card-project,
+    #portfoliulnostru.localevo-portfolio-v2 .portfolio-project-content {
+        min-height: 540px !important;
+    }
+}
+
+/* Mobil */
+@media (max-width: 767.98px) {
+    #serviciilenoastre.localevo-services-v2 .services-grid {
+        grid-template-columns: 1fr !important;
+        border-radius: 20px !important;
+    }
+
+    #serviciilenoastre.localevo-services-v2 .service-card {
+        min-height: 0 !important;
+        padding: 30px 24px !important;
+    }
+
+    #serviciilenoastre.localevo-services-v2 .service-card-icon {
+        margin-bottom: 25px !important;
+    }
+
+    #serviciilenoastre.localevo-services-v2 .service-card-link {
+        margin-top: 8px !important;
+        padding-top: 18px !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 > .container {
+        width: min(calc(100% - 34px), 1560px) !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 .text-center.mb-5 {
+        margin-bottom: 32px !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 .portfolio-projects-grid {
+        grid-template-columns: 1fr !important;
+        gap: 28px !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 .portfolio-card-project,
+    #portfoliulnostru.localevo-portfolio-v2 .portfolio-project-content {
+        min-height: 510px !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 .portfolio-project-content {
+        padding: 28px 24px !important;
+    }
+}
+
+@media (max-width: 420px) {
+    #portfoliulnostru.localevo-portfolio-v2 .portfolio-card-project,
+    #portfoliulnostru.localevo-portfolio-v2 .portfolio-project-content {
+        min-height: 470px !important;
+    }
+}
+
+/* =========================================================
+   LOCALEVO — DESIGN V3
+   Ajustări cerute: Servicii / Colaborări / Contact
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   SERVICII V3
+   Blocuri mai distincte + iconuri decorative mari în fundal
+   --------------------------------------------------------- */
+#serviciilenoastre.localevo-services-v2 .services-grid {
+    gap: 16px !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card {
+    overflow: hidden !important;
+    min-height: 315px !important;
+    border: 1px solid rgba(23,32,51,.08) !important;
+    border-radius: 22px !important;
+    box-shadow: 0 18px 46px rgba(23,32,51,.055) !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(1) .service-card {
+    background: #eef6f8 !important;
+}
+#serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(2) .service-card {
+    background: #fff1e8 !important;
+}
+#serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(3) .service-card {
+    background: #edf7f2 !important;
+}
+#serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(4) .service-card {
+    background: #f2effa !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card:hover {
+    box-shadow: 0 24px 58px rgba(23,32,51,.09) !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card-icon {
+    position: absolute !important;
+    z-index: 0 !important;
+    width: 150px !important;
+    height: 150px !important;
+    margin: 0 !important;
+    border: 0 !important;
+    border-radius: 50% !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    opacity: .11 !important;
+    pointer-events: none !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card-icon i {
+    font-size: 5.8rem !important;
+    line-height: 1 !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(1) .service-card-icon {
+    top: -26px !important;
+    right: -22px !important;
+    color: #1683aa !important;
+}
+#serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(2) .service-card-icon {
+    top: -30px !important;
+    right: -18px !important;
+    color: #f97316 !important;
+}
+#serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(3) .service-card-icon {
+    right: -22px !important;
+    bottom: -30px !important;
+    top: auto !important;
+    color: #2f7d68 !important;
+}
+#serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(4) .service-card-icon {
+    right: -22px !important;
+    bottom: -30px !important;
+    top: auto !important;
+    color: #7456b8 !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card::after {
+    display: none !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card > *:not(.service-card-icon) {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card-kicker,
+#serviciilenoastre.localevo-services-v2 .service-card-eyebrow {
+    margin-top: 16px !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card p {
+    max-width: 78% !important;
+}
+
+/* ---------------------------------------------------------
+   COLABORĂRI V3
+   Secțiune mai compactă; card 2/3 imagine + 1/3 conținut
+   --------------------------------------------------------- */
+#portfoliulnostru.localevo-portfolio-v2 {
+    padding-top: clamp(58px, 6vw, 82px) !important;
+    padding-bottom: clamp(58px, 6vw, 82px) !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 > .container {
+    width: min(calc(100% - 80px), 1380px) !important;
+    max-width: 1380px !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .text-center.mb-5 {
+    margin-bottom: 34px !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .text-center.mb-5 h2 {
+    font-size: clamp(1.85rem, 2.5vw, 2.65rem) !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-projects-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 28px !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-card-project {
+    display: grid !important;
+    grid-template-rows: 2fr 1fr !important;
+    min-height: 0 !important;
+    height: 500px !important;
+    overflow: hidden !important;
+    background: #fff !important;
+    border-radius: 20px !important;
+    box-shadow: 0 18px 50px rgba(23,32,51,.11) !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-project-image {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+    background: #dfe4e1 !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-project-image::after {
+    background: linear-gradient(180deg, rgba(8,15,22,.02), rgba(8,15,22,.08)) !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-project-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    transform: none !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-card-project:hover .portfolio-project-image img {
+    transform: scale(1.025) !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-project-content {
+    position: relative !important;
+    z-index: 2 !important;
+    min-height: 0 !important;
+    height: 100% !important;
+    justify-content: center !important;
+    padding: 22px 24px !important;
+    background: #fff !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-case-label {
+    margin-bottom: 7px !important;
+    padding: 0 !important;
+    background: transparent !important;
+    color: #d95f0b !important;
+    border-radius: 0 !important;
+    font-size: .66rem !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-case-title {
+    margin-bottom: 7px !important;
+    color: #172033 !important;
+    font-size: 1.35rem !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-case-summary {
+    display: -webkit-box !important;
+    overflow: hidden !important;
+    margin-bottom: 7px !important;
+    color: #5d6875 !important;
+    font-size: .82rem !important;
+    line-height: 1.45 !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 2 !important;
+    line-clamp: 2 !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-project-services {
+    overflow: hidden !important;
+    margin-bottom: 8px !important;
+    color: #75808b !important;
+    font-size: .68rem !important;
+    line-height: 1.35 !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-project-link {
+    color: #d95f0b !important;
+    font-size: .78rem !important;
+    border-color: rgba(217,95,11,.35) !important;
+}
+
+/* ---------------------------------------------------------
+   CONTACT V3
+   Mai compact, fără spațiu gol inutil
+   --------------------------------------------------------- */
+#contact.localevo-contact-redesign {
+    padding-top: clamp(48px, 5vw, 66px) !important;
+    padding-bottom: clamp(38px, 4vw, 54px) !important;
+}
+
+#contact.localevo-contact-redesign > .container {
+    max-width: 1080px !important;
+}
+
+#contact > .container > .row:first-child {
+    margin-bottom: 0 !important;
+}
+
+#contact > .container > .row:first-child .col-lg-8 {
+    max-width: 760px !important;
+}
+
+#contact .contact-flow {
+    margin-top: 20px !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch {
+    margin-top: 30px !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"] {
+    padding-top: 30px !important;
+    padding-bottom: 0 !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child {
+    padding-left: 0 !important;
+    padding-right: 42px !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:last-child {
+    padding-left: 42px !important;
+    padding-right: 0 !important;
+}
+
+#contact .contact-card-title {
+    margin-bottom: 10px !important;
+}
+
+#contact .contact-card-text {
+    margin-bottom: 20px !important;
+}
+
+#contact .contact-info-item {
+    margin-bottom: 14px !important;
+}
+
+#contact .contact-social {
+    margin-top: 20px !important;
+}
+
+#contact .form-control {
+    min-height: 46px !important;
+}
+
+#contact textarea.form-control {
+    min-height: 98px !important;
+}
+
+#contact .mb-3 {
+    margin-bottom: 10px !important;
+}
+
+#contact .btn-primary {
+    min-height: 46px !important;
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+    #serviciilenoastre.localevo-services-v2 .service-card {
+        min-height: 290px !important;
+    }
+
+    #serviciilenoastre.localevo-services-v2 .service-card-icon {
+        width: 125px !important;
+        height: 125px !important;
+    }
+
+    #serviciilenoastre.localevo-services-v2 .service-card-icon i {
+        font-size: 4.8rem !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 > .container {
+        width: min(calc(100% - 48px), 1380px) !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 .portfolio-projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 .portfolio-card-project {
+        height: 480px !important;
+    }
+
+    #contact.localevo-contact-redesign > .container {
+        max-width: 900px !important;
+    }
+}
+
+/* Mobil */
+@media (max-width: 767.98px) {
+    #serviciilenoastre.localevo-services-v2 .services-grid {
+        gap: 14px !important;
+    }
+
+    #serviciilenoastre.localevo-services-v2 .service-card {
+        min-height: 245px !important;
+        border-radius: 18px !important;
+    }
+
+    #serviciilenoastre.localevo-services-v2 .service-card-icon {
+        width: 105px !important;
+        height: 105px !important;
+        opacity: .10 !important;
+    }
+
+    #serviciilenoastre.localevo-services-v2 .service-card-icon i {
+        font-size: 4rem !important;
+    }
+
+    #serviciilenoastre.localevo-services-v2 .service-card p {
+        max-width: 88% !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 {
+        padding-top: 52px !important;
+        padding-bottom: 52px !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 > .container {
+        width: min(calc(100% - 34px), 1380px) !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 .portfolio-projects-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 .portfolio-card-project {
+        height: 470px !important;
+        grid-template-rows: 2fr 1fr !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 .portfolio-project-content {
+        padding: 18px 20px !important;
+    }
+
+    #contact.localevo-contact-redesign {
+        padding-top: 46px !important;
+        padding-bottom: 38px !important;
+    }
+
+    #contact .row.g-4.justify-content-center.align-items-stretch {
+        margin-top: 24px !important;
+    }
+
+    #contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"],
+    #contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child,
+    #contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:last-child {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-top: 26px !important;
+    }
+
+    #contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child {
+        padding-bottom: 28px !important;
+    }
+
+    #contact textarea.form-control {
+        min-height: 105px !important;
+    }
+}
+
+/* =========================================================
+   LOCALEVO — DESIGN V4 FINAL
+   Servicii / Colaborări / Contact
+   ========================================================= */
+
+/* =========================
+   SERVICII — fundal alb, iconuri mari fără bulină
+   ========================= */
+#serviciilenoastre.localevo-services-v2 {
+    background: #ffffff !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .services-grid {
+    gap: 18px !important;
+    background: transparent !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card {
+    position: relative !important;
+    overflow: hidden !important;
+    min-height: 300px !important;
+    padding: 44px 42px 38px !important;
+    border-radius: 22px !important;
+    border: 1px solid rgba(23,32,51,.09) !important;
+    box-shadow: 0 16px 42px rgba(23,32,51,.055) !important;
+}
+
+/* Nuanțe suficient de vizibile pe fundal alb */
+#serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(1) .service-card {
+    background: #edf6fa !important;
+}
+#serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(2) .service-card {
+    background: #fff0e7 !important;
+}
+#serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(3) .service-card {
+    background: #edf7f3 !important;
+}
+#serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(4) .service-card {
+    background: #f2effa !important;
+}
+
+/* eliminăm orice cerc/bulină decorativă din jurul iconului */
+#serviciilenoastre.localevo-services-v2 .service-card-icon,
+#serviciilenoastre.localevo-services-v2 .service-card-icon::before,
+#serviciilenoastre.localevo-services-v2 .service-card-icon::after {
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+/* iconul devine element grafic de fundal */
+#serviciilenoastre.localevo-services-v2 .service-card-icon {
+    position: absolute !important;
+    z-index: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 190px !important;
+    height: 190px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    opacity: .12 !important;
+    pointer-events: none !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card-icon i {
+    display: block !important;
+    width: auto !important;
+    height: auto !important;
+    font-size: 8.2rem !important;
+    line-height: 1 !important;
+    background: transparent !important;
+    border: 0 !important;
+}
+
+/* poziții intenționat diferite pentru un aspect mai organic */
+#serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(1) .service-card-icon {
+    top: -48px !important;
+    right: -42px !important;
+    bottom: auto !important;
+    color: #2185a6 !important;
+}
+#serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(2) .service-card-icon {
+    top: -54px !important;
+    right: -38px !important;
+    bottom: auto !important;
+    color: #e96612 !important;
+}
+#serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(3) .service-card-icon {
+    top: auto !important;
+    right: -42px !important;
+    bottom: -55px !important;
+    color: #2f7d68 !important;
+}
+#serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(4) .service-card-icon {
+    top: auto !important;
+    right: -44px !important;
+    bottom: -58px !important;
+    color: #7155aa !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card > *:not(.service-card-icon) {
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card-kicker,
+#serviciilenoastre.localevo-services-v2 .service-card-eyebrow {
+    margin-top: 0 !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card p {
+    max-width: 76% !important;
+}
+
+/* =========================
+   COLABORĂRI — 2/3 imagine SUS + 1/3 text JOS
+   ========================= */
+#portfoliulnostru.localevo-portfolio-v2 {
+    padding-top: 52px !important;
+    padding-bottom: 58px !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 > .container {
+    width: min(calc(100% - 64px), 1320px) !important;
+    max-width: 1320px !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .text-center.mb-5 {
+    margin-bottom: 28px !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-projects-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    align-items: start !important;
+    gap: 26px !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-card-project {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+    background: #fff !important;
+    border-radius: 18px !important;
+    box-shadow: 0 16px 42px rgba(23,32,51,.10) !important;
+}
+
+/* 2/3: imaginea este deasupra și are raport fix */
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-project-image {
+    position: relative !important;
+    inset: auto !important;
+    flex: 0 0 auto !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 4 / 3 !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+    border-radius: 0 !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-project-image::after {
+    display: none !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-project-image img {
+    position: absolute !important;
+    inset: 0 !important;
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    transform: none !important;
+}
+
+/* 1/3: prezentarea este obligatoriu sub imagine */
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-project-content {
+    position: relative !important;
+    inset: auto !important;
+    z-index: 2 !important;
+    flex: 1 1 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 170px !important;
+    padding: 20px 22px 22px !important;
+    background: #fff !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-case-label {
+    margin: 0 0 7px !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-case-title {
+    margin: 0 0 8px !important;
+    font-size: 1.28rem !important;
+    line-height: 1.15 !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-case-summary {
+    display: block !important;
+    overflow: visible !important;
+    margin: 0 0 9px !important;
+    font-size: .80rem !important;
+    line-height: 1.45 !important;
+    -webkit-line-clamp: unset !important;
+    line-clamp: unset !important;
+    -webkit-box-orient: initial !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-project-services {
+    margin: 0 0 10px !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .portfolio-project-link {
+    margin-top: auto !important;
+}
+
+/* =========================
+   CONTACT — stânga centrată în propria jumătate
+   ========================= */
+#contact.localevo-contact-redesign {
+    padding-top: 42px !important;
+    padding-bottom: 36px !important;
+}
+
+#contact.localevo-contact-redesign > .container {
+    max-width: 1040px !important;
+}
+
+#contact .contact-flow {
+    margin-top: 16px !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch {
+    margin-top: 24px !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"] {
+    padding-top: 26px !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding-right: 38px !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:last-child {
+    padding-left: 38px !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child .contact-card {
+    width: min(100%, 330px) !important;
+    margin: 0 auto !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child .contact-card-title,
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child .contact-card-text {
+    text-align: center !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child .contact-info {
+    width: fit-content !important;
+    max-width: 100% !important;
+    margin: 22px auto 0 !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child .contact-info-item {
+    justify-content: flex-start !important;
+    text-align: left !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child .contact-social {
+    margin-top: 20px !important;
+    text-align: center !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child .contact-social .social-links {
+    justify-content: center !important;
+}
+
+#contact textarea.form-control {
+    min-height: 92px !important;
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+    #serviciilenoastre.localevo-services-v2 .service-card-icon {
+        width: 160px !important;
+        height: 160px !important;
+    }
+
+    #serviciilenoastre.localevo-services-v2 .service-card-icon i {
+        font-size: 6.8rem !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 > .container {
+        width: min(calc(100% - 44px), 1320px) !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 .portfolio-projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+/* Mobil */
+@media (max-width: 767.98px) {
+    #serviciilenoastre.localevo-services-v2 .service-card {
+        min-height: 245px !important;
+        padding: 30px 24px !important;
+    }
+
+    #serviciilenoastre.localevo-services-v2 .service-card-icon {
+        width: 125px !important;
+        height: 125px !important;
+    }
+
+    #serviciilenoastre.localevo-services-v2 .service-card-icon i {
+        font-size: 5.2rem !important;
+    }
+
+    #serviciilenoastre.localevo-services-v2 .service-card p {
+        max-width: 88% !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 {
+        padding-top: 46px !important;
+        padding-bottom: 48px !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 > .container {
+        width: min(calc(100% - 32px), 1320px) !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 .portfolio-projects-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 .portfolio-project-image {
+        aspect-ratio: 4 / 3 !important;
+    }
+
+    #portfoliulnostru.localevo-portfolio-v2 .portfolio-project-content {
+        min-height: 0 !important;
+        padding: 19px 20px 21px !important;
+    }
+
+    #contact.localevo-contact-redesign {
+        padding-top: 40px !important;
+        padding-bottom: 32px !important;
+    }
+
+    #contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child,
+    #contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:last-child {
+        display: block !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    #contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child .contact-card {
+        width: min(100%, 380px) !important;
+    }
+}
+
+/* =========================================================
+   LOCALEVO — V5 refinements
+   ========================================================= */
+
+/* SERVICII: secțiune alb-cald + iconuri curate, fără panouri de fundal */
+#serviciilenoastre.localevo-services-v2 {
+    background: #ffffff !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card-icon {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card-icon::before,
+#serviciilenoastre.localevo-services-v2 .service-card-icon::after {
+    content: none !important;
+    display: none !important;
+}
+
+#serviciilenoastre.localevo-services-v2 .service-card-icon i {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+/* neutralizează orice fundal dreptunghiular moștenit pe iconurile 2 și 4 */
+#serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(2) .service-card-icon,
+#serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(4) .service-card-icon {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* PORTOFOLIU: titlu identic ca scară/aliniere cu celelalte secțiuni */
+#portfoliulnostru.localevo-portfolio-v2 .text-center.mb-5 {
+    text-align: center !important;
+    margin-bottom: 34px !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .text-center.mb-5 h2 {
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+}
+
+#portfoliulnostru.localevo-portfolio-v2 .text-center.mb-5 .divider {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* CONTACT: coloana "Vrei să discutăm?" aliniată coerent */
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child .contact-card {
+    width: 330px !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    text-align: left !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child .contact-card-title,
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child .contact-card-text {
+    text-align: left !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child .contact-info {
+    width: 100% !important;
+    margin: 22px 0 0 !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child .contact-info-item {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: left !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child .contact-social {
+    width: 100% !important;
+    margin-top: 22px !important;
+    text-align: left !important;
+}
+
+#contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child .contact-social .social-links {
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    gap: 28px !important;
+    margin-top: 14px !important;
+}
+
+/* Mobil */
+@media (max-width: 767.98px) {
+    #portfoliulnostru.localevo-portfolio-v2 .text-center.mb-5 h2 {
+        font-size: 1.75rem !important;
+    }
+
+    #contact .row.g-4.justify-content-center.align-items-stretch > [class*="col-"]:first-child .contact-card {
+        width: min(100%, 360px) !important;
+    }
+}
+
+/* =========================================================
+   V6 — FUNDAL SECȚIUNE SERVICII
+   Override final intenționat
+   ========================================================= */
+html body #serviciilenoastre,
+html body #serviciilenoastre.page-section,
+html body #serviciilenoastre.localevo-services-v2 {
+    background-color: #ffffff !important;
+    background-image: none !important;
+}
+
+/* Păstrăm cardurile distincte față de noul fundal */
+html body #serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(1) .service-card {
+    background-color: #eaf4f8 !important;
+}
+html body #serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(2) .service-card {
+    background-color: #fff0e7 !important;
+}
+html body #serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(3) .service-card {
+    background-color: #eaf5f0 !important;
+}
+html body #serviciilenoastre.localevo-services-v2 .services-grid-item:nth-child(4) .service-card {
+    background-color: #f0edf8 !important;
+}
+
+/* =========================================================
+   V7 — FUNDAL SERVICII CLAR VIZIBIL
+   ========================================================= */
+html body section#serviciilenoastre.page-section.decorative-section.localevo-accent-section.localevo-services-v2 {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+}
+
+/* Eliminăm și efectele decorative care pot da impresia de fundal alb/gradient */
+html body section#serviciilenoastre::before,
+html body section#serviciilenoastre::after {
+    background-image: none !important;
+}
+
+/* Containerul interior trebuie să rămână transparent ca să se vadă fundalul secțiunii */
+html body #serviciilenoastre .services-wide-container,
+html body #serviciilenoastre .container-fluid {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* =========================================================
+   V8 — COLABORĂRI: grafică decorativă mai mică
+   Cardul își păstrează poziția.
+   ========================================================= */
+#portfoliulnostru.localevo-portfolio-v2::before {
+    width: 250px !important;
+    height: 250px !important;
+    left: -125px !important;
+    top: -125px !important;
+}
+
+/* Dacă decorul secțiunii este generat și de clasa generică */
+#portfoliulnostru.decorative-section::before {
+    width: 250px !important;
+    height: 250px !important;
+    left: -125px !important;
+    top: -125px !important;
+}
+
+@media (max-width: 767.98px) {
+    #portfoliulnostru.localevo-portfolio-v2::before,
+    #portfoliulnostru.decorative-section::before {
+        width: 170px !important;
+        height: 170px !important;
+        left: -85px !important;
+        top: -85px !important;
+    }
+}
+
+
+/* =========================================================
+   V9 — SERVICII: FUNDAL ALB-CALD FINAL
+   Aceasta este regula finală și suprascrie V6/V7.
+   ========================================================= */
+html body section#serviciilenoastre.page-section.decorative-section.localevo-accent-section.localevo-services-v2,
+html body #serviciilenoastre.localevo-services-v2 {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+}
+
+html body section#serviciilenoastre::before,
+html body section#serviciilenoastre::after {
+    background: transparent !important;
+    background-image: none !important;
+}
+
+html body #serviciilenoastre .services-wide-container,
+html body #serviciilenoastre .container-fluid {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+
+/* =========================================================
+   FINAL — FUNDAL SERVICII ALB CALD
+   ========================================================= */
+html body section#serviciilenoastre.page-section.decorative-section.localevo-accent-section.localevo-services-v2 {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+}
+
+html body section#serviciilenoastre.page-section.decorative-section.localevo-accent-section.localevo-services-v2::before,
+html body section#serviciilenoastre.page-section.decorative-section.localevo-accent-section.localevo-services-v2::after {
+    background-image: none !important;
+}
+
+html body section#serviciilenoastre .services-wide-container,
+html body section#serviciilenoastre .container,
+html body section#serviciilenoastre .container-fluid {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+
+/* =========================================================
+   FUNDAL SERVICII — ALB MAI DESCHIS
+   ========================================================= */
+html body section#serviciilenoastre.page-section.decorative-section.localevo-accent-section.localevo-services-v2 {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+}
+
+
+/* =========================================================
+   V11 — SERVICII: FUNDAL ALB PUR
+   ========================================================= */
+html body section#serviciilenoastre.page-section.decorative-section.localevo-accent-section.localevo-services-v2,
+html body section#serviciilenoastre#serviciilenoastre {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+}
+
+html body section#serviciilenoastre::before,
+html body section#serviciilenoastre::after {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+html body section#serviciilenoastre > .container,
+html body section#serviciilenoastre > .container-fluid,
+html body section#serviciilenoastre .services-wide-container {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* =========================================================
+   LOCALEVO — SERVICII / CORECȚIE FINALĂ 2026-10-06
+   Regula aceasta trebuie să rămână la FINALUL fișierului.
+   ========================================================= */
+
+/* Fundalul ÎNTREGII secțiuni Servicii */
+html body section#serviciilenoastre {
+    background: #fffefa !important;
+    background-color: #fffefa !important;
+    background-image: none !important;
+}
+
+/* Nici wrapper-ele, nici decorațiile secțiunii nu mai colorează fundalul */
+html body section#serviciilenoastre > .container,
+html body section#serviciilenoastre > .container-fluid,
+html body section#serviciilenoastre .services-wide-container {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+html body section#serviciilenoastre::before,
+html body section#serviciilenoastre::after {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* Cardurile: aproape albe, cu diferențiere foarte discretă */
+html body #serviciilenoastre .services-grid-item:nth-child(1) .service-card {
+    background: #fbfdff !important;
+    background-color: #fbfdff !important;
+    border-color: #dcecf4 !important;
+}
+html body #serviciilenoastre .services-grid-item:nth-child(2) .service-card {
+    background: #fffaf7 !important;
+    background-color: #fffaf7 !important;
+    border-color: #f5dfd2 !important;
+}
+html body #serviciilenoastre .services-grid-item:nth-child(3) .service-card {
+    background: #fbfefc !important;
+    background-color: #fbfefc !important;
+    border-color: #d9eee6 !important;
+}
+html body #serviciilenoastre .services-grid-item:nth-child(4) .service-card {
+    background: #fcfbff !important;
+    background-color: #fcfbff !important;
+    border-color: #e4def3 !important;
+}
+
+/* Pictogramele rămân fără bulină/fundal și parțial vizibile în colț */
+html body #serviciilenoastre .service-card-icon {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
