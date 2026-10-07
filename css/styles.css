@@ -22537,3 +22537,44 @@ html body #serviciilenoastre .service-card-icon {
     margin-bottom:20px!important;
   }
 }
+
+/* =========================================================
+   LOCALEVO — HERO MOBILE — CORECȚIE EXCLUSIV POZIȚIONARE
+   ========================================================= */
+@media screen and (max-width: 767.98px) {
+
+    /* Anulează doar centrarea laterală independentă a textului și CTA-urilor. */
+    body header.masthead .hero-content > p.hero-subtitle {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    body header.masthead .hero-actions {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        justify-content: flex-start !important;
+    }
+
+    /* Regulile existente dau CTA-urilor margin: 0 auto; anulăm doar acea poziționare. */
+    body header.masthead .hero-content .hero-primary-cta,
+    body header.masthead .hero-content a.btn.btn-primary.btn-xl.hero-primary-cta,
+    body header.masthead .hero-content .hero-secondary-cta {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* Cardul rămâne pe axa conținutului; cele 3 zone sunt egale. */
+    body header.masthead .hero-trust-panel {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    /* Centrează grupul icon + text în secțiunea lui, fără a-i schimba designul. */
+    body header.masthead .hero-trust-item,
+    body header.masthead .hero-trust-item:first-child,
+    body header.masthead .hero-trust-item:last-child {
+        justify-content: center !important;
+    }
+}
+
