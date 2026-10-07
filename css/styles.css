@@ -22578,5 +22578,21 @@ html body #serviciilenoastre .service-card-icon {
         padding-left: 7px !important;
         padding-right: 7px !important;
     }
+
+    /* Corecție exclusiv pentru Sprijin direct pe mobil */
+    body header.masthead .hero-trust-item:nth-child(3) .hero-trust-item__icon {
+        transform: translateX(7px) !important;
+    }    
+
+    body header.masthead .hero-trust-item:nth-child(3) > span:last-child {
+        transform: translateX(7px) !important;
+    }
+
+    /* Mută doar bara separatorului 3 cu 7px spre stânga */
+    body header.masthead .hero-trust-item:nth-child(3) {
+        margin-left: -7px !important;
+        margin-right: 7px !important;
+    }   
 }
+
 
