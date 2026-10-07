@@ -22570,11 +22570,13 @@ html body #serviciilenoastre .service-card-icon {
         grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
     }
 
-    /* Centrează grupul icon + text în secțiunea lui, fără a-i schimba designul. */
+    /* Centrează grupul icon + text în fiecare dintre cele 3 secțiuni */
     body header.masthead .hero-trust-item,
     body header.masthead .hero-trust-item:first-child,
     body header.masthead .hero-trust-item:last-child {
         justify-content: center !important;
+        padding-left: 7px !important;
+        padding-right: 7px !important;
     }
 }
 
