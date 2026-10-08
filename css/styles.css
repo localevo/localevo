@@ -22596,3 +22596,32 @@ html body #serviciilenoastre .service-card-icon {
 }
 
 
+
+/* Hero: desktop retains every original alignment and positioning rule. */
+@media (min-width: 768px) {
+  .localevo-2026-refresh header.masthead .hero-actions {
+    margin-top: clamp(44px, 7vh, 88px) !important;
+  }
+}
+/* Hero: center only on mobile; leave other sections untouched. */
+@media (max-width: 767.98px) {
+  .localevo-2026-refresh header.masthead .hero-content {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .localevo-2026-refresh header.masthead .hero-title,
+  .localevo-2026-refresh header.masthead .hero-subtitle {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .localevo-2026-refresh header.masthead .hero-actions {
+    justify-content: center !important;
+    align-items: center !important;
+    margin: clamp(42px, 7vh, 80px) auto 0 !important;
+  }
+  .localevo-2026-refresh header.masthead .hero-secondary-cta {
+    justify-content: center !important;
+  }
+}
