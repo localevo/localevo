@@ -22878,3 +22878,38 @@ body.localevo-2026-refresh #portfoliulnostru.localevo-portfolio-v2 .portfolio-pr
     overflow-wrap:break-word!important;
   }
 }
+
+/* Aceeasi rotunjire ca la cardurile de servicii, pe toate ecranele. */
+body.localevo-2026-refresh #portfoliulnostru.localevo-portfolio-v2 .portfolio-card-project {
+  border-radius: 18px !important;
+}
+
+/* Potrivire cu raza cardurilor de servicii pe mobil. */
+@media (max-width: 767.98px) {
+  body.localevo-2026-refresh #portfoliulnostru.localevo-portfolio-v2 .portfolio-card-project {
+    border-radius: 14px !important;
+  }
+}
+
+/* Link real pe toata suprafata cardului. */
+body.localevo-2026-refresh #serviciilenoastre .service-card {position:relative!important}
+body.localevo-2026-refresh #serviciilenoastre .service-card-overlay {position:absolute!important;inset:0!important;display:block!important;z-index:5!important;cursor:pointer;border-radius:inherit}
+body.localevo-2026-refresh #serviciilenoastre .service-card-link {position:relative;z-index:6}
+body.localevo-2026-refresh #serviciilenoastre .service-card-overlay:focus-visible {outline:3px solid #f97316;outline-offset:3px}
+
+/* Link nativ: intregul card este un singur element <a>. */
+body.localevo-2026-refresh #serviciilenoastre a.service-card {
+  display: grid;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+body.localevo-2026-refresh #serviciilenoastre a.service-card:hover,
+body.localevo-2026-refresh #serviciilenoastre a.service-card:focus {
+  color: inherit;
+  text-decoration: none;
+}
+body.localevo-2026-refresh #serviciilenoastre a.service-card:focus-visible {
+  outline: 3px solid #f97316;
+  outline-offset: 3px;
+}
